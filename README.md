@@ -76,9 +76,19 @@ Un mot complété faux coûte 15 points et ses lettres fautives s'effacent ; les
 lettres déjà verrouillées par un mot juste, elles, ne bougent pas. Terminer
 une grille sans la moindre faute vaut +120.
 
-La progression, les meilleurs scores, la cagnotte d'étoiles et la série
-quotidienne sont stockés dans le `localStorage` du navigateur — rien ne part
-sur un serveur.
+**Une partie se quitte et se reprend.** Chaque coup est enregistré : lettres
+posées, mots validés, score, fautes, indices achetés et temps écoulé. Revenez
+plus tard, même après avoir fermé le navigateur, et la grille est exactement
+comme vous l'avez laissée — l'accueil affiche « Reprendre » et l'avancement.
+Le temps est stocké en durée écoulée et non en heure de départ, sinon une
+partie reprise le lendemain afficherait vingt heures de jeu. Le défi du jour a
+sa propre sauvegarde par date, et une grille terminée efface la sienne. Une
+sauvegarde faite avant une régénération du contenu est ignorée : elle ne
+correspondrait plus à la grille affichée.
+
+La progression, les meilleurs scores, la cagnotte d'étoiles, la partie en cours
+et la série quotidienne sont stockés dans le `localStorage` du navigateur —
+rien ne part sur un serveur.
 
 Les tarifs et le taux de gain sont des constantes à ajuster : `COUT_LETTRE`,
 `COUT_MOT_PAR_LETTRE`, `COUT_MOT_MINIMUM`, `COUT_INDEX` et `COUT_SOLUTIONS`

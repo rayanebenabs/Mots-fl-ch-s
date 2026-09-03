@@ -9,10 +9,14 @@ import { cle, cellulesDe, preparer } from '../jeu/grille'
 import {
   nouvellePartie, taper, effacer, selectionner, deplacerCurseur, motVoisin, resultat,
   revelerLettre, revelerMot, ouvrirIndex, revelerTout, coutDuMot,
+  pourSauvegarde, depuisSauvegarde,
   COUT_LETTRE, COUT_INDEX, COUT_SOLUTIONS,
   type EtatPartie,
 } from '../jeu/partie'
-import { depenser, enregistrerGrille, enregistrerQuotidien, lire } from '../jeu/stockage'
+import {
+  cleDePartie, depenser, ecrireEnCours, effacerEnCours, enregistrerGrille,
+  enregistrerQuotidien, lire, lireEnCours, signatureDe,
+} from '../jeu/stockage'
 import { dateDuJour } from '../jeu/quotidien'
 import type { Grille, MotNumerote } from '../types'
 
@@ -25,14 +29,23 @@ interface Props {
 
 export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Props) {
   const plan = useMemo(() => preparer(grille), [grille])
-  const [etat, setEtat] = useState<EtatPartie>(() => nouvellePartie(plan))
+  const cleSauvegarde = cleDePartie(grille, quotidien, dateDuJour())
+  // on reprend la partie laissee en plan, si elle correspond a cette grille
+  const [etat, setEtat] = useState<EtatPartie>(() => {
+    const reprise = lireEnCours(cleSauvegarde, grille)
+    return reprise ? depuisSauvegarde(reprise) : nouvellePartie(plan)
+  })
   const [feuille, setFeuille] = useState(false)
   const [indices, setIndices] = useState(false)
   const [index, setIndex] = useState(false)
   const [etoiles, setEtoiles] = useState(() => lire().etoiles)
   const [gagnees, setGagnees] = useState(0)
 
-  useEffect(() => setEtat(nouvellePartie(plan)), [plan])
+  // la partie est enregistree a chaque coup: quitter n a jamais rien coute
+  useEffect(() => {
+    if (etat.finiA) return
+    ecrireEnCours(cleSauvegarde, pourSauvegarde(etat, signatureDe(grille)))
+  }, [etat, cleSauvegarde])
 
   useEffect(() => {
     if (!etat.finiA) return
@@ -173,7 +186,7 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
           resultat={r}
           etoilesGagnees={gagnees}
           quotidien={quotidien}
-          onRejouer={() => { setFeuille(false); onRejouer() }}
+          onRejouer={() => { effacerEnCours(cleSauvegarde); setFeuille(false); onRejouer() }}
           onFermer={onQuitter}
         />
       )}

@@ -1,4 +1,5 @@
 import type { MotNumerote, Resultat } from '../types'
+import type { PartieEnCours } from './stockage'
 import { cle, cellulesDe, lettresOffertes, preparer, type PlanGrille } from './grille'
 
 export const POINTS_PAR_LETTRE = 10
@@ -254,3 +255,43 @@ export function resultat(plan: PlanGrille, etat: EtatPartie): Resultat {
 export { preparer }
 export type { PlanGrille }
 
+
+/** Ce qu on garde d une partie quittee en cours de route. Le temps est
+ *  stocke en duree ecoulee, pas en heure de depart: sinon une partie reprise
+ *  le lendemain afficherait vingt heures de jeu. */
+export function pourSauvegarde(etat: EtatPartie, signature: string): PartieEnCours {
+  return {
+    signature,
+    ecoule: Date.now() - etat.debut,
+    saisie: etat.saisie,
+    figees: etat.figees,
+    revelees: etat.revelees,
+    motsTrouves: etat.motsTrouves,
+    erreurs: etat.erreurs,
+    score: etat.score,
+    motActif: etat.motActif,
+    curseur: etat.curseur,
+    indices: etat.indices,
+    indexOuvert: etat.indexOuvert,
+    solutions: etat.solutions,
+  }
+}
+
+export function depuisSauvegarde(p: PartieEnCours): EtatPartie {
+  return {
+    saisie: p.saisie,
+    figees: p.figees,
+    revelees: p.revelees,
+    motsTrouves: p.motsTrouves,
+    erreurs: p.erreurs,
+    score: p.score,
+    motActif: p.motActif,
+    curseur: p.curseur,
+    indices: p.indices,
+    indexOuvert: p.indexOuvert,
+    solutions: p.solutions,
+    debut: Date.now() - p.ecoule,
+    finiA: null,
+    rate: null,
+  }
+}

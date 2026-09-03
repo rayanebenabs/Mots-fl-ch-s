@@ -111,6 +111,7 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
 .carte:active { transform: scale(.985); }
 .carte[disabled] { opacity: .45; }
 
+.carte-jour .jauge { margin-top: 10px; }
 .carte-jour {
   background: linear-gradient(135deg, rgba(255,201,60,.20), rgba(124,107,255,.20));
   border-color: rgba(255, 201, 60, .35);
@@ -406,4 +407,5 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
 .pastille-niveau.n4 { background: var(--faux); color: #fff; }
 .niveau-corps { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 .niveau-corps b { font-size: 15px; font-weight: 800; }
+.niveau-corps .jauge { margin-top: 7px; }
 .niveau-corps .meta { margin: 0; }

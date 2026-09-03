@@ -28,6 +28,8 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
   const [aide, setAide] = useState(false)
   const jour = grilleDuJour(grilles)
   const faitAujourdhui = sauvegarde.quotidien[dateDuJour()]
+  const reprise = (cle: string) => sauvegarde.enCours[cle]
+  const jourEnCours = reprise(`jour:${dateDuJour()}`)
 
   const grilleDe = (theme: string, n: number) =>
     grilles.find(g => g.collection === 'campagne' && g.theme === theme && g.niveau === n)
@@ -57,13 +59,20 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
         <button className="carte carte-jour" onClick={() => onJouer(jour, true)}>
           <div className="carte-entete">
             <h2>Défi du jour</h2>
-            <span className="etiquette or">{faitAujourdhui ? 'Terminé' : 'Nouveau'}</span>
+            <span className="etiquette or">
+              {faitAujourdhui ? 'Terminé' : jourEnCours ? 'À reprendre' : 'Nouveau'}
+            </span>
           </div>
           <p className="meta">
             {libelleDate()} · {jour.mots.length} mots ·{' '}
             {jour.theme === 'classique' ? 'à l’ancienne' : 'pop & internet'}
             {faitAujourdhui && ` · ★ ${faitAujourdhui.score}`}
           </p>
+          {jourEnCours && !faitAujourdhui && (
+            <div className="jauge">
+              <span style={{ width: `${(jourEnCours.motsTrouves.length / jour.mots.length) * 100}%` }} />
+            </div>
+          )}
         </button>
 
         {THEMES.map(theme => {
@@ -81,6 +90,7 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
                 const precedente = niv.n === 1 ? null : grilleDe(theme.cle, niv.n - 1)
                 const ouvert = niv.n === 1 || !!(precedente && sauvegarde.grilles[precedente.id])
                 const res = sauvegarde.grilles[g.id]
+                const encours = reprise(g.id)
                 return (
                   <button
                     key={g.id}
@@ -92,10 +102,19 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
                     <span className="niveau-corps">
                       <b>{niv.nom}</b>
                       <span className="meta">
-                        {ouvert ? `${g.titre} · ${g.mots.length} mots` : 'Terminez le niveau précédent'}
+                        {!ouvert ? 'Terminez le niveau précédent'
+                          : encours ? `Repris à ${encours.motsTrouves.length}/${g.mots.length} mots`
+                            : `${g.titre} · ${g.mots.length} mots`}
                       </span>
+                      {ouvert && encours && (
+                        <span className="jauge">
+                          <span style={{ width: `${(encours.motsTrouves.length / g.mots.length) * 100}%` }} />
+                        </span>
+                      )}
                     </span>
-                    <span className="etiquette">{!ouvert ? '🔒' : res ? `★ ${res.score}` : '→'}</span>
+                    <span className="etiquette">
+                      {!ouvert ? '🔒' : res ? `★ ${res.score}` : encours ? 'Reprendre' : '→'}
+                    </span>
                   </button>
                 )
               })}

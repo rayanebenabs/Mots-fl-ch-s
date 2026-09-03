@@ -1,4 +1,4 @@
-import type { Resultat } from '../types'
+import type { Grille, Resultat } from '../types'
 
 const CLE = 'motsfleches.v1'
 
@@ -6,15 +6,36 @@ const CLE = 'motsfleches.v1'
  *  avant meme d avoir termine une grille. */
 export const ETOILES_DEPART = 80
 
+/** Une partie laissee en plan, telle qu on la retrouve en revenant. */
+export interface PartieEnCours {
+  /** empreinte de la grille: une partie sauvegardee avant une regeneration
+   *  du contenu ne correspondrait plus a la grille affichee */
+  signature: string
+  ecoule: number
+  saisie: Record<string, string>
+  figees: Record<string, true>
+  revelees: Record<string, true>
+  motsTrouves: number[]
+  erreurs: number
+  score: number
+  motActif: number
+  curseur: number
+  indices: number
+  indexOuvert: boolean
+  solutions: boolean
+}
+
 export interface Sauvegarde {
   grilles: Record<string, Resultat>
   quotidien: Record<string, Resultat>   // date ISO -> resultat
+  enCours: Record<string, PartieEnCours>
   serie: { dernier: string; jours: number }
   etoiles: number
 }
 
 const VIDE: Sauvegarde = {
-  grilles: {}, quotidien: {}, serie: { dernier: '', jours: 0 }, etoiles: ETOILES_DEPART,
+  grilles: {}, quotidien: {}, enCours: {},
+  serie: { dernier: '', jours: 0 }, etoiles: ETOILES_DEPART,
 }
 
 export function lire(): Sauvegarde {
@@ -50,7 +71,8 @@ export function enregistrerGrille(id: string, r: Resultat): Gain {
   const s = lire()
   // une grille ouverte a la page des solutions ne compte pas: ni record,
   // ni etoiles, sinon on rachete des indices avec ce qu ils ont revele
-  if (r.solutions) return { sauvegarde: s, etoilesGagnees: 0 }
+  delete s.enCours[id]
+  if (r.solutions) { ecrire(s); return { sauvegarde: s, etoilesGagnees: 0 } }
   const ancien = s.grilles[id]
   const etoilesGagnees = etoilesPour(r.score, ancien?.score ?? 0)
   if (!ancien || r.score > ancien.score) s.grilles[id] = r
@@ -62,7 +84,8 @@ export function enregistrerGrille(id: string, r: Resultat): Gain {
 export function enregistrerQuotidien(date: string, r: Resultat): Gain {
   const s = lire()
   let etoilesGagnees = 0
-  if (r.solutions) return { sauvegarde: s, etoilesGagnees: 0 }
+  delete s.enCours[`jour:${date}`]
+  if (r.solutions) { ecrire(s); return { sauvegarde: s, etoilesGagnees: 0 } }
   if (!s.quotidien[date]) {
     s.quotidien[date] = r
     etoilesGagnees = etoilesPour(r.score, 0)
@@ -84,4 +107,32 @@ export function depenser(cout: number): number {
   s.etoiles = Math.max(0, s.etoiles - cout)
   ecrire(s)
   return s.etoiles
+}
+
+/** Identifie la partie: le defi du jour repart de zero chaque jour. */
+export function cleDePartie(grille: Grille, quotidien: boolean, date: string) {
+  return quotidien ? `jour:${date}` : grille.id
+}
+
+export function signatureDe(grille: Grille) {
+  return `${grille.mots.length}:${grille.solution[0]}`
+}
+
+export function lireEnCours(cle: string, grille: Grille): PartieEnCours | null {
+  const enregistree = lire().enCours[cle]
+  if (!enregistree || enregistree.signature !== signatureDe(grille)) return null
+  return enregistree
+}
+
+export function ecrireEnCours(cle: string, partie: PartieEnCours) {
+  const s = lire()
+  s.enCours[cle] = partie
+  ecrire(s)
+}
+
+export function effacerEnCours(cle: string): Sauvegarde {
+  const s = lire()
+  delete s.enCours[cle]
+  ecrire(s)
+  return s
 }
