@@ -36,6 +36,13 @@ export default function Aide({ onFermer, compact }: { onFermer?: () => void; com
             <b> ↴</b> à droite puis vers le bas.
           </p>
           <p>
+            <b>À deux.</b> Sur l’accueil, basculez sur <i>À deux</i> : on se passe
+            le téléphone. Chacun remplit un mot, puis la main change — qu’il soit
+            juste ou faux. Le bouton <i>Je passe</i> rend la main sans rien
+            résoudre. Le score est commun : la grille se gagne ou se perd à deux,
+            le petit compteur ne dit que qui a bouclé combien de mots.
+          </p>
+          <p>
             <b>Deux univers.</b> <i>À l’ancienne</i> reprend le vocabulaire du mot
             fléché de kiosque ; <i>Pop, internet &amp; quotidien</i> pioche dans les
             séries, les memes et l’actu. Dans chacun, les quatre niveaux ne changent

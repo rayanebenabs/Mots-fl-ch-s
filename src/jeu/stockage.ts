@@ -1,4 +1,5 @@
 import type { Grille, Resultat } from '../types'
+import type { Duo } from './partie'
 
 const CLE = 'motsfleches.v1'
 
@@ -21,6 +22,7 @@ export interface PartieEnCours {
   motActif: number
   curseur: number
   indices: number
+  duo: Duo | null
   indexOuvert: boolean
   solutions: boolean
 }
@@ -31,11 +33,14 @@ export interface Sauvegarde {
   enCours: Record<string, PartieEnCours>
   serie: { dernier: string; jours: number }
   etoiles: number
+  /** les prenoms des deux joueurs du mode duo, retenus d une partie a l autre */
+  duoNoms: [string, string]
 }
 
 const VIDE: Sauvegarde = {
   grilles: {}, quotidien: {}, enCours: {},
   serie: { dernier: '', jours: 0 }, etoiles: ETOILES_DEPART,
+  duoNoms: ['Joueur 1', 'Joueur 2'],
 }
 
 export function lire(): Sauvegarde {
@@ -71,8 +76,7 @@ export function enregistrerGrille(id: string, r: Resultat): Gain {
   const s = lire()
   // une grille ouverte a la page des solutions ne compte pas: ni record,
   // ni etoiles, sinon on rachete des indices avec ce qu ils ont revele
-  delete s.enCours[id]
-  if (r.solutions) { ecrire(s); return { sauvegarde: s, etoilesGagnees: 0 } }
+  if (r.solutions) return { sauvegarde: s, etoilesGagnees: 0 }
   const ancien = s.grilles[id]
   const etoilesGagnees = etoilesPour(r.score, ancien?.score ?? 0)
   if (!ancien || r.score > ancien.score) s.grilles[id] = r
@@ -84,8 +88,7 @@ export function enregistrerGrille(id: string, r: Resultat): Gain {
 export function enregistrerQuotidien(date: string, r: Resultat): Gain {
   const s = lire()
   let etoilesGagnees = 0
-  delete s.enCours[`jour:${date}`]
-  if (r.solutions) { ecrire(s); return { sauvegarde: s, etoilesGagnees: 0 } }
+  if (r.solutions) return { sauvegarde: s, etoilesGagnees: 0 }
   if (!s.quotidien[date]) {
     s.quotidien[date] = r
     etoilesGagnees = etoilesPour(r.score, 0)
@@ -110,8 +113,15 @@ export function depenser(cout: number): number {
 }
 
 /** Identifie la partie: le defi du jour repart de zero chaque jour. */
-export function cleDePartie(grille: Grille, quotidien: boolean, date: string) {
-  return quotidien ? `jour:${date}` : grille.id
+export function cleDePartie(grille: Grille, quotidien: boolean, date: string, duo = false) {
+  return (quotidien ? `jour:${date}` : grille.id) + (duo ? '#duo' : '')
+}
+
+export function enregistrerNomsDuo(noms: [string, string]) {
+  const s = lire()
+  s.duoNoms = noms
+  ecrire(s)
+  return s
 }
 
 export function signatureDe(grille: Grille) {

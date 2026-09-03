@@ -5,13 +5,14 @@ import BarreDefinition from './BarreDefinition'
 import FinPartie from './FinPartie'
 import Indices from './Indices'
 import IndexGrille from './IndexGrille'
+import BarreDuo from './BarreDuo'
 import { cle, cellulesDe, preparer } from '../jeu/grille'
 import {
   nouvellePartie, taper, effacer, selectionner, deplacerCurseur, motVoisin, resultat,
   revelerLettre, revelerMot, ouvrirIndex, revelerTout, coutDuMot,
-  pourSauvegarde, depuisSauvegarde, partieResolue,
+  pourSauvegarde, depuisSauvegarde, partieResolue, passerLaMain,
   COUT_LETTRE, COUT_INDEX, COUT_SOLUTIONS,
-  type EtatPartie,
+  type EtatPartie, type Duo,
 } from '../jeu/partie'
 import {
   cleDePartie, depenser, ecrireEnCours, effacerEnCours, enregistrerGrille,
@@ -23,16 +24,17 @@ import type { Grille, MotNumerote } from '../types'
 interface Props {
   grille: Grille
   quotidien: boolean
+  duo: Duo | null
   onQuitter: () => void
   onRejouer: () => void
 }
 
-export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Props) {
+export default function EcranJeu({ grille, quotidien, duo, onQuitter, onRejouer }: Props) {
   const plan = useMemo(() => preparer(grille), [grille])
-  const cleSauvegarde = cleDePartie(grille, quotidien, dateDuJour())
-  const dejaFinie = quotidien
-    ? lire().quotidien[dateDuJour()]
-    : lire().grilles[grille.id]
+  const cleSauvegarde = cleDePartie(grille, quotidien, dateDuJour(), !!duo)
+  // en duo on ne bascule jamais en revue: la partie est propre a la paire
+  const dejaFinie = duo ? undefined
+    : quotidien ? lire().quotidien[dateDuJour()] : lire().grilles[grille.id]
   // une partie en plan se reprend; une grille deja rendue se revoit,
   // remplie, plutot que de repartir de zero sans prevenir
   const [revue, setRevue] = useState(() => !lireEnCours(cleSauvegarde, grille) && !!dejaFinie)
@@ -40,7 +42,7 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
     const reprise = lireEnCours(cleSauvegarde, grille)
     if (reprise) return depuisSauvegarde(reprise)
     if (dejaFinie) return partieResolue(plan, dejaFinie)
-    return nouvellePartie(plan)
+    return nouvellePartie(plan, duo)
   })
   const [feuille, setFeuille] = useState(false)
   const [indices, setIndices] = useState(false)
@@ -60,6 +62,9 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
     const gain = quotidien
       ? enregistrerQuotidien(dateDuJour(), r)
       : enregistrerGrille(grille.id, r)
+    // la partie est finie: sa sauvegarde n a plus lieu d etre. On efface la
+    // cle exacte, solo ou duo, pour ne pas emporter celle de l autre mode
+    effacerEnCours(cleSauvegarde)
     setEtoiles(gain.sauvegarde.etoiles)
     setGagnees(gain.etoilesGagnees)
     const t = setTimeout(() => setFeuille(true), 550)
@@ -158,6 +163,13 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
       <Plateau grille={grille} plan={plan} etat={etat} onCase={surCase} onMot={surMot} />
 
       <div className="zone-basse">
+        {etat.duo && (
+          <BarreDuo
+            duo={etat.duo}
+            fini={!!etat.finiA}
+            onPasser={() => setEtat(passerLaMain)}
+          />
+        )}
         {revue && (
           <div className="barre-revue">
             <span>
@@ -166,7 +178,9 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
             </span>
             <button
               className="bouton-revue"
-              onClick={() => { effacerEnCours(cleSauvegarde); setRevue(false); setEtat(nouvellePartie(plan)) }}
+              onClick={() => {
+                effacerEnCours(cleSauvegarde); setRevue(false); setEtat(nouvellePartie(plan, duo))
+              }}
             >
               Rejouer
             </button>

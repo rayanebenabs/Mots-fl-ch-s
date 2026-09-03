@@ -13,6 +13,15 @@ export const COUT_MOT_MINIMUM = 45
 export const COUT_INDEX = 40
 export const COUT_SOLUTIONS = 200
 
+/** Partie a deux sur le meme telephone: on se passe l appareil. */
+export interface Duo {
+  noms: [string, string]
+  /** a qui de jouer */
+  actif: 0 | 1
+  /** mots resolus par chacun, a titre indicatif: le score, lui, est commun */
+  trouves: [number, number]
+}
+
 export interface EtatPartie {
   saisie: Record<string, string>
   /** cases figees: lettres offertes + lettres de mots valides */
@@ -29,13 +38,15 @@ export interface EtatPartie {
   /** cases devoilees par un indice: on ne les masque plus */
   revelees: Record<string, true>
   indices: number
+  /** null en solo */
+  duo: Duo | null
   /** l index du magazine: la liste de toutes les definitions */
   indexOuvert: boolean
   /** la page des solutions a ete achetee: la grille ne rapporte plus rien */
   solutions: boolean
 }
 
-export function nouvellePartie(plan: PlanGrille): EtatPartie {
+export function nouvellePartie(plan: PlanGrille, duo: Duo | null = null): EtatPartie {
   const offertes = lettresOffertes(plan)
   const figees: Record<string, true> = {}
   for (const k of Object.keys(offertes)) figees[k] = true
@@ -53,6 +64,7 @@ export function nouvellePartie(plan: PlanGrille): EtatPartie {
     rate: null,
     revelees: {},
     indices: 0,
+    duo,
     indexOuvert: false,
     solutions: false,
   }
@@ -170,7 +182,32 @@ export function taper(plan: PlanGrille, etat: EtatPartie, lettre: string): EtatP
   const saisie = { ...etat.saisie, [cle(...cells[i])]: lettre }
   let j = i + 1
   while (j < cells.length && etat.figees[cle(...cells[j])]) j++
-  return controler(plan, { ...etat, saisie, curseur: Math.min(j, cells.length - 1), rate: null })
+  const suite = controler(plan, {
+    ...etat, saisie, curseur: Math.min(j, cells.length - 1), rate: null,
+  })
+  return apresCoup(etat, suite)
+}
+
+/**
+ * En duo, la main passe des qu un mot est tranche, juste ou faux. Tant qu on
+ * remplit des lettres sans boucler de mot, on garde la main.
+ */
+function apresCoup(avant: EtatPartie, apres: EtatPartie): EtatPartie {
+  if (!apres.duo) return apres
+  const gagnes = apres.motsTrouves.length - avant.motsTrouves.length
+  if (gagnes <= 0 && apres.rate === null) return apres
+  const trouves: [number, number] = [...apres.duo.trouves]
+  trouves[apres.duo.actif] += Math.max(0, gagnes)
+  return {
+    ...apres,
+    duo: { ...apres.duo, actif: apres.duo.actif === 0 ? 1 : 0, trouves },
+  }
+}
+
+/** Bloque ? On passe la main sans rien resoudre. */
+export function passerLaMain(etat: EtatPartie): EtatPartie {
+  if (!etat.duo || etat.finiA) return etat
+  return { ...etat, duo: { ...etat.duo, actif: etat.duo.actif === 0 ? 1 : 0 }, rate: null }
 }
 
 export function effacer(plan: PlanGrille, etat: EtatPartie): EtatPartie {
@@ -276,6 +313,7 @@ export function partieResolue(plan: PlanGrille, r: Resultat): EtatPartie {
     motActif: premier ? premier.id : -1,
     curseur: 0,
     indices: r.indices ?? 0,
+    duo: null,
     indexOuvert: true,
     solutions: false,
     debut: Date.now() - r.tempsMs,
@@ -300,6 +338,7 @@ export function pourSauvegarde(etat: EtatPartie, signature: string): PartieEnCou
     motActif: etat.motActif,
     curseur: etat.curseur,
     indices: etat.indices,
+    duo: etat.duo,
     indexOuvert: etat.indexOuvert,
     solutions: etat.solutions,
   }
@@ -316,6 +355,7 @@ export function depuisSauvegarde(p: PartieEnCours): EtatPartie {
     motActif: p.motActif,
     curseur: p.curseur,
     indices: p.indices,
+    duo: p.duo ?? null,
     indexOuvert: p.indexOuvert,
     solutions: p.solutions,
     debut: Date.now() - p.ecoule,

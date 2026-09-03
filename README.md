@@ -76,6 +76,14 @@ Un mot complété faux coûte 15 points et ses lettres fautives s'effacent ; les
 lettres déjà verrouillées par un mot juste, elles, ne bougent pas. Terminer
 une grille sans la moindre faute vaut +120.
 
+**Mode duo, sur le même téléphone.** La bascule *À deux* de l'accueil demande
+les deux prénoms, puis lance la grille à tour de rôle : on se passe l'appareil
+comme on se passe le magazine. La main change dès qu'un mot est tranché, juste
+ou faux, et le bouton *Je passe* la rend sans rien résoudre. Le score est
+commun — la grille se gagne à deux — et un compteur indique seulement qui a
+bouclé combien de mots. La partie à deux a sa propre sauvegarde : commencer une
+grille en solo et la refaire en duo ne mélange pas les deux.
+
 **Une grille terminée se revoit.** En y revenant, elle s'affiche remplie, avec
 le score et le nombre de fautes du record, sans clavier — c'est la page des
 solutions du magazine. Un bouton *Rejouer* la remet à zéro. Rien n'est

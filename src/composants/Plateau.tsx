@@ -21,7 +21,7 @@ export default function Plateau({ grille, plan, etat, onCase, onMot }: Props) {
   return (
     <div className="zone-grille">
       <div
-        className="plateau"
+        className={`plateau${etat.duo ? ` duo${etat.duo.actif}` : ''}`}
         style={{
           gridTemplateColumns: `repeat(${grille.cols}, var(--taille))`,
           ['--cols' as string]: grille.cols,

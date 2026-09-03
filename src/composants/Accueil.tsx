@@ -2,6 +2,8 @@ import { useState } from 'react'
 import type { Grille } from '../types'
 import type { Sauvegarde } from '../jeu/stockage'
 import { grilleDuJour, libelleDate, dateDuJour } from '../jeu/quotidien'
+import { enregistrerNomsDuo } from '../jeu/stockage'
+import type { Duo } from '../jeu/partie'
 import Aide from './Aide'
 
 const THEMES = [
@@ -21,14 +23,21 @@ const NIVEAUX = [
 interface Props {
   grilles: Grille[]
   sauvegarde: Sauvegarde
-  onJouer: (g: Grille, quotidien: boolean) => void
+  onJouer: (g: Grille, quotidien: boolean, duo: Duo | null) => void
 }
 
 export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
   const [aide, setAide] = useState(false)
+  const [aDeux, setADeux] = useState(false)
+  const [noms, setNoms] = useState<[string, string]>(sauvegarde.duoNoms)
+  const [reglages, setReglages] = useState(false)
   const jour = grilleDuJour(grilles)
   const faitAujourdhui = sauvegarde.quotidien[dateDuJour()]
-  const reprise = (cle: string) => sauvegarde.enCours[cle]
+  const reprise = (cle: string) => sauvegarde.enCours[cle + (aDeux ? '#duo' : '')]
+
+  /** En duo, la partie demarre sur le joueur 1, avec les prenoms retenus. */
+  const lancer = (g: Grille, quotidien: boolean) =>
+    onJouer(g, quotidien, aDeux ? { noms, actif: 0, trouves: [0, 0] } : null)
   const jourEnCours = reprise(`jour:${dateDuJour()}`)
 
   const grilleDe = (theme: string, n: number) =>
@@ -56,7 +65,19 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
           </p>
         </div>
 
-        <button className="carte carte-jour" onClick={() => onJouer(jour, true)}>
+        <div className="bascule" role="tablist" aria-label="Nombre de joueurs">
+          <button role="tab" aria-selected={!aDeux} className={!aDeux ? 'actif' : ''}
+                  onClick={() => setADeux(false)}>Solo</button>
+          <button role="tab" aria-selected={aDeux} className={aDeux ? 'actif' : ''}
+                  onClick={() => { setADeux(true); setReglages(true) }}>À deux</button>
+          {aDeux && (
+            <button className="bascule-noms" onClick={() => setReglages(true)}>
+              {noms[0]} &amp; {noms[1]} ✎
+            </button>
+          )}
+        </div>
+
+        <button className="carte carte-jour" onClick={() => lancer(jour, true)}>
           <div className="carte-entete">
             <h2>Défi du jour</h2>
             <span className="etiquette or">
@@ -96,7 +117,7 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
                     key={g.id}
                     className={`carte niveau ${res ? 'faite' : ''}`}
                     disabled={!ouvert}
-                    onClick={() => onJouer(g, false)}
+                    onClick={() => lancer(g, false)}
                   >
                     <span className={`pastille-niveau n${niv.n}`}>{niv.n}</span>
                     <span className="niveau-corps">
@@ -128,6 +149,42 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
       </div>
 
       {aide && <Aide onFermer={() => setAide(false)} />}
+
+      {reglages && (
+        <div className="voile" onClick={() => setReglages(false)}>
+          <div className="feuille" onClick={e => e.stopPropagation()}>
+            <h2>Qui joue ?</h2>
+            <p className="aide" style={{ margin: '2px 0 0' }}>
+              On se passe le téléphone : chacun remplit un mot, puis rend la main.
+              Le score est commun, la grille se gagne à deux.
+            </p>
+            <div className="champs">
+              {[0, 1].map(i => (
+                <label key={i} className={`champ j${i}`}>
+                  <span>Joueur {i + 1}</span>
+                  <input
+                    value={noms[i]}
+                    maxLength={14}
+                    onChange={e => setNoms(n => (i === 0 ? [e.target.value, n[1]] : [n[0], e.target.value]))}
+                  />
+                </label>
+              ))}
+            </div>
+            <button
+              className="bouton"
+              onClick={() => {
+                const propres: [string, string] = [
+                  noms[0].trim() || 'Joueur 1', noms[1].trim() || 'Joueur 2']
+                setNoms(propres)
+                enregistrerNomsDuo(propres)
+                setReglages(false)
+              }}
+            >
+              C’est parti
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
