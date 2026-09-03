@@ -256,6 +256,34 @@ export { preparer }
 export type { PlanGrille }
 
 
+/**
+ * Rejoue une grille deja terminee, telle qu elle a ete rendue: toutes les
+ * lettres en place, le score et le temps du record. Sert a la revenir voir
+ * sans avoir a la refaire.
+ */
+export function partieResolue(plan: PlanGrille, r: Resultat): EtatPartie {
+  const saisie: Record<string, string> = {}
+  const figees: Record<string, true> = {}
+  plan.solution.forEach((lettre, k) => { saisie[k] = lettre; figees[k] = true })
+  const premier = plan.mots[0]
+  return {
+    saisie,
+    figees,
+    revelees: {},
+    motsTrouves: plan.mots.map(m => m.id),
+    erreurs: r.erreurs,
+    score: r.score,
+    motActif: premier ? premier.id : -1,
+    curseur: 0,
+    indices: r.indices ?? 0,
+    indexOuvert: true,
+    solutions: false,
+    debut: Date.now() - r.tempsMs,
+    finiA: Date.now(),
+    rate: null,
+  }
+}
+
 /** Ce qu on garde d une partie quittee en cours de route. Le temps est
  *  stocke en duree ecoulee, pas en heure de depart: sinon une partie reprise
  *  le lendemain afficherait vingt heures de jeu. */

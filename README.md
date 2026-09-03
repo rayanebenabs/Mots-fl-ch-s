@@ -76,6 +76,11 @@ Un mot complété faux coûte 15 points et ses lettres fautives s'effacent ; les
 lettres déjà verrouillées par un mot juste, elles, ne bougent pas. Terminer
 une grille sans la moindre faute vaut +120.
 
+**Une grille terminée se revoit.** En y revenant, elle s'affiche remplie, avec
+le score et le nombre de fautes du record, sans clavier — c'est la page des
+solutions du magazine. Un bouton *Rejouer* la remet à zéro. Rien n'est
+recompté au passage : revoir une grille ne rapporte pas d'étoiles.
+
 **Une partie se quitte et se reprend.** Chaque coup est enregistré : lettres
 posées, mots validés, score, fautes, indices achetés et temps écoulé. Revenez
 plus tard, même après avoir fermé le navigateur, et la grille est exactement

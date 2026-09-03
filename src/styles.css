@@ -294,6 +294,21 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
 .barre-def .longueur { font-size: 11px; color: var(--texte-3); font-weight: 700; }
 .barre-def .texte { font-size: 14.5px; font-weight: 650; line-height: 1.25; }
 
+/* la grille est deja rendue: on la revoit, et on peut la refaire */
+.barre-revue {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 11px 12px; margin-bottom: 10px; border-radius: var(--r-l);
+  background: rgba(47, 212, 143, .14); border: 1px solid rgba(47, 212, 143, .35);
+  font-size: 13.5px; color: var(--texte);
+}
+.barre-revue b { color: var(--juste); font-variant-numeric: tabular-nums; }
+.bouton-revue {
+  flex: 0 0 auto; padding: 9px 15px; border-radius: 999px;
+  background: var(--juste); color: #05301f; font-size: 13.5px; font-weight: 800;
+  transition: transform var(--transition);
+}
+.bouton-revue:active { transform: scale(.96); }
+
 /* ------------------------------------------------------------------ clavier */
 .clavier { display: flex; flex-direction: column; gap: 6px; }
 .rangee { display: flex; gap: 5px; justify-content: center; }

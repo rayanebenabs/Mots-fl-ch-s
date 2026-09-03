@@ -9,7 +9,7 @@ import { cle, cellulesDe, preparer } from '../jeu/grille'
 import {
   nouvellePartie, taper, effacer, selectionner, deplacerCurseur, motVoisin, resultat,
   revelerLettre, revelerMot, ouvrirIndex, revelerTout, coutDuMot,
-  pourSauvegarde, depuisSauvegarde,
+  pourSauvegarde, depuisSauvegarde, partieResolue,
   COUT_LETTRE, COUT_INDEX, COUT_SOLUTIONS,
   type EtatPartie,
 } from '../jeu/partie'
@@ -30,10 +30,17 @@ interface Props {
 export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Props) {
   const plan = useMemo(() => preparer(grille), [grille])
   const cleSauvegarde = cleDePartie(grille, quotidien, dateDuJour())
-  // on reprend la partie laissee en plan, si elle correspond a cette grille
+  const dejaFinie = quotidien
+    ? lire().quotidien[dateDuJour()]
+    : lire().grilles[grille.id]
+  // une partie en plan se reprend; une grille deja rendue se revoit,
+  // remplie, plutot que de repartir de zero sans prevenir
+  const [revue, setRevue] = useState(() => !lireEnCours(cleSauvegarde, grille) && !!dejaFinie)
   const [etat, setEtat] = useState<EtatPartie>(() => {
     const reprise = lireEnCours(cleSauvegarde, grille)
-    return reprise ? depuisSauvegarde(reprise) : nouvellePartie(plan)
+    if (reprise) return depuisSauvegarde(reprise)
+    if (dejaFinie) return partieResolue(plan, dejaFinie)
+    return nouvellePartie(plan)
   })
   const [feuille, setFeuille] = useState(false)
   const [indices, setIndices] = useState(false)
@@ -43,12 +50,12 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
 
   // la partie est enregistree a chaque coup: quitter n a jamais rien coute
   useEffect(() => {
-    if (etat.finiA) return
+    if (etat.finiA || revue) return
     ecrireEnCours(cleSauvegarde, pourSauvegarde(etat, signatureDe(grille)))
   }, [etat, cleSauvegarde])
 
   useEffect(() => {
-    if (!etat.finiA) return
+    if (!etat.finiA || revue) return
     const r = resultat(plan, etat)
     const gain = quotidien
       ? enregistrerQuotidien(dateDuJour(), r)
@@ -151,17 +158,33 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
       <Plateau grille={grille} plan={plan} etat={etat} onCase={surCase} onMot={surMot} />
 
       <div className="zone-basse">
+        {revue && (
+          <div className="barre-revue">
+            <span>
+              Grille terminée · <b>★ {dejaFinie!.score}</b> ·{' '}
+              {dejaFinie!.erreurs === 0 ? 'sans faute' : `${dejaFinie!.erreurs} faute${dejaFinie!.erreurs > 1 ? 's' : ''}`}
+            </span>
+            <button
+              className="bouton-revue"
+              onClick={() => { effacerEnCours(cleSauvegarde); setRevue(false); setEtat(nouvellePartie(plan)) }}
+            >
+              Rejouer
+            </button>
+          </div>
+        )}
         <BarreDefinition
           plan={plan}
           etat={etat}
           onMot={surMot}
           onPas={pas => setEtat(s => selectionner(s, motVoisin(plan, s, pas)))}
         />
-        <Clavier
-          onLettre={l => setEtat(s => taper(plan, s, l))}
-          onEffacer={() => setEtat(s => effacer(plan, s))}
-          onSuivant={() => setEtat(s => selectionner(s, motVoisin(plan, s, 1)))}
-        />
+        {!revue && (
+          <Clavier
+            onLettre={l => setEtat(s => taper(plan, s, l))}
+            onEffacer={() => setEtat(s => effacer(plan, s))}
+            onSuivant={() => setEtat(s => selectionner(s, motVoisin(plan, s, 1)))}
+          />
+        )}
       </div>
 
       {indices && (
