@@ -101,6 +101,11 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .marque .accroche { margin: 10px auto 0; max-width: 300px; font-size: 13.5px; color: var(--texte-2); }
+.compteur-crayons {
+  margin: 12px 0 0; font-size: 13px; color: var(--texte-3);
+  font-variant-numeric: tabular-nums;
+}
+.compteur-crayons b { font-size: 19px; color: var(--accent); font-weight: 900; }
 
 .carte {
   display: block; width: 100%; text-align: left;
@@ -295,6 +300,32 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
 }
 .barre-def .longueur { font-size: 11px; color: var(--texte-3); font-weight: 700; }
 .barre-def .texte { font-size: 14.5px; font-weight: 650; line-height: 1.25; }
+
+/* l objectif de la grille: le troisieme crayon */
+.barre-objectif {
+  display: flex; align-items: center; gap: 9px;
+  padding: 8px 11px; margin-bottom: 8px; border-radius: var(--r-l);
+  background: rgba(255, 255, 255, .06); border: 1px solid var(--panneau-bord);
+  font-size: 12.5px; color: var(--texte-2);
+}
+.barre-objectif.tenu { background: rgba(47, 212, 143, .14); border-color: rgba(47,212,143,.4); }
+.barre-objectif.rate { opacity: .5; }
+.barre-objectif.rate .obj-texte { text-decoration: line-through; }
+.obj-etiquette {
+  flex: 0 0 auto; font-size: 10.5px; font-weight: 900; letter-spacing: .4px;
+  text-transform: uppercase; color: var(--accent);
+}
+.obj-texte { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.obj-jauge { flex: 0 0 auto; font-weight: 800; font-variant-numeric: tabular-nums; }
+
+.bilan-crayons { display: flex; align-items: center; gap: 14px; margin: 16px 0 4px; }
+.crayons.gros i { width: 8px; height: 26px; border-radius: 3px; background: rgba(255,255,255,.12); }
+.crayons.gros i.plein { background: var(--accent); }
+.bilan-crayons ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; }
+.bilan-crayons li { font-size: 12.5px; color: var(--texte-3); }
+.bilan-crayons li::before { content: '○ '; }
+.bilan-crayons li.ok { color: var(--texte); }
+.bilan-crayons li.ok::before { content: '● '; color: var(--accent); }
 
 /* ---------------------------------------------------------------- mode duo */
 :root { --duo-0: #43dfe8; --duo-1: #ff8fa3; }
@@ -524,3 +555,79 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
   .clavier { gap: 5px; }
   .zone-grille { padding: 2px 0 6px; }
 }
+
+/* ----------------------------------------------------------------- parcours */
+.parcours { display: flex; flex-direction: column; gap: 6px; }
+
+.cahier {
+  padding: 14px 12px 6px;
+  border-radius: var(--r-l);
+  background: var(--panneau);
+  border: 1px solid var(--panneau-bord);
+  margin-bottom: 10px;
+}
+.cahier.ferme { opacity: .5; }
+
+.cahier-entete { display: flex; align-items: center; gap: 11px; margin-bottom: 4px; }
+.cahier-num {
+  flex: 0 0 auto; width: 32px; height: 32px; border-radius: 10px;
+  display: grid; place-items: center; font-weight: 900; font-size: 15px;
+}
+.cahier-num.t-classique { background: var(--accent); color: #2a1e00; }
+.cahier-num.t-moderne { background: var(--accent-2); color: #fff; }
+.cahier-titre { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.cahier-titre b { font-size: 15.5px; font-weight: 800; }
+.cahier-titre > span { font-size: 12px; color: var(--texte-2); }
+.cahier-cadenas { flex: 0 0 auto; font-size: 15px; }
+.cahier-pied {
+  margin: 2px 0 8px; text-align: center;
+  font-size: 11.5px; color: var(--texte-3); font-weight: 700;
+}
+
+/* le chemin serpente: chaque etape est decalee, un trait les relie */
+.chemin { list-style: none; margin: 6px 0 0; padding: 0; position: relative; }
+.chemin::before {
+  content: ''; position: absolute; top: 16px; bottom: 16px; left: 50%;
+  width: 2px; margin-left: -1px; border-left: 2px dashed rgba(255, 255, 255, .16);
+}
+.etape {
+  position: relative; display: flex; align-items: center; gap: 10px;
+  padding: 5px 0; width: 100%;
+}
+.etape.p0 { justify-content: center; }
+.etape.p1 { justify-content: flex-end; padding-right: 24%; }
+.etape.p2 { justify-content: center; }
+.etape.p3 { justify-content: flex-start; padding-left: 24%; }
+
+.noeud {
+  width: 52px; height: 52px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: 17px; font-weight: 900;
+  background: var(--case-bloc); color: var(--texte-3);
+  border: 2px solid rgba(255, 255, 255, .10);
+  transition: transform var(--transition), box-shadow var(--transition);
+  z-index: 1;
+}
+.noeud.ouvert { background: var(--case-vide); color: var(--case-texte); border-color: #fff3; }
+.noeud.fait { background: var(--juste); border-color: rgba(255,255,255,.25); }
+.noeud.courant { box-shadow: 0 0 0 4px rgba(255, 201, 60, .35); border-color: var(--accent); }
+.noeud:active:not(:disabled) { transform: scale(.93); }
+.noeud:disabled { cursor: default; }
+
+.crayons { display: flex; gap: 3px; }
+.crayons i {
+  width: 5px; height: 14px; border-radius: 2px;
+  background: rgba(5, 48, 31, .28);
+}
+.crayons i.plein { background: #05301f; }
+
+.etape-info {
+  position: absolute; left: 12px; right: 12px; top: 50%;
+  transform: translateY(-50%); pointer-events: none;
+  display: flex; flex-direction: column; gap: 1px;
+  font-size: 11px; color: var(--texte-2); text-align: left;
+}
+.etape.p1 .etape-info, .etape.p2 .etape-info { text-align: left; padding-right: 40%; }
+.etape.p3 .etape-info { text-align: right; padding-left: 40%; }
+.etape.p0 .etape-info { text-align: left; padding-right: 55%; }
+.etape-info b { color: var(--accent); font-size: 11.5px; letter-spacing: .4px; }

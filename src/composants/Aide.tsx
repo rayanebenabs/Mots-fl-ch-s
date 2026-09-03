@@ -29,6 +29,15 @@ export default function Aide({ onFermer, compact }: { onFermer?: () => void; com
       {!compact && (
         <>
           <p style={{ marginTop: 18 }}>
+            <b>Le parcours.</b> Huit cahiers de six grilles. Chaque grille
+            rapporte jusqu’à trois crayons : un pour l’avoir terminée, un pour
+            l’avoir faite sans aucune faute, un pour son objectif propre — sans
+            indice, sous le chrono, ou une longue enfilade de mots justes. Les
+            crayons ouvrent les cahiers suivants : bâcler une grille vous
+            obligera à y revenir. Boucler les six grilles d’un cahier verse une
+            prime en étoiles.
+          </p>
+          <p>
             <b>Comment jouer.</b> Chaque définition porte un numéro, visible dans sa case
             et dans la barre sous la grille. Touchez un numéro pour choisir le mot, la
             flèche vous indique dans quel sens l’écrire : <b>→</b> à droite,

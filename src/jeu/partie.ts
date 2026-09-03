@@ -1,4 +1,4 @@
-import type { MotNumerote, Resultat } from '../types'
+import type { MotNumerote, Objectif, Resultat } from '../types'
 import type { PartieEnCours } from './stockage'
 import { cle, cellulesDe, lettresOffertes, preparer, type PlanGrille } from './grille'
 
@@ -38,6 +38,9 @@ export interface EtatPartie {
   /** cases devoilees par un indice: on ne les masque plus */
   revelees: Record<string, true>
   indices: number
+  /** enfilade de mots trouvés sans faute entre eux, et son record */
+  serie: number
+  serieMax: number
   /** null en solo */
   duo: Duo | null
   /** l index du magazine: la liste de toutes les definitions */
@@ -64,6 +67,8 @@ export function nouvellePartie(plan: PlanGrille, duo: Duo | null = null): EtatPa
     rate: null,
     revelees: {},
     indices: 0,
+    serie: 0,
+    serieMax: 0,
     duo,
     indexOuvert: false,
     solutions: false,
@@ -237,7 +242,7 @@ export function deplacerCurseur(etat: EtatPartie, i: number): EtatPartie {
  * sont effacees.
  */
 function controler(plan: PlanGrille, etat: EtatPartie): EtatPartie {
-  let { saisie, figees, score, erreurs } = etat
+  let { saisie, figees, score, erreurs, serie, serieMax } = etat
   const trouves = [...etat.motsTrouves]
   let rate: number | null = null
   let change = true
@@ -254,9 +259,12 @@ function controler(plan: PlanGrille, etat: EtatPartie): EtatPartie {
         figees = { ...figees }
         for (const [r, c] of cells) figees[cle(r, c)] = true
         score += mot.long * POINTS_PAR_LETTRE * (contientBonus(plan, mot) ? 2 : 1)
+        serie += 1
+        serieMax = Math.max(serieMax, serie)
         change = true
       } else {
         erreurs += 1
+        serie = 0
         score = Math.max(0, score - MALUS_ERREUR)
         rate = mot.id
         saisie = { ...saisie }
@@ -271,21 +279,40 @@ function controler(plan: PlanGrille, etat: EtatPartie): EtatPartie {
   const fini = trouves.length === plan.mots.length
   if (fini && !etat.finiA && erreurs === 0) score += BONUS_SANS_FAUTE
   return {
-    ...etat, saisie, figees, score, erreurs, motsTrouves: trouves, rate,
+    ...etat, saisie, figees, score, erreurs, serie, serieMax, motsTrouves: trouves, rate,
     finiA: fini ? (etat.finiA ?? Date.now()) : null,
   }
 }
 
-export function resultat(plan: PlanGrille, etat: EtatPartie): Resultat {
+/** L objectif est-il rempli ? Une grille ouverte aux solutions ne compte pas. */
+export function objectifAtteint(
+  objectif: Objectif | undefined, etat: EtatPartie, tempsMs: number,
+): boolean {
+  if (!objectif || etat.solutions) return false
+  if (objectif.type === 'sansIndice') return etat.indices === 0
+  if (objectif.type === 'chrono') return tempsMs <= objectif.valeur * 60000
+  return etat.serieMax >= objectif.valeur
+}
+
+export function resultat(
+  plan: PlanGrille, etat: EtatPartie, objectif?: Objectif,
+): Resultat {
+  const tempsMs = (etat.finiA ?? Date.now()) - etat.debut
+  const fini = etat.motsTrouves.length === plan.mots.length
+  const atteint = objectifAtteint(objectif, etat, tempsMs)
   return {
     score: etat.score,
     erreurs: etat.erreurs,
-    tempsMs: (etat.finiA ?? Date.now()) - etat.debut,
+    tempsMs,
     motsTrouves: etat.motsTrouves.length,
     motsTotal: plan.mots.length,
     sansFaute: etat.erreurs === 0,
     indices: etat.indices,
     solutions: etat.solutions,
+    serieMax: etat.serieMax,
+    objectifAtteint: atteint,
+    crayons: etat.solutions ? 0
+      : (fini ? 1 : 0) + (fini && etat.erreurs === 0 ? 1 : 0) + (fini && atteint ? 1 : 0),
   }
 }
 
@@ -313,6 +340,8 @@ export function partieResolue(plan: PlanGrille, r: Resultat): EtatPartie {
     motActif: premier ? premier.id : -1,
     curseur: 0,
     indices: r.indices ?? 0,
+    serie: 0,
+    serieMax: r.serieMax ?? 0,
     duo: null,
     indexOuvert: true,
     solutions: false,
@@ -338,6 +367,7 @@ export function pourSauvegarde(etat: EtatPartie, signature: string): PartieEnCou
     motActif: etat.motActif,
     curseur: etat.curseur,
     indices: etat.indices,
+    serieMax: etat.serieMax,
     duo: etat.duo,
     indexOuvert: etat.indexOuvert,
     solutions: etat.solutions,
@@ -355,6 +385,8 @@ export function depuisSauvegarde(p: PartieEnCours): EtatPartie {
     motActif: p.motActif,
     curseur: p.curseur,
     indices: p.indices,
+    serie: 0,
+    serieMax: p.serieMax ?? 0,
     duo: p.duo ?? null,
     indexOuvert: p.indexOuvert,
     solutions: p.solutions,

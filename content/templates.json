@@ -1,83 +1,755 @@
 {
- "_lisezmoi": "Une entree par grille: id, niveau (1-4, difficulte des mots), theme (classique ou moderne), titre, collection, seed (la graine rend la generation reproductible), cols et rows.",
+ "_lisezmoi": "Une entree par grille. collection: parcours (les 8 cahiers de l aventure) ou quotidien (le pool du defi du jour). Pour le parcours: cahier (1-8), rang (1-6) et objectif, le troisieme crayon de la grille.",
  "grilles": [
   {
-   "id": "clas-1",
+   "id": "c1-1",
    "niveau": 1,
    "theme": "classique",
-   "titre": "Café du matin",
-   "collection": "campagne",
-   "seed": 1061,
+   "titre": "Le kiosque · 1",
+   "collection": "parcours",
+   "cahier": 1,
+   "rang": 1,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 100617,
    "cols": 9,
    "rows": 11
   },
   {
-   "id": "clas-2",
+   "id": "c1-2",
+   "niveau": 1,
+   "theme": "classique",
+   "titre": "Le kiosque · 2",
+   "collection": "parcours",
+   "cahier": 1,
+   "rang": 2,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 12
+   },
+   "seed": 101234,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c1-3",
+   "niveau": 1,
+   "theme": "classique",
+   "titre": "Le kiosque · 3",
+   "collection": "parcours",
+   "cahier": 1,
+   "rang": 3,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 5
+   },
+   "seed": 101851,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c1-4",
    "niveau": 2,
    "theme": "classique",
-   "titre": "Mots croisés du dimanche",
-   "collection": "campagne",
-   "seed": 1122,
+   "titre": "Le kiosque · 4",
+   "collection": "parcours",
+   "cahier": 1,
+   "rang": 4,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 102468,
    "cols": 9,
    "rows": 11
   },
   {
-   "id": "clas-3",
-   "niveau": 3,
+   "id": "c1-5",
+   "niveau": 2,
    "theme": "classique",
-   "titre": "Le coin des habitués",
-   "collection": "campagne",
-   "seed": 1183,
+   "titre": "Le kiosque · 5",
+   "collection": "parcours",
+   "cahier": 1,
+   "rang": 5,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 11
+   },
+   "seed": 103085,
    "cols": 9,
    "rows": 11
   },
   {
-   "id": "clas-4",
-   "niveau": 4,
+   "id": "c1-6",
+   "niveau": 2,
    "theme": "classique",
-   "titre": "Vieille école",
-   "collection": "campagne",
-   "seed": 1244,
+   "titre": "Le kiosque · 6",
+   "collection": "parcours",
+   "cahier": 1,
+   "rang": 6,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 6
+   },
+   "seed": 103702,
    "cols": 9,
    "rows": 11
   },
   {
-   "id": "mode-1",
+   "id": "c2-1",
    "niveau": 1,
    "theme": "moderne",
-   "titre": "Scroll matinal",
-   "collection": "campagne",
-   "seed": 2061,
+   "titre": "Plein écran · 1",
+   "collection": "parcours",
+   "cahier": 2,
+   "rang": 1,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 104319,
    "cols": 9,
    "rows": 11
   },
   {
-   "id": "mode-2",
+   "id": "c2-2",
+   "niveau": 1,
+   "theme": "moderne",
+   "titre": "Plein écran · 2",
+   "collection": "parcours",
+   "cahier": 2,
+   "rang": 2,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 12
+   },
+   "seed": 104936,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c2-3",
    "niveau": 2,
    "theme": "moderne",
-   "titre": "Culture de niche",
-   "collection": "campagne",
-   "seed": 2122,
+   "titre": "Plein écran · 3",
+   "collection": "parcours",
+   "cahier": 2,
+   "rang": 3,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 6
+   },
+   "seed": 105553,
    "cols": 9,
    "rows": 11
   },
   {
-   "id": "mode-3",
+   "id": "c2-4",
+   "niveau": 2,
+   "theme": "moderne",
+   "titre": "Plein écran · 4",
+   "collection": "parcours",
+   "cahier": 2,
+   "rang": 4,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 106170,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c2-5",
+   "niveau": 2,
+   "theme": "moderne",
+   "titre": "Plein écran · 5",
+   "collection": "parcours",
+   "cahier": 2,
+   "rang": 5,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 11
+   },
+   "seed": 106787,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c2-6",
    "niveau": 3,
    "theme": "moderne",
-   "titre": "Very demure",
-   "collection": "campagne",
-   "seed": 2183,
+   "titre": "Plein écran · 6",
+   "collection": "parcours",
+   "cahier": 2,
+   "rang": 6,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 7
+   },
+   "seed": 107404,
    "cols": 9,
    "rows": 11
   },
   {
-   "id": "mode-4",
+   "id": "c3-1",
+   "niveau": 2,
+   "theme": "classique",
+   "titre": "Le café du coin · 1",
+   "collection": "parcours",
+   "cahier": 3,
+   "rang": 1,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 108021,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c3-2",
+   "niveau": 2,
+   "theme": "classique",
+   "titre": "Le café du coin · 2",
+   "collection": "parcours",
+   "cahier": 3,
+   "rang": 2,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 11
+   },
+   "seed": 108638,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c3-3",
+   "niveau": 2,
+   "theme": "classique",
+   "titre": "Le café du coin · 3",
+   "collection": "parcours",
+   "cahier": 3,
+   "rang": 3,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 6
+   },
+   "seed": 109255,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c3-4",
+   "niveau": 3,
+   "theme": "classique",
+   "titre": "Le café du coin · 4",
+   "collection": "parcours",
+   "cahier": 3,
+   "rang": 4,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 109872,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c3-5",
+   "niveau": 3,
+   "theme": "classique",
+   "titre": "Le café du coin · 5",
+   "collection": "parcours",
+   "cahier": 3,
+   "rang": 5,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 10
+   },
+   "seed": 110489,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c3-6",
+   "niveau": 3,
+   "theme": "classique",
+   "titre": "Le café du coin · 6",
+   "collection": "parcours",
+   "cahier": 3,
+   "rang": 6,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 7
+   },
+   "seed": 111106,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c4-1",
+   "niveau": 2,
+   "theme": "moderne",
+   "titre": "Fil d’actu · 1",
+   "collection": "parcours",
+   "cahier": 4,
+   "rang": 1,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 111723,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c4-2",
+   "niveau": 3,
+   "theme": "moderne",
+   "titre": "Fil d’actu · 2",
+   "collection": "parcours",
+   "cahier": 4,
+   "rang": 2,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 10
+   },
+   "seed": 112340,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c4-3",
+   "niveau": 3,
+   "theme": "moderne",
+   "titre": "Fil d’actu · 3",
+   "collection": "parcours",
+   "cahier": 4,
+   "rang": 3,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 7
+   },
+   "seed": 112957,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c4-4",
+   "niveau": 3,
+   "theme": "moderne",
+   "titre": "Fil d’actu · 4",
+   "collection": "parcours",
+   "cahier": 4,
+   "rang": 4,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 113574,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c4-5",
+   "niveau": 3,
+   "theme": "moderne",
+   "titre": "Fil d’actu · 5",
+   "collection": "parcours",
+   "cahier": 4,
+   "rang": 5,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 10
+   },
+   "seed": 114191,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c4-6",
    "niveau": 4,
    "theme": "moderne",
-   "titre": "Terminally online",
-   "collection": "campagne",
-   "seed": 2244,
+   "titre": "Fil d’actu · 6",
+   "collection": "parcours",
+   "cahier": 4,
+   "rang": 6,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 8
+   },
+   "seed": 114808,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c5-1",
+   "niveau": 3,
+   "theme": "classique",
+   "titre": "Dimanche pluvieux · 1",
+   "collection": "parcours",
+   "cahier": 5,
+   "rang": 1,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 115425,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c5-2",
+   "niveau": 3,
+   "theme": "classique",
+   "titre": "Dimanche pluvieux · 2",
+   "collection": "parcours",
+   "cahier": 5,
+   "rang": 2,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 10
+   },
+   "seed": 116042,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c5-3",
+   "niveau": 3,
+   "theme": "classique",
+   "titre": "Dimanche pluvieux · 3",
+   "collection": "parcours",
+   "cahier": 5,
+   "rang": 3,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 7
+   },
+   "seed": 116659,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c5-4",
+   "niveau": 4,
+   "theme": "classique",
+   "titre": "Dimanche pluvieux · 4",
+   "collection": "parcours",
+   "cahier": 5,
+   "rang": 4,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 117276,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c5-5",
+   "niveau": 4,
+   "theme": "classique",
+   "titre": "Dimanche pluvieux · 5",
+   "collection": "parcours",
+   "cahier": 5,
+   "rang": 5,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 9
+   },
+   "seed": 117893,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c5-6",
+   "niveau": 4,
+   "theme": "classique",
+   "titre": "Dimanche pluvieux · 6",
+   "collection": "parcours",
+   "cahier": 5,
+   "rang": 6,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 8
+   },
+   "seed": 118510,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c6-1",
+   "niveau": 3,
+   "theme": "moderne",
+   "titre": "Terminally online · 1",
+   "collection": "parcours",
+   "cahier": 6,
+   "rang": 1,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 119127,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c6-2",
+   "niveau": 3,
+   "theme": "moderne",
+   "titre": "Terminally online · 2",
+   "collection": "parcours",
+   "cahier": 6,
+   "rang": 2,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 10
+   },
+   "seed": 119744,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c6-3",
+   "niveau": 4,
+   "theme": "moderne",
+   "titre": "Terminally online · 3",
+   "collection": "parcours",
+   "cahier": 6,
+   "rang": 3,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 8
+   },
+   "seed": 120361,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c6-4",
+   "niveau": 4,
+   "theme": "moderne",
+   "titre": "Terminally online · 4",
+   "collection": "parcours",
+   "cahier": 6,
+   "rang": 4,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 120978,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c6-5",
+   "niveau": 4,
+   "theme": "moderne",
+   "titre": "Terminally online · 5",
+   "collection": "parcours",
+   "cahier": 6,
+   "rang": 5,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 9
+   },
+   "seed": 121595,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c6-6",
+   "niveau": 4,
+   "theme": "moderne",
+   "titre": "Terminally online · 6",
+   "collection": "parcours",
+   "cahier": 6,
+   "rang": 6,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 8
+   },
+   "seed": 122212,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c7-1",
+   "niveau": 4,
+   "theme": "classique",
+   "titre": "Le grand cahier · 1",
+   "collection": "parcours",
+   "cahier": 7,
+   "rang": 1,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 122829,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c7-2",
+   "niveau": 4,
+   "theme": "classique",
+   "titre": "Le grand cahier · 2",
+   "collection": "parcours",
+   "cahier": 7,
+   "rang": 2,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 9
+   },
+   "seed": 123446,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c7-3",
+   "niveau": 4,
+   "theme": "classique",
+   "titre": "Le grand cahier · 3",
+   "collection": "parcours",
+   "cahier": 7,
+   "rang": 3,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 8
+   },
+   "seed": 124063,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c7-4",
+   "niveau": 4,
+   "theme": "classique",
+   "titre": "Le grand cahier · 4",
+   "collection": "parcours",
+   "cahier": 7,
+   "rang": 4,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 124680,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c7-5",
+   "niveau": 4,
+   "theme": "classique",
+   "titre": "Le grand cahier · 5",
+   "collection": "parcours",
+   "cahier": 7,
+   "rang": 5,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 9
+   },
+   "seed": 125297,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c7-6",
+   "niveau": 4,
+   "theme": "classique",
+   "titre": "Le grand cahier · 6",
+   "collection": "parcours",
+   "cahier": 7,
+   "rang": 6,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 8
+   },
+   "seed": 125914,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c8-1",
+   "niveau": 4,
+   "theme": "moderne",
+   "titre": "Le mur · 1",
+   "collection": "parcours",
+   "cahier": 8,
+   "rang": 1,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 126531,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c8-2",
+   "niveau": 4,
+   "theme": "moderne",
+   "titre": "Le mur · 2",
+   "collection": "parcours",
+   "cahier": 8,
+   "rang": 2,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 9
+   },
+   "seed": 127148,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c8-3",
+   "niveau": 4,
+   "theme": "moderne",
+   "titre": "Le mur · 3",
+   "collection": "parcours",
+   "cahier": 8,
+   "rang": 3,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 8
+   },
+   "seed": 127765,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c8-4",
+   "niveau": 4,
+   "theme": "moderne",
+   "titre": "Le mur · 4",
+   "collection": "parcours",
+   "cahier": 8,
+   "rang": 4,
+   "objectif": {
+    "type": "sansIndice"
+   },
+   "seed": 128382,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c8-5",
+   "niveau": 4,
+   "theme": "moderne",
+   "titre": "Le mur · 5",
+   "collection": "parcours",
+   "cahier": 8,
+   "rang": 5,
+   "objectif": {
+    "type": "chrono",
+    "valeur": 9
+   },
+   "seed": 128999,
+   "cols": 9,
+   "rows": 11
+  },
+  {
+   "id": "c8-6",
+   "niveau": 4,
+   "theme": "moderne",
+   "titre": "Le mur · 6",
+   "collection": "parcours",
+   "cahier": 8,
+   "rang": 6,
+   "objectif": {
+    "type": "enfilade",
+    "valeur": 8
+   },
+   "seed": 129616,
    "cols": 9,
    "rows": 11
   },

@@ -19,17 +19,22 @@ import {
   enregistrerQuotidien, lire, lireEnCours, signatureDe,
 } from '../jeu/stockage'
 import { dateDuJour } from '../jeu/quotidien'
+import { libelleObjectif } from '../jeu/parcours'
 import type { Grille, MotNumerote } from '../types'
 
 interface Props {
   grille: Grille
   quotidien: boolean
   duo: Duo | null
+  /** appelée quand la grille est bouclée, pour créditer le cahier */
+  surVictoire?: (g: Grille) => number
   onQuitter: () => void
   onRejouer: () => void
 }
 
-export default function EcranJeu({ grille, quotidien, duo, onQuitter, onRejouer }: Props) {
+export default function EcranJeu(
+  { grille, quotidien, duo, surVictoire, onQuitter, onRejouer }: Props,
+) {
   const plan = useMemo(() => preparer(grille), [grille])
   const cleSauvegarde = cleDePartie(grille, quotidien, dateDuJour(), !!duo)
   // en duo on ne bascule jamais en revue: la partie est propre a la paire
@@ -49,6 +54,7 @@ export default function EcranJeu({ grille, quotidien, duo, onQuitter, onRejouer 
   const [index, setIndex] = useState(false)
   const [etoiles, setEtoiles] = useState(() => lire().etoiles)
   const [gagnees, setGagnees] = useState(0)
+  const [primeCahier, setPrimeCahier] = useState(0)
 
   // la partie est enregistree a chaque coup: quitter n a jamais rien coute
   useEffect(() => {
@@ -58,15 +64,17 @@ export default function EcranJeu({ grille, quotidien, duo, onQuitter, onRejouer 
 
   useEffect(() => {
     if (!etat.finiA || revue) return
-    const r = resultat(plan, etat)
+    const r = resultat(plan, etat, grille.objectif)
     const gain = quotidien
       ? enregistrerQuotidien(dateDuJour(), r)
       : enregistrerGrille(grille.id, r)
     // la partie est finie: sa sauvegarde n a plus lieu d etre. On efface la
     // cle exacte, solo ou duo, pour ne pas emporter celle de l autre mode
     effacerEnCours(cleSauvegarde)
-    setEtoiles(gain.sauvegarde.etoiles)
-    setGagnees(gain.etoilesGagnees)
+    const prime = surVictoire?.(grille) ?? 0
+    setEtoiles(gain.sauvegarde.etoiles + prime)
+    setGagnees(gain.etoilesGagnees + prime)
+    setPrimeCahier(prime)
     const t = setTimeout(() => setFeuille(true), 550)
     return () => clearTimeout(t)
   }, [etat.finiA])
@@ -126,6 +134,12 @@ export default function EcranJeu({ grille, quotidien, duo, onQuitter, onRejouer 
 
   const surMot = (m: MotNumerote) => setEtat(s => selectionner(s, m))
 
+  // etat vivant de l objectif, pour que le joueur sache ou il en est
+  const objectifRate = grille.objectif?.type === 'sansIndice'
+    ? etat.indices > 0 : etat.solutions
+  const objectifTenu = grille.objectif?.type === 'enfilade'
+    && etat.serieMax >= grille.objectif.valeur
+
   /** Un indice se paie d abord, puis se devoile. */
   const acheter = (cout: number, devoiler: (e: EtatPartie) => EtatPartie) => {
     if (etoiles < cout) return
@@ -133,7 +147,7 @@ export default function EcranJeu({ grille, quotidien, duo, onQuitter, onRejouer 
     setEtat(devoiler)
     setIndices(false)
   }
-  const r = resultat(plan, etat)
+  const r = resultat(plan, etat, grille.objectif)
 
   return (
     <div className="appli">
@@ -163,6 +177,15 @@ export default function EcranJeu({ grille, quotidien, duo, onQuitter, onRejouer 
       <Plateau grille={grille} plan={plan} etat={etat} onCase={surCase} onMot={surMot} />
 
       <div className="zone-basse">
+        {grille.objectif && !etat.finiA && (
+          <div className={`barre-objectif ${objectifRate ? 'rate' : objectifTenu ? 'tenu' : ''}`}>
+            <span className="obj-etiquette">3<sup>e</sup> crayon</span>
+            <span className="obj-texte">{libelleObjectif(grille)}</span>
+            {grille.objectif.type === 'enfilade' && (
+              <span className="obj-jauge">{etat.serieMax}/{grille.objectif.valeur}</span>
+            )}
+          </div>
+        )}
         {etat.duo && (
           <BarreDuo
             duo={etat.duo}
@@ -222,6 +245,8 @@ export default function EcranJeu({ grille, quotidien, duo, onQuitter, onRejouer 
         <FinPartie
           resultat={r}
           etoilesGagnees={gagnees}
+          primeCahier={primeCahier}
+          objectif={libelleObjectif(grille)}
           quotidien={quotidien}
           onRejouer={() => { effacerEnCours(cleSauvegarde); setFeuille(false); onRejouer() }}
           onFermer={onQuitter}

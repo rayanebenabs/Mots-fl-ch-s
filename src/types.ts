@@ -17,6 +17,12 @@ export interface Mot {
   defTotal: number
 }
 
+/** Le troisième crayon d'une grille du parcours. */
+export type Objectif =
+  | { type: 'sansIndice' }
+  | { type: 'chrono'; valeur: number }    // en minutes
+  | { type: 'enfilade'; valeur: number }  // mots d'affilée sans faute
+
 export interface CaseDef { r: number; c: number; mots: number[] }
 export interface CaseSpeciale { r: number; c: number; type: TypeSpecial }
 
@@ -24,7 +30,10 @@ export interface Grille {
   id: string
   niveau: number
   titre: string
-  collection: 'campagne' | 'quotidien'
+  collection: 'parcours' | 'quotidien'
+  cahier?: number
+  rang?: number
+  objectif?: Objectif
   theme: 'classique' | 'moderne'
   cols: number
   rows: number
@@ -46,4 +55,9 @@ export interface Resultat {
   sansFaute: boolean
   indices: number
   solutions: boolean
+  /** la plus longue série de mots trouvés sans faute entre eux */
+  serieMax: number
+  objectifAtteint: boolean
+  /** 1 terminée + 1 sans faute + 1 objectif */
+  crayons: number
 }

@@ -471,8 +471,10 @@ def construire(gab, banque, lexique, deja_vus):
             mots_out[wid]["defSlot"] = i
             mots_out[wid]["defTotal"] = len(ids)
 
+    fiche = {k: gab[k] for k in ("cahier", "rang", "objectif") if k in gab}
     return {"id": gab["id"], "niveau": gab["niveau"], "theme": gab["theme"],
-            "titre": gab["titre"], "collection": gab.get("collection", "campagne"),
+            "titre": gab["titre"], "collection": gab.get("collection", "parcours"),
+            **fiche,
             "cols": cols, "rows": rows, "mots": mots_out,
             "defs": [{"r": r, "c": c, "mots": ids} for (r, c), ids in sorted(defs.items())],
             "special": cases_speciales(liste, gab["niveau"], random.Random(gab["seed"] * 31)),
@@ -482,8 +484,12 @@ def construire(gab, banque, lexique, deja_vus):
 
 def main():
     banque = charger("content/wordbank.json")["mots"]
-    definitions = {m["m"]: m for m in banque}
     lexique = charger("content/lexique.json")["mots"]
+    # certaines reponses n ont pas leur place dans une grille grand public
+    exclus = set(charger("content/exclus.json")["mots"])
+    lexique = {m: z for m, z in lexique.items() if m not in exclus}
+    banque = [m for m in banque if m["m"] not in exclus]
+    definitions = {m["m"]: m for m in banque}
     gabarits = charger("content/templates.json")["grilles"]
 
     # file ordonnee, jamais un set: l ordre d iteration d un set varie d un

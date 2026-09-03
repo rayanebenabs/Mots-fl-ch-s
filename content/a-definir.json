@@ -1,4 +1,4 @@
 {
- "_lisezmoi": "Mots utilises par les grilles qui n ont pas encore de definition. Ajoutez-les a content/wordbank.json.",
+ "_lisezmoi": "Mots utilises par les grilles qui n ont pas encore de definition. Ajoutez-les a content/wordbank.json puis relancez python3 tools/attacher_definitions.py",
  "mots": []
 }

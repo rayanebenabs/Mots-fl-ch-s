@@ -1,0 +1,7 @@
+{
+ "_lisezmoi": "Mots que le lexique ne doit jamais proposer comme reponse: insultes et grossieretes qui n ont pas leur place dans une grille grand public. Le filtre s applique dans tools/build_grids.py.",
+ "mots": ["SALOPE", "SALOPES", "PUTE", "PUTES", "CONNARD", "CONNARDS", "CONNASSE",
+          "ENCULE", "ENCULES", "PEDE", "PEDES", "NEGRE", "NEGRES", "NEGRESSE",
+          "BITE", "BITES", "COUILLE", "COUILLES", "CHIER", "CHIE", "CHIENT",
+          "PISSER", "PISSE", "PISSENT", "BAISER", "BAISE", "BAISENT", "VIOL", "VIOLS"]
+}

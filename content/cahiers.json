@@ -1,0 +1,61 @@
+{
+ "_lisezmoi": "Les huit cahiers du parcours. porte = crayons cumules exiges pour l ouvrir (18 crayons possibles par cahier). recompense = etoiles versees quand les six grilles du cahier sont terminees.",
+ "cahiers": [
+  {
+   "numero": 1,
+   "nom": "Le kiosque",
+   "theme": "classique",
+   "porte": 0,
+   "recompense": 150
+  },
+  {
+   "numero": 2,
+   "nom": "Plein écran",
+   "theme": "moderne",
+   "porte": 12,
+   "recompense": 200
+  },
+  {
+   "numero": 3,
+   "nom": "Le café du coin",
+   "theme": "classique",
+   "porte": 24,
+   "recompense": 250
+  },
+  {
+   "numero": 4,
+   "nom": "Fil d’actu",
+   "theme": "moderne",
+   "porte": 36,
+   "recompense": 300
+  },
+  {
+   "numero": 5,
+   "nom": "Dimanche pluvieux",
+   "theme": "classique",
+   "porte": 48,
+   "recompense": 350
+  },
+  {
+   "numero": 6,
+   "nom": "Terminally online",
+   "theme": "moderne",
+   "porte": 60,
+   "recompense": 400
+  },
+  {
+   "numero": 7,
+   "nom": "Le grand cahier",
+   "theme": "classique",
+   "porte": 72,
+   "recompense": 450
+  },
+  {
+   "numero": 8,
+   "nom": "Le mur",
+   "theme": "moderne",
+   "porte": 84,
+   "recompense": 500
+  }
+ ]
+}

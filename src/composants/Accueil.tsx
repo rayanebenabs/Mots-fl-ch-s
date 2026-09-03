@@ -1,47 +1,35 @@
 import { useState } from 'react'
 import type { Grille } from '../types'
 import type { Sauvegarde } from '../jeu/stockage'
-import { grilleDuJour, libelleDate, dateDuJour } from '../jeu/quotidien'
 import { enregistrerNomsDuo } from '../jeu/stockage'
+import { etatDuParcours, crayonsTotal, type Cahier } from '../jeu/parcours'
 import type { Duo } from '../jeu/partie'
+import { grilleDuJour, libelleDate, dateDuJour } from '../jeu/quotidien'
+import Parcours from './Parcours'
 import Aide from './Aide'
-
-const THEMES = [
-  { cle: 'classique' as const, nom: 'À l’ancienne',
-    accroche: 'Le mot fléché du kiosque : vocabulaire, conjugaisons, tournures.' },
-  { cle: 'moderne' as const, nom: 'Pop, internet & quotidien',
-    accroche: 'Séries, memes, actu et galères de tous les jours.' },
-]
-
-const NIVEAUX = [
-  { n: 1, nom: 'Facile', desc: 'Des mots que tout le monde emploie' },
-  { n: 2, nom: 'Moyen', desc: 'Il faut réfléchir un peu' },
-  { n: 3, nom: 'Costaud', desc: 'Vocabulaire moins courant' },
-  { n: 4, nom: 'Redoutable', desc: 'Mots rares, définitions retorses' },
-]
 
 interface Props {
   grilles: Grille[]
+  cahiers: Cahier[]
   sauvegarde: Sauvegarde
   onJouer: (g: Grille, quotidien: boolean, duo: Duo | null) => void
 }
 
-export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
+export default function Accueil({ grilles, cahiers, sauvegarde, onJouer }: Props) {
   const [aide, setAide] = useState(false)
   const [aDeux, setADeux] = useState(false)
   const [noms, setNoms] = useState<[string, string]>(sauvegarde.duoNoms)
   const [reglages, setReglages] = useState(false)
+
   const jour = grilleDuJour(grilles)
   const faitAujourdhui = sauvegarde.quotidien[dateDuJour()]
-  const reprise = (cle: string) => sauvegarde.enCours[cle + (aDeux ? '#duo' : '')]
+  const jourEnCours = sauvegarde.enCours[`jour:${dateDuJour()}` + (aDeux ? '#duo' : '')]
+  const etat = etatDuParcours(grilles, cahiers, sauvegarde)
+  const total = crayonsTotal(grilles, sauvegarde)
+  const possibles = grilles.filter(g => g.collection === 'parcours').length * 3
 
-  /** En duo, la partie demarre sur le joueur 1, avec les prenoms retenus. */
   const lancer = (g: Grille, quotidien: boolean) =>
     onJouer(g, quotidien, aDeux ? { noms, actif: 0, trouves: [0, 0] } : null)
-  const jourEnCours = reprise(`jour:${dateDuJour()}`)
-
-  const grilleDe = (theme: string, n: number) =>
-    grilles.find(g => g.collection === 'campagne' && g.theme === theme && g.niveau === n)
 
   return (
     <div className="appli">
@@ -60,8 +48,11 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
         <div className="marque">
           <h1 className="titre">MOTS<br />FLÉCHÉS</h1>
           <p className="accroche">
-            Des grilles pleines, comme au kiosque. Deux univers, quatre niveaux,
-            une grille par jour.
+            Huit cahiers, quarante-huit grilles pleines. On avance de l’une à
+            l’autre en récoltant des crayons.
+          </p>
+          <p className="compteur-crayons">
+            <b>{total}</b> / {possibles} crayons
           </p>
         </div>
 
@@ -96,52 +87,8 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
           )}
         </button>
 
-        {THEMES.map(theme => {
-          const finis = NIVEAUX.filter(niv => {
-            const g = grilleDe(theme.cle, niv.n)
-            return g && sauvegarde.grilles[g.id]
-          }).length
-          return (
-            <section key={theme.cle}>
-              <p className="section-titre">{theme.nom} · {finis}/4</p>
-              <p className="section-accroche">{theme.accroche}</p>
-              {NIVEAUX.map(niv => {
-                const g = grilleDe(theme.cle, niv.n)
-                if (!g) return null
-                const precedente = niv.n === 1 ? null : grilleDe(theme.cle, niv.n - 1)
-                const ouvert = niv.n === 1 || !!(precedente && sauvegarde.grilles[precedente.id])
-                const res = sauvegarde.grilles[g.id]
-                const encours = reprise(g.id)
-                return (
-                  <button
-                    key={g.id}
-                    className={`carte niveau ${res ? 'faite' : ''}`}
-                    disabled={!ouvert}
-                    onClick={() => lancer(g, false)}
-                  >
-                    <span className={`pastille-niveau n${niv.n}`}>{niv.n}</span>
-                    <span className="niveau-corps">
-                      <b>{niv.nom}</b>
-                      <span className="meta">
-                        {!ouvert ? 'Terminez le niveau précédent'
-                          : encours ? `Repris à ${encours.motsTrouves.length}/${g.mots.length} mots`
-                            : `${g.titre} · ${g.mots.length} mots`}
-                      </span>
-                      {ouvert && encours && (
-                        <span className="jauge">
-                          <span style={{ width: `${(encours.motsTrouves.length / g.mots.length) * 100}%` }} />
-                        </span>
-                      )}
-                    </span>
-                    <span className="etiquette">
-                      {!ouvert ? '🔒' : res ? `★ ${res.score}` : encours ? 'Reprendre' : '→'}
-                    </span>
-                  </button>
-                )
-              })}
-            </section>
-          )
-        })}
+        <p className="section-titre">Le parcours</p>
+        <Parcours cahiers={etat} onJouer={g => lancer(g, false)} />
 
         <p className="section-titre">Cases spéciales et indices</p>
         <div className="carte"><Aide compact /></div>

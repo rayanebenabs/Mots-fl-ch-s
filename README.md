@@ -22,18 +22,38 @@ lettre, soit une case de définition. Pas de trou, pas de case noire décorative
 Une trentaine de mots par grille, et la grille occupe toute la place
 disponible à l'écran.
 
-**Deux univers**, huit grilles de campagne :
+### Le parcours
 
-| Univers | Vocabulaire |
-|---|---|
-| À l'ancienne | Le mot fléché de kiosque : vocabulaire courant, conjugaisons, tournures |
-| Pop, internet & quotidien | Séries, memes, actu, galères de tous les jours |
+Huit **cahiers** de six grilles, comme une pile de fléchés poche. On avance de
+l'un à l'autre en récoltant des crayons.
 
-**Quatre niveaux** dans chaque univers. Ils ne changent ni la taille de la
-grille ni le nombre de mots — seulement la **rareté des mots à trouver**. La
-difficulté s'appuie sur la fréquence d'usage réelle du français (échelle Zipf) :
-le niveau 1 vise des mots que tout le monde emploie (Zipf 5,2), le niveau 4 des
-mots qu'on connaît sans jamais les dire (Zipf 3,1).
+| Cahier | Univers | Difficulté |
+|---|---|---|
+| 1 · Le kiosque | à l'ancienne | facile |
+| 2 · Plein écran | pop & internet | facile |
+| 3 · Le café du coin | à l'ancienne | moyen |
+| 4 · Fil d'actu | pop & internet | moyen |
+| 5 · Dimanche pluvieux | à l'ancienne | costaud |
+| 6 · Terminally online | pop & internet | costaud |
+| 7 · Le grand cahier | à l'ancienne | redoutable |
+| 8 · Le mur | pop & internet | redoutable |
+
+**Trois crayons par grille**, et c'est là que se joue la progression :
+
+1. la grille est terminée ;
+2. elle l'a été **sans aucune faute** ;
+3. son **objectif** est rempli — sans le moindre indice, sous un chrono, ou une
+   enfilade de mots justes d'affilée. Chaque grille a le sien.
+
+Un mot fléché ne se perd jamais : on finit toujours par le boucler. Sans
+possibilité d'échec, un chemin de progression n'est qu'une liste. Les crayons
+sont là pour ça — **il en faut douze de plus à chaque cahier pour ouvrir le
+suivant**, donc bâcler une grille oblige à y revenir. Boucler les six grilles
+d'un cahier verse une prime en étoiles, une seule fois.
+
+À l'intérieur d'un cahier, les grilles s'ouvrent l'une après l'autre.
+
+**Deux univers** se relaient d'un cahier à l'autre :
 
 Le **défi du jour** tire une grille du pool quotidien selon la date : tout le
 monde a la même le même jour, et le score se partage en pastilles (façon Wordle)

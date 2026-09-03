@@ -22,6 +22,7 @@ export interface PartieEnCours {
   motActif: number
   curseur: number
   indices: number
+  serieMax: number
   duo: Duo | null
   indexOuvert: boolean
   solutions: boolean
@@ -35,12 +36,14 @@ export interface Sauvegarde {
   etoiles: number
   /** les prenoms des deux joueurs du mode duo, retenus d une partie a l autre */
   duoNoms: [string, string]
+  /** cahiers dont la recompense a deja ete versee */
+  cahiersPayes: number[]
 }
 
 const VIDE: Sauvegarde = {
   grilles: {}, quotidien: {}, enCours: {},
   serie: { dernier: '', jours: 0 }, etoiles: ETOILES_DEPART,
-  duoNoms: ['Joueur 1', 'Joueur 2'],
+  duoNoms: ['Joueur 1', 'Joueur 2'], cahiersPayes: [],
 }
 
 export function lire(): Sauvegarde {
@@ -145,4 +148,17 @@ export function effacerEnCours(cle: string): Sauvegarde {
   delete s.enCours[cle]
   ecrire(s)
   return s
+}
+
+/**
+ * Verse la recompense d un cahier fraichement termine. Une seule fois:
+ * refaire une grille du cahier ne la repaie pas.
+ */
+export function verserRecompense(numero: number, montant: number): number {
+  const s = lire()
+  if (s.cahiersPayes.includes(numero)) return 0
+  s.cahiersPayes = [...s.cahiersPayes, numero]
+  s.etoiles += montant
+  ecrire(s)
+  return montant
 }
