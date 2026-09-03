@@ -43,4 +43,5 @@ export interface Resultat {
   motsTrouves: number
   motsTotal: number
   sansFaute: boolean
+  indices: number
 }

@@ -62,7 +62,9 @@ export default function Plateau({ grille, plan, etat, onCase, onMot }: Props) {
           const lettre = etat.saisie[k] ?? ''
           const type = plan.special.get(k)
           const trouve = ids.some(id => etat.motsTrouves.includes(id))
-          const masque = type === 'mystere' && !trouve && lettre
+          // une lettre payee avec des etoiles n est jamais masquee
+          const revelee = !!etat.revelees[k]
+          const masque = type === 'mystere' && !trouve && lettre && !revelee
           return (
             <button
               key={k}
@@ -72,6 +74,7 @@ export default function Plateau({ grille, plan, etat, onCase, onMot }: Props) {
                 k === curseurCle ? 'curseur' : '',
                 trouve ? 'juste' : '',
                 casesRatees.has(k) ? 'faux' : '',
+                revelee && !trouve ? 'revelee' : '',
                 type ?? ''].filter(Boolean).join(' ')}
               onClick={() => onCase(r, c)}
               aria-label={`Ligne ${r + 1} colonne ${c + 1}${lettre ? `, ${lettre}` : ', vide'}`}

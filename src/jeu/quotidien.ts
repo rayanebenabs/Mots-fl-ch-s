@@ -38,7 +38,9 @@ export function texteDePartage(r: Resultat, date = dateDuJour()): string {
   return [
     `Mots Fléchés — Défi du jour n°${numeroDuJour(date)}`,
     `${r.score} pts · ${r.motsTrouves}/${r.motsTotal} mots · ${min}′${String(sec).padStart(2, '0')}`,
-    r.sansFaute ? 'Sans aucune faute 🔥' : `${r.erreurs} faute${r.erreurs > 1 ? 's' : ''}`,
+    [r.sansFaute ? 'Sans aucune faute 🔥' : `${r.erreurs} faute${r.erreurs > 1 ? 's' : ''}`,
+     r.indices ? `${r.indices} indice${r.indices > 1 ? 's' : ''}` : null]
+      .filter(Boolean).join(' · '),
     '',
     ...lignes,
   ].join('\n')

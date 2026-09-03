@@ -44,13 +44,32 @@ le mot commence et dans quel sens il se lit : `→` à droite, `↓` en dessous,
   mot soit validé.
 - **Cadeau** (point cyan) — lettre offerte, déjà en place au démarrage.
 
+**Indices et étoiles.** Le bouton 💡 ouvre deux coups de pouce : dévoiler une
+lettre du mot en cours (★ 25) ou le mot entier (★ 15 par case encore
+manquante, ★ 45 minimum). Une lettre dévoilée est verrouillée — impossible de
+l'effacer — et reste lisible même sur une case mystère.
+
+Les étoiles ne sont pas le score. Le score se joue sur une grille ; les étoiles
+suivent le joueur d'une grille à l'autre et ne servent qu'à payer des indices.
+On démarre avec 80 étoiles, de quoi s'offrir trois lettres ou un mot court dès
+la première grille. Ensuite on en gagne **une pour cinq points marqués**, et
+seulement sur ce qui dépasse son propre record : une grille bien jouée rapporte
+environ 130 étoiles, la refaire à l'identique n'en rapporte aucune. Tout
+l'arbitrage est là : dépenser maintenant, ou garder pour le Boss final.
+
 **Score.** 10 points par lettre d'un mot juste, doublés par une case bonus.
 Un mot complété faux coûte 15 points et ses lettres fautives s'effacent ; les
 lettres déjà verrouillées par un mot juste, elles, ne bougent pas. Terminer
 une grille sans la moindre faute vaut +120.
 
-La progression, les meilleurs scores et la série quotidienne sont stockés dans
-le `localStorage` du navigateur — rien ne part sur un serveur.
+La progression, les meilleurs scores, la cagnotte d'étoiles et la série
+quotidienne sont stockés dans le `localStorage` du navigateur — rien ne part
+sur un serveur.
+
+Les tarifs et le taux de gain sont trois constantes à ajuster :
+`COUT_LETTRE`, `COUT_MOT_PAR_LETTRE` et `COUT_MOT_MINIMUM` dans
+`src/jeu/partie.ts`, `ETOILES_DEPART` et `etoilesPour()` dans
+`src/jeu/stockage.ts`.
 
 ## Modifier le contenu
 

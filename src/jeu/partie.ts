@@ -5,6 +5,11 @@ export const POINTS_PAR_LETTRE = 10
 export const MALUS_ERREUR = 15
 export const BONUS_SANS_FAUTE = 120
 
+/** Tarifs des indices, en etoiles du porte-monnaie. */
+export const COUT_LETTRE = 25
+export const COUT_MOT_PAR_LETTRE = 15
+export const COUT_MOT_MINIMUM = 45
+
 export interface EtatPartie {
   saisie: Record<string, string>
   /** cases figees: lettres offertes + lettres de mots valides */
@@ -18,6 +23,9 @@ export interface EtatPartie {
   finiA: number | null
   /** id du dernier mot rate, pour l animation */
   rate: number | null
+  /** cases devoilees par un indice: on ne les masque plus */
+  revelees: Record<string, true>
+  indices: number
 }
 
 export function nouvellePartie(plan: PlanGrille): EtatPartie {
@@ -36,6 +44,8 @@ export function nouvellePartie(plan: PlanGrille): EtatPartie {
     debut: Date.now(),
     finiA: null,
     rate: null,
+    revelees: {},
+    indices: 0,
   }
 }
 
@@ -58,6 +68,64 @@ export function motVoisin(plan: PlanGrille, etat: EtatPartie, pas: 1 | -1): MotN
     if (!etat.motsTrouves.includes(cand.id)) return cand
   }
   return plan.mots[(depart + pas + n) % n]
+}
+
+/** Cases du mot actif qui n ont pas encore leur bonne lettre. */
+export function casesADevoiler(plan: PlanGrille, etat: EtatPartie): Array<[number, number]> {
+  const mot = plan.parId.get(etat.motActif)
+  if (!mot || etat.finiA) return []
+  return cellulesDe(mot).filter(([r, c]) => {
+    const k = cle(r, c)
+    return !etat.figees[k] && etat.saisie[k] !== plan.solution.get(k)
+  })
+}
+
+export function coutDuMot(plan: PlanGrille, etat: EtatPartie): number {
+  const n = casesADevoiler(plan, etat).length
+  return n === 0 ? 0 : Math.max(COUT_MOT_MINIMUM, n * COUT_MOT_PAR_LETTRE)
+}
+
+/** La case que revelerait l indice "une lettre": celle du curseur si elle est
+ *  encore a trouver, sinon la premiere qui l est. */
+export function caseDuProchainIndice(
+  plan: PlanGrille, etat: EtatPartie,
+): [number, number] | null {
+  const restantes = casesADevoiler(plan, etat)
+  if (!restantes.length) return null
+  const mot = plan.parId.get(etat.motActif)!
+  const sousCurseur = cellulesDe(mot)[etat.curseur]
+  const viseeCurseur = restantes.find(
+    ([r, c]) => sousCurseur && r === sousCurseur[0] && c === sousCurseur[1])
+  return viseeCurseur ?? restantes[0]
+}
+
+function devoiler(
+  plan: PlanGrille, etat: EtatPartie, cases: Array<[number, number]>,
+): EtatPartie {
+  if (!cases.length) return etat
+  const saisie = { ...etat.saisie }
+  const figees = { ...etat.figees }
+  const revelees = { ...etat.revelees }
+  for (const [r, c] of cases) {
+    const k = cle(r, c)
+    saisie[k] = plan.solution.get(k)!
+    figees[k] = true
+    revelees[k] = true
+  }
+  return controler(plan, {
+    ...etat, saisie, figees, revelees, indices: etat.indices + 1, rate: null,
+  })
+}
+
+/** Indice "une lettre": devoile la case visee et la verrouille. */
+export function revelerLettre(plan: PlanGrille, etat: EtatPartie): EtatPartie {
+  const cible = caseDuProchainIndice(plan, etat)
+  return cible ? devoiler(plan, etat, [cible]) : etat
+}
+
+/** Indice "le mot entier": devoile toutes les cases manquantes du mot actif. */
+export function revelerMot(plan: PlanGrille, etat: EtatPartie): EtatPartie {
+  return devoiler(plan, etat, casesADevoiler(plan, etat))
 }
 
 function contientBonus(plan: PlanGrille, mot: MotNumerote) {
@@ -152,6 +220,7 @@ export function resultat(plan: PlanGrille, etat: EtatPartie): Resultat {
     motsTrouves: etat.motsTrouves.length,
     motsTotal: plan.mots.length,
     sansFaute: etat.erreurs === 0,
+    indices: etat.indices,
   }
 }
 

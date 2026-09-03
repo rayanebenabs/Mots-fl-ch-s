@@ -34,7 +34,12 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
   return (
     <div className="appli">
       <header className="entete">
-        <span className="jeton">🔥 {sauvegarde.serie.jours}</span>
+        <span className="jeton" aria-label={`Série de ${sauvegarde.serie.jours} jours`}>
+          🔥 {sauvegarde.serie.jours}
+        </span>
+        <span className="jeton" aria-label={`${sauvegarde.etoiles} étoiles`}>
+          ★ {sauvegarde.etoiles}
+        </span>
         <div className="milieu" />
         <button className="rond" onClick={() => setAide(true)} aria-label="Comment jouer">?</button>
       </header>
@@ -102,7 +107,7 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
           )
         })}
 
-        <p className="section-titre">Cases spéciales</p>
+        <p className="section-titre">Cases spéciales et indices</p>
         <div className="carte">
           <Aide compact />
         </div>

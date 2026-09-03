@@ -3,12 +3,14 @@ import Plateau from './Plateau'
 import Clavier from './Clavier'
 import BarreDefinition from './BarreDefinition'
 import FinPartie from './FinPartie'
+import Indices from './Indices'
 import { cle, cellulesDe, preparer } from '../jeu/grille'
 import {
   nouvellePartie, taper, effacer, selectionner, deplacerCurseur, motVoisin, resultat,
+  revelerLettre, revelerMot, coutDuMot, casesADevoiler, COUT_LETTRE,
   type EtatPartie,
 } from '../jeu/partie'
-import { enregistrerGrille, enregistrerQuotidien } from '../jeu/stockage'
+import { depenser, enregistrerGrille, enregistrerQuotidien, lire } from '../jeu/stockage'
 import { dateDuJour } from '../jeu/quotidien'
 import type { Grille, MotNumerote } from '../types'
 
@@ -23,14 +25,20 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
   const plan = useMemo(() => preparer(grille), [grille])
   const [etat, setEtat] = useState<EtatPartie>(() => nouvellePartie(plan))
   const [feuille, setFeuille] = useState(false)
+  const [indices, setIndices] = useState(false)
+  const [etoiles, setEtoiles] = useState(() => lire().etoiles)
+  const [gagnees, setGagnees] = useState(0)
 
   useEffect(() => setEtat(nouvellePartie(plan)), [plan])
 
   useEffect(() => {
     if (!etat.finiA) return
     const r = resultat(plan, etat)
-    if (quotidien) enregistrerQuotidien(dateDuJour(), r)
-    else enregistrerGrille(grille.id, r)
+    const gain = quotidien
+      ? enregistrerQuotidien(dateDuJour(), r)
+      : enregistrerGrille(grille.id, r)
+    setEtoiles(gain.sauvegarde.etoiles)
+    setGagnees(gain.etoilesGagnees)
     const t = setTimeout(() => setFeuille(true), 550)
     return () => clearTimeout(t)
   }, [etat.finiA])
@@ -89,6 +97,14 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
   }
 
   const surMot = (m: MotNumerote) => setEtat(s => selectionner(s, m))
+
+  /** Un indice se paie d abord, puis se devoile. */
+  const acheter = (cout: number, devoiler: (e: EtatPartie) => EtatPartie) => {
+    if (etoiles < cout) return
+    setEtoiles(depenser(cout))
+    setEtat(devoiler)
+    setIndices(false)
+  }
   const r = resultat(plan, etat)
 
   return (
@@ -98,11 +114,17 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
         <div className="milieu">
           <h1>{quotidien ? 'Défi du jour' : grille.titre}</h1>
           <p className="sous">
-            {etat.motsTrouves.length}/{plan.mots.length} mots
+            {etat.motsTrouves.length}/{plan.mots.length} mots · {etat.score} pts
             {etat.erreurs > 0 && ` · ${etat.erreurs} faute${etat.erreurs > 1 ? 's' : ''}`}
           </p>
         </div>
-        <span className="jeton">★ {etat.score}</span>
+        <button
+          className="rond"
+          onClick={() => setIndices(true)}
+          disabled={!!etat.finiA || casesADevoiler(plan, etat).length === 0}
+          aria-label="Demander un indice"
+        >💡</button>
+        <span className="jeton" aria-label={`${etoiles} étoiles`}>★ {etoiles}</span>
       </header>
 
       <Plateau grille={grille} plan={plan} etat={etat} onCase={surCase} onMot={surMot} />
@@ -121,9 +143,21 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
         />
       </div>
 
+      {indices && (
+        <Indices
+          plan={plan}
+          etat={etat}
+          etoiles={etoiles}
+          onLettre={() => acheter(COUT_LETTRE, s => revelerLettre(plan, s))}
+          onMot={() => acheter(coutDuMot(plan, etat), s => revelerMot(plan, s))}
+          onFermer={() => setIndices(false)}
+        />
+      )}
+
       {feuille && (
         <FinPartie
           resultat={r}
+          etoilesGagnees={gagnees}
           quotidien={quotidien}
           onRejouer={() => { setFeuille(false); onRejouer() }}
           onFermer={onQuitter}

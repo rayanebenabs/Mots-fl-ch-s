@@ -16,6 +16,14 @@ export default function Aide({ onFermer, compact }: { onFermer?: () => void; com
           <span><b>{c.nom}</b> — {c.desc}</span>
         </div>
       ))}
+      <div className="rang">
+        <span className="pastille" style={{ background: 'rgba(255,255,255,.14)' }}>💡</span>
+        <span>
+          <b>Indices</b> — le bouton 💡 dévoile une lettre (★ 25) ou le mot entier
+          (★ 15 par case manquante). Vous gagnez une étoile pour cinq points
+          marqués, chaque fois que vous battez votre record sur une grille.
+        </span>
+      </div>
       {!compact && (
         <>
           <p style={{ marginTop: 18 }}>
@@ -27,6 +35,12 @@ export default function Aide({ onFermer, compact }: { onFermer?: () => void; com
             Un mot complet se vérifie tout seul : juste, il se verrouille en vert et
             rapporte 10 points par lettre. Faux, les lettres fautives s’effacent et
             vous perdez 15 points. Zéro faute sur la grille : +120.
+          </p>
+          <p>
+            <b>Les étoiles ne sont pas le score.</b> Le score se joue sur une
+            grille ; les étoiles, elles, vous suivent d’une grille à l’autre et
+            ne servent qu’à payer des indices. À vous de voir si vous les
+            dépensez maintenant ou si vous les gardez pour le Boss final.
           </p>
         </>
       )}
