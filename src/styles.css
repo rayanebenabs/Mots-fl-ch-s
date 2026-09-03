@@ -34,6 +34,10 @@
   --ombre: 0 8px 24px rgba(0, 0, 0, .35);
   --transition: 160ms cubic-bezier(.4, 0, .2, 1);
 
+  /* marges de securite, isolees pour etre testables et reutilisables */
+  --marge-haute: max(10px, env(safe-area-inset-top));
+  --marge-basse: max(8px, env(safe-area-inset-bottom));
+
   color-scheme: dark;
 }
 
@@ -70,12 +74,17 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .appli {
+  /* 100dvh suit la hauteur reellement visible; 100% sert de repli */
   height: 100%;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   max-width: 520px;
   margin: 0 auto;
-  padding: max(10px, env(safe-area-inset-top)) 12px max(8px, env(safe-area-inset-bottom));
+  /* pas de marge basse ici: la zone de defilement doit descendre jusqu au
+     bord physique de l ecran, sinon il reste une bande morte sous elle.
+     La marge est reportee a l interieur, en fin de contenu. */
+  padding: var(--marge-haute) 12px 0;
 }
 
 /* ------------------------------------------------------------------ entete */
@@ -105,7 +114,15 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
 }
 
 /* ----------------------------------------------------------------- accueil */
-.defile { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.defile {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  /* le contenu s arrete au-dessus de l indicateur d accueil, mais la zone
+     de defilement, elle, va jusqu en bas */
+  padding-bottom: var(--marge-basse);
+}
 
 .marque { text-align: center; padding: 18px 0 22px; }
 .marque .titre {
@@ -183,7 +200,7 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
   /* repli pour les navigateurs sans requetes de conteneur */
   --taille: min(
     calc((100vw - 44px - var(--cols) * 3px) / var(--cols)),
-    calc((100vh - 424px - env(safe-area-inset-top) - env(safe-area-inset-bottom)
+    calc((100vh - 424px - var(--marge-haute) - var(--marge-basse)
           - var(--rows) * 3px) / var(--rows)));
   display: grid;
   gap: 3px;
@@ -198,7 +215,7 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
   .plateau {
     --taille: min(
       calc((100vw - 44px - var(--cols) * 3px) / var(--cols)),
-      calc((100svh - 424px - env(safe-area-inset-top) - env(safe-area-inset-bottom)
+      calc((100svh - 424px - var(--marge-haute) - var(--marge-basse)
             - var(--rows) * 3px) / var(--rows)));
   }
 }
@@ -278,7 +295,10 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
 
 /* --------------------------------------------------------------- barre def */
 /* toujours au-dessus de la grille, quoi qu il arrive */
-.zone-basse { flex: 0 0 auto; position: relative; z-index: 1; }
+.zone-basse {
+  flex: 0 0 auto; position: relative; z-index: 1;
+  padding-bottom: var(--marge-basse);
+}
 
 .numeros {
   display: flex; gap: 6px; overflow-x: auto; padding: 2px 2px 8px;
@@ -653,7 +673,7 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
    seul chemin vers une nouvelle version */
 .maj {
   position: fixed; left: 10px; right: 10px; z-index: 40;
-  top: max(10px, env(safe-area-inset-top));
+  top: var(--marge-haute);
   display: flex; align-items: center; gap: 10px;
   padding: 11px 12px; border-radius: var(--r-l);
   background: linear-gradient(135deg, #3a2f8f, #2a2160);
