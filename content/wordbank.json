@@ -1,0 +1,2639 @@
+{
+ "_lisezmoi": "Banque de mots et definitions. m=mot (SANS ACCENT, majuscules, A-Z uniquement), d=definition affichee dans la grille, t=theme (pop|net|actu|sport|gaming|vie), n=niveau de difficulte 1 a 4. Ajoutez vos entrees puis relancez: python3 tools/build_grids.py",
+ "mots": [
+  {
+   "m": "AI",
+   "d": "Avoir, à la première personne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AN",
+   "d": "365 jours au compteur",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AS",
+   "d": "Le champion, ou la carte maîtresse",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "BD",
+   "d": "Le neuvième art",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "CV",
+   "d": "Le document qu'on enjolive",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "DJ",
+   "d": "Il fait vibrer le dancefloor",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "DO",
+   "d": "La toute première note",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "EN",
+   "d": "Préposition passé-partout",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ES",
+   "d": "Être, deuxième personne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ET",
+   "d": "La conjonction qui additionne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "EU",
+   "d": "Avoir, au participe passé",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "GO",
+   "d": "Top départ des gamers",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "IA",
+   "d": "Elle écrit, dessine et inquiète",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "IL",
+   "d": "Pronom de la troisième place",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "KO",
+   "d": "Hors service chez les boxeurs",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "LA",
+   "d": "Note du diapason",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "LU",
+   "d": "Le message vu... mais pas répondu",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "MI",
+   "d": "Note entre re et fa",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "NE",
+   "d": "Moitié de négation",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "NI",
+   "d": "Ni l'un... ni l'autre",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "NU",
+   "d": "Sans filtre ni vêtements",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "OK",
+   "d": "Le mot le plus parlé de la planète",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "ON",
+   "d": "Pronom qui n'assume rien",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "OR",
+   "d": "Métal de la première marche",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "OS",
+   "d": "Il y en a 206 dans le corps",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "RE",
+   "d": "Deuxième note de la gamme",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "SI",
+   "d": "Condition, ou note de musique",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TV",
+   "d": "La boîte à images",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "US",
+   "d": "Coutumes, avec les mœurs",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "VU",
+   "d": "Coché sur la liste",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ADO",
+   "d": "Il à toujours raison, surtout à quinze ans",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AGE",
+   "d": "On le demande rarement poliment",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AIR",
+   "d": "On le pollue, il se joue aussi",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "AMI",
+   "d": "Le contraire d'un ennemi",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ANE",
+   "d": "Champion du monde de l'entêtement",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "API",
+   "d": "La porte d'entrée des développeurs",
+   "t": "net",
+   "n": 3
+  },
+  {
+   "m": "APP",
+   "d": "On la télécharge en trois secondes",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "ART",
+   "d": "Il est contemporain, et souvent incompris",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "AVE",
+   "d": "Salut, chez les Romains",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "BAC",
+   "d": "Le tout premier diplôme",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "BAL",
+   "d": "La soirée dansante du 14 juillet",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "BOT",
+   "d": "Robot de conversation",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "BUG",
+   "d": "Le cauchemar du développeur",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "BUT",
+   "d": "Il fait exploser le stade",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "CAC",
+   "d": "L'indice de la Bourse de Paris",
+   "t": "actu",
+   "n": 3
+  },
+  {
+   "m": "CAP",
+   "d": "Le franchir, ou le mettre au sud",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CLE",
+   "d": "Elle ouvre les portes, ou se branche en USB",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CRI",
+   "d": "Le tableau de Munch",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "DUO",
+   "d": "Ils chantent à deux",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "EAU",
+   "d": "H2O",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ELU",
+   "d": "Il a gagné les élections",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "ERE",
+   "d": "Longue période de l'Histoire",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ETE",
+   "d": "La saison des festivals",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "FAN",
+   "d": "Il connaît toutes les paroles",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "FEU",
+   "d": "Rouge, il arrête tout le monde",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "FIL",
+   "d": "On le suit sur les réseaux",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "FOU",
+   "d": "Aux échecs, il avance en diagonale",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "HIT",
+   "d": "Le tube de l'été",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "ILE",
+   "d": "Terre entourée d'eau et de caméras",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "IRA",
+   "d": "Aller, dans le futur",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "JEU",
+   "d": "Vidéo, ou de société",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "LAC",
+   "d": "Étendue d'eau douce",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "LIT",
+   "d": "On y passé un tiers de sa vie",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "LOL",
+   "d": "Le rire d'internet, version 2005",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "MER",
+   "d": "Bleue, salée et en danger",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "MUR",
+   "d": "Celui de Berlin est tombé en 89",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "NBA",
+   "d": "La ligue au ballon orange",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "NEZ",
+   "d": "Il pousse quand on ment",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "NFT",
+   "d": "L'image hors de prix que tout le monde peut copier",
+   "t": "net",
+   "n": 3
+  },
+  {
+   "m": "NON",
+   "d": "Le mot préféré des enfants de deux ans",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "NUL",
+   "d": "Le score du match sans vainqueur",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "OIE",
+   "d": "Elle à un jeu à son nom",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ONT",
+   "d": "Avoir, au pluriel",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ONU",
+   "d": "Elle siège à New York",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "OSE",
+   "d": "Il ne manque pas de culot",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "OUI",
+   "d": "Réponse qui engage",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "POP",
+   "d": "Culture de masse, ou musique",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "PRO",
+   "d": "Il en a fait son métier",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "PSG",
+   "d": "Le club de la capitale",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "RAP",
+   "d": "Genre numéro un en France",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "RIZ",
+   "d": "La base de la moitié de la planète",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ROC",
+   "d": "Solide comme lui",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ROI",
+   "d": "Il porte la couronne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "RUE",
+   "d": "Elle descend dans la manif",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "SEL",
+   "d": "Il donne du goût, même aux blagues",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SKI",
+   "d": "Sport de descente",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "SMS",
+   "d": "Message court, réponse encore plus courte",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "SON",
+   "d": "Il est spatialisé dans les nouveaux casques",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "SUR",
+   "d": "Certain, ou posé dessus",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TAG",
+   "d": "Signature sur un mur",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "TIC",
+   "d": "Petit geste incontrôlable",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TOC",
+   "d": "Il frappe à la porte",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TRI",
+   "d": "Le geste écolo de la cuisine",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "UFC",
+   "d": "La ligue du combat en cage",
+   "t": "sport",
+   "n": 3
+  },
+  {
+   "m": "USE",
+   "d": "Fatigué par le temps",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "VIE",
+   "d": "Elle est belle, paraît-il",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "VIF",
+   "d": "Rapide et piquant",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "VOL",
+   "d": "Il décolle, ou il dérobe",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "WEB",
+   "d": "La toile",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "AILE",
+   "d": "Il joue sur celle-ci, au foot",
+   "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "AIME",
+   "d": "Il a un faible pour",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ALGO",
+   "d": "Il décide de ce que tu regardes ce soir",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "AMES",
+   "d": "Elles seraient sœurs",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AMIE",
+   "d": "Copine de longue date",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AMIS",
+   "d": "Ils répondent au groupe WhatsApp",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ANES",
+   "d": "Ils sont teigneux, au pluriel",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ANNE",
+   "d": "Prénom de la sœur de Barbe-Bleue",
+   "t": "pop",
+   "n": 3
+  },
+  {
+   "m": "ARTS",
+   "d": "Ils sont martiaux, ou premiers",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "AVEC",
+   "d": "Préposition d'accompagnement",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "BEEF",
+   "d": "L'embrouille entre deux rappeurs",
+   "t": "pop",
+   "n": 3
+  },
+  {
+   "m": "BLEU",
+   "d": "La couleur du maillot des Bleus",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "BOSS",
+   "d": "Le monstre de fin de niveau",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "BUZZ",
+   "d": "Tout le monde le cherche, personne ne le contrôle",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "CAKE",
+   "d": "Gâteau, ou râteau en langage ado",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CASE",
+   "d": "Elle attend sa lettre",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CHAT",
+   "d": "Star absolue d'internet",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "CHEF",
+   "d": "Il a des étoiles ou des galons",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CLIC",
+   "d": "Un geste, une commande",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "CLIP",
+   "d": "Trois minutes de vidéo musicale",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "CODE",
+   "d": "On le casse, ou on l'écrit",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "DATA",
+   "d": "Le pétrole du XXIe siècle",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "DEFI",
+   "d": "Il est lancé chaque jour",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "DUNE",
+   "d": "Le désert d'Arrakis",
+   "t": "pop",
+   "n": 3
+  },
+  {
+   "m": "ECHO",
+   "d": "Il répète tout",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ELLE",
+   "d": "Pronom féminin, et magazine",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ELON",
+   "d": "Le prénom du patron de X",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "EMOI",
+   "d": "Trouble et agitation",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ERES",
+   "d": "Longues périodes, au pluriel",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ETAT",
+   "d": "Il est de droit, ou d'urgence",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "ETES",
+   "d": "Plusieurs saisons chaudes",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ETRE",
+   "d": "Le verbe le plus important",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "FILM",
+   "d": "Deux heures dans le noir",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "FLOP",
+   "d": "Le contraire d'un carton",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "FOOT",
+   "d": "Le sport roi",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "FUNK",
+   "d": "Le groove des années 70",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "GIGA",
+   "d": "Préfixe qui multiplie par un milliard",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "GOAT",
+   "d": "Le meilleur de tous les temps, en abrégé",
+   "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "GOKU",
+   "d": "Le Saiyan aux cheveux dorés",
+   "t": "pop",
+   "n": 3
+  },
+  {
+   "m": "GOLF",
+   "d": "Sport à petites balles",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "HULK",
+   "d": "Il devient vert quand il s'énerve",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "HYPE",
+   "d": "L'attente insoutenable avant la sortie",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "IDEE",
+   "d": "Elle arrive sous la douche",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "IKEA",
+   "d": "Le labyrinthe suédois du samedi",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ILES",
+   "d": "Archipel, au pluriel",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ITEM",
+   "d": "L'objet à ramasser dans le jeu",
+   "t": "gaming",
+   "n": 2
+  },
+  {
+   "m": "JEDI",
+   "d": "Chevalier au sabre laser",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "JOUR",
+   "d": "Il finit toujours par se lever",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "JUDO",
+   "d": "Sport de tatami",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "KPOP",
+   "d": "La pop coréenne qui remplit les stades",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "LIKE",
+   "d": "Le petit cœur qu'on distribue",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "LIRE",
+   "d": "Ce qu'on ne fait plus assez",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "LIVE",
+   "d": "En direct, sans filet",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "LOFT",
+   "d": "L'ancêtre de la télé-réalité",
+   "t": "pop",
+   "n": 3
+  },
+  {
+   "m": "LOOT",
+   "d": "Le butin ramasse après le combat",
+   "t": "gaming",
+   "n": 2
+  },
+  {
+   "m": "LUNE",
+   "d": "On y est retourné récemment",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "LUXE",
+   "d": "Le secteur qui ignore la crise",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "MAIL",
+   "d": "Il s'accumule sans être lu",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "MARS",
+   "d": "La planète rouge",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "MEME",
+   "d": "Image virale qu'on ne peut plus s'enlever de la tête",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "MENU",
+   "d": "On le déroule, ou on le commande",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MERE",
+   "d": "Elle a toujours raison",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "META",
+   "d": "Le nouveau nom de Facebook",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "MODE",
+   "d": "Elle change à chaque saison",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "MOIS",
+   "d": "Une trentaine de jours",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MOTS",
+   "d": "Ils sont fléchés ici",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "NIER",
+   "d": "Tout démentir en bloc",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "NOIR",
+   "d": "La couleur du film de genre",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "NOOB",
+   "d": "Le débutant qui gêne toute l'équipe",
+   "t": "gaming",
+   "n": 2
+  },
+  {
+   "m": "NOTE",
+   "d": "De musique, ou sur vingt",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "NUIT",
+   "d": "La blanche empêche de dormir",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ONDE",
+   "d": "Elle se propage",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "OPEN",
+   "d": "Tournoi de tennis, en anglais",
+   "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "ORAL",
+   "d": "L'épreuve qui fait transpirer",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "OSER",
+   "d": "Tenter le coup",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "OTER",
+   "d": "Enlever, en plus chic",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PAYS",
+   "d": "Il a des frontières",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PERE",
+   "d": "Il fait des blagues nulles",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PEUR",
+   "d": "Le moteur du film d'horreur",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "PLUS",
+   "d": "Le signe de l'addition",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "POST",
+   "d": "Publication en ligne",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "RAGE",
+   "d": "Elle fait quitter la partie",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "RATE",
+   "d": "Il a échoué, ou c'est un organe",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "REEL",
+   "d": "Le format vertical qui a tué la photo",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "RIEN",
+   "d": "Le contraire de tout",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "RIRE",
+   "d": "Meilleur remède connu",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ROCK",
+   "d": "Il n'est toujours pas mort",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "ROSE",
+   "d": "Fleur, couleur, et film de Barbie",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "RUER",
+   "d": "Ce que fait le cheval en colère",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SAGA",
+   "d": "Série de films qui n'en finit plus",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "SALE",
+   "d": "Le contraire de propre",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SANS",
+   "d": "Le contraire d'avec",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SETS",
+   "d": "Ils s'enchaînent à Roland-Garros",
+   "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "SEUL",
+   "d": "Sans personne autour",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SMIC",
+   "d": "Le salaire plancher",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "SOIR",
+   "d": "Le moment du scroll infini",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "SOLO",
+   "d": "En mode tout seul",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "SOUL",
+   "d": "La musique de l'âme",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "SPAM",
+   "d": "Courrier que personne n'a demandé",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "STAR",
+   "d": "Elle brille au cinéma comme au ciel",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "SWAG",
+   "d": "Classe et assurance, version 2012",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "TAPE",
+   "d": "Il frappe sur le clavier",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "TAXE",
+   "d": "Ce que personne n'aime payer",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "TELE",
+   "d": "Réalité, elle a envahi les soirées",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "TETE",
+   "d": "Elle est bien faite, paraît-il",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "THOR",
+   "d": "Le dieu au marteau chez Marvel",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "TIRE",
+   "d": "Il a fait feu",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TIRS",
+   "d": "La séance qui décide du match",
+   "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "TOPS",
+   "d": "Les meilleurs, en langage de classement",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "TOUR",
+   "d": "Il fait le tour de la France en juillet",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "TOUT",
+   "d": "Rien, à côté",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TROP",
+   "d": "Au-delà du raisonnable",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "UBER",
+   "d": "Il à donne son nom à un verbe",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "USER",
+   "d": "L'utilisateur, en anglais",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "VELO",
+   "d": "Il a envahi les villes",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "VERT",
+   "d": "La couleur de l'écologie",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "VOIR",
+   "d": "Utiliser ses yeux",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "VOTE",
+   "d": "Le geste du dimanche matin",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "WIFI",
+   "d": "Sans lui, la panique générale",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "WOKE",
+   "d": "Adjectif devenu champ de bataille politique",
+   "t": "actu",
+   "n": 3
+  },
+  {
+   "m": "YODA",
+   "d": "Petit, vert et sage il est",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "ZONE",
+   "d": "À défendre, ou à éviter",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "ADELE",
+   "d": "La voix qui fait pleurer les stades",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "ALBUM",
+   "d": "Douze titres et un teaser",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "ALIEN",
+   "d": "Dans l'espace, personne ne l'entend crier",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "AMOUR",
+   "d": "Il rend aveugle",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ANIME",
+   "d": "Le dessin animé japonais",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "APERO",
+   "d": "Le rituel du vendredi soir",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AVION",
+   "d": "On culpabilise de le prendre",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "BANCO",
+   "d": "Pari accepté",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "BIERE",
+   "d": "Pression ou artisanale",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CESAR",
+   "d": "L'Oscar à la française",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "CLASH",
+   "d": "Embrouille publique entre deux egos",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "CLOUD",
+   "d": "Le nuage où dorment tes photos",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "COMBO",
+   "d": "L'enchaînement qui fait mal",
+   "t": "gaming",
+   "n": 2
+  },
+  {
+   "m": "CRISE",
+   "d": "Climatique, économique ou de nerfs",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "CRUSH",
+   "d": "Celui qui fait battre le cœur",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "DEBAT",
+   "d": "A la télé, il tourne vite au clash",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "DISCO",
+   "d": "Musique à boule à facettes",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "DRONE",
+   "d": "Il filme tout d'en haut",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "ECRAN",
+   "d": "On y passé sept heures par jour",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "ELIRE",
+   "d": "Choisir par les urnes",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "EMOJI",
+   "d": "Petit dessin qui remplace les mots",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "FOULE",
+   "d": "Elle est en délire",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "FUSEE",
+   "d": "Elle décolle de Kourou",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "GHOST",
+   "d": "Disparaître sans explication",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "GREVE",
+   "d": "Le sport national français",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "HATER",
+   "d": "Il commente pour détruire",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "HOUSE",
+   "d": "La musique née dans les clubs de Chicago",
+   "t": "pop",
+   "n": 3
+  },
+  {
+   "m": "INFOX",
+   "d": "Fausse nouvelle, en bon français",
+   "t": "actu",
+   "n": 3
+  },
+  {
+   "m": "JOKER",
+   "d": "Le clown le plus inquiétant du cinéma",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "KEBAB",
+   "d": "Le repas de trois heures du matin",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "LASER",
+   "d": "Rayon de lumière concentré",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "LOYER",
+   "d": "Il augmente, toujours",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "LUFFY",
+   "d": "Le pirate au chapeau de paille",
+   "t": "pop",
+   "n": 3
+  },
+  {
+   "m": "LUPIN",
+   "d": "Le gentleman cambrioleur d'Assane Diop",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "MANGA",
+   "d": "La BD qui se lit à l'envers",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "MARIO",
+   "d": "Le plombier moustachu",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "MATCH",
+   "d": "Quatre-vingt-dix minutes de tension",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "MEDIA",
+   "d": "Il informe et il agace",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "MEMES",
+   "d": "Les images qui font le tour du web",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "METRO",
+   "d": "Boulot, dodo, et lui",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MONDE",
+   "d": "Le journal du soir, ou la planète",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "MYTHO",
+   "d": "Il raconte n'importe quoi",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "NEIGE",
+   "d": "Elle manque de plus en plus en montagne",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "OCEAN",
+   "d": "Il monte, et ça inquiète",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "ORAGE",
+   "d": "Éclairs et tonnerre",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "OSCAR",
+   "d": "La statuette dorée d'Hollywood",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "OTAKU",
+   "d": "Fan absolu de culture japonaise",
+   "t": "pop",
+   "n": 3
+  },
+  {
+   "m": "PARIS",
+   "d": "Elle a accueilli les Jeux en 2024",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "PIXEL",
+   "d": "Le plus petit carré de l'écran",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "PIZZA",
+   "d": "L'ananas dessus fait toujours débat",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PLAGE",
+   "d": "Serviette contre serviette en août",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PLUIE",
+   "d": "Elle ruine les festivals",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PRIME",
+   "d": "L'horaire où tout se joue",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "RADIO",
+   "d": "Elle se réveille avec vous",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "RELOU",
+   "d": "Insupportable, en verlan",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "REMIX",
+   "d": "La même chanson, en plus rapide",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "ROBOT",
+   "d": "Il fait le ménage, ou la guerre",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "RUGBY",
+   "d": "Le sport du ballon ovale",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "SABLE",
+   "d": "Il colle à la crème solaire",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SANTE",
+   "d": "On trinque à la sienne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SCENE",
+   "d": "On y monte pour jouer",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "SCORE",
+   "d": "Il s'affiche à la fin",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "SENAT",
+   "d": "La chambre haute",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "SERIE",
+   "d": "On la terminé en un week-end",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "SNAKE",
+   "d": "Le jeu du Nokia 3310",
+   "t": "gaming",
+   "n": 2
+  },
+  {
+   "m": "SONIC",
+   "d": "Le hérisson bleu qui court vite",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "SPORT",
+   "d": "Trente minutes par jour, dit-on",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "STADE",
+   "d": "Il se remplit les soirs de match",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "STORY",
+   "d": "Elle s'efface au bout de 24 heures",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "SUSHI",
+   "d": "Poisson cru et riz vinaigre",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SWIPE",
+   "d": "Le geste du pouce qui décide de tout",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "TERRE",
+   "d": "Notre caillou bleu",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "TITAN",
+   "d": "L'attaque de ceux-la",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "TITRE",
+   "d": "Il fait la une",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "TRAIN",
+   "d": "Souvent en retard, jamais coupable",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TROLL",
+   "d": "Il provoque pour le plaisir",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "VEGAN",
+   "d": "Il refuse tout produit animal",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "VIBES",
+   "d": "L'ambiance, en langage jeune",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "VIRAL",
+   "d": "Ce que tout le monde rêve de devenir",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "VIRUS",
+   "d": "Informatique ou biologique",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "VOTER",
+   "d": "Le devoir du citoyen",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "ZELDA",
+   "d": "La princesse d'Hyrule",
+   "t": "gaming",
+   "n": 2
+  },
+  {
+   "m": "ABONNE",
+   "d": "Il a cliqué sur le bouton rouge",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "ACTEUR",
+   "d": "Il joue les autres",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "ARCADE",
+   "d": "La salle des bornes de jeu",
+   "t": "gaming",
+   "n": 2
+  },
+  {
+   "m": "AVATAR",
+   "d": "Ton visage numérique",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "BANGER",
+   "d": "Le morceau qui met le feu",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "BARBIE",
+   "d": "Le film rose de 2023",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "BASKET",
+   "d": "Chaussure, ou sport de paniers",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "BATMAN",
+   "d": "Le justicier de Gotham",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "BOULOT",
+   "d": "Entre métro et dodo",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "BURGER",
+   "d": "Il se mange avec les doigts",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CAMERA",
+   "d": "Elle tourne",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "CANAPE",
+   "d": "Le quartier général du dimanche",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CANNES",
+   "d": "La Croisette et sa montée des marches",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "CINEMA",
+   "d": "La salle obscure",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "CLIMAT",
+   "d": "Le sujet qui divise les COP",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "COMPTE",
+   "d": "Il se crée en trente secondes",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "COURSE",
+   "d": "Contre la montre",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "DATING",
+   "d": "La drague par application",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "EQUIPE",
+   "d": "Le journal du sport",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "ETOILE",
+   "d": "Le chef en veut trois",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "FILTRE",
+   "d": "Il gomme dix ans en un clic",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "FLECHE",
+   "d": "Elle indique le sens du mot",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "FLEMME",
+   "d": "Elle gagné souvent le dimanche",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "FRANCE",
+   "d": "L'Hexagone",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "GALERE",
+   "d": "La journée qui commence mal",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "GRILLE",
+   "d": "Celle que vous remplissez",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "INDICE",
+   "d": "Le petit coup de pouce",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "LETTRE",
+   "d": "Elle remplit la case",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MAIRIE",
+   "d": "Elle a une écharpe tricolore",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "MARVEL",
+   "d": "L'usine à super-héros",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "MASQUE",
+   "d": "Souvenir de 2020",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "MATRIX",
+   "d": "La pilule rouge ou la bleue",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "MBAPPE",
+   "d": "Le numéro dix des Bleus",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "MIROIR",
+   "d": "Il ne ment jamais",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MOMENT",
+   "d": "Il faut le saisir",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "NARUTO",
+   "d": "Le ninja au renard à neuf queues",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "NIVEAU",
+   "d": "On le passe, ou on le perd",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "OCEANS",
+   "d": "Ils couvrent 70 pour cent du globe",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "PIXELS",
+   "d": "Ils composent l'image",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "PODIUM",
+   "d": "Trois marches, trois heureux",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "PRESSE",
+   "d": "Elle est libre, en principe",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "PROMPT",
+   "d": "Ce qu'on tape pour parler à une IA",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "RECORD",
+   "d": "Il est fait pour être battu",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "REPLAY",
+   "d": "Le match, une deuxième fois",
+   "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "RESEAU",
+   "d": "Social, il vole le temps",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "RUMEUR",
+   "d": "Elle court plus vite que la vérité",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "SAISON",
+   "d": "Elle se terminé sur un cliffhanger",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "SAMPLE",
+   "d": "Le bout de morceau qu'on recycle",
+   "t": "pop",
+   "n": 3
+  },
+  {
+   "m": "SCRIPT",
+   "d": "Le texte du film, ou du développeur",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "SCROLL",
+   "d": "Le geste qui avale les soirées",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "SECRET",
+   "d": "Il ne tient jamais longtemps",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SEISME",
+   "d": "La terre tremble",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "SELFIE",
+   "d": "La photo de soi, par soi",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "SERIES",
+   "d": "On les enchaîne sans dormir",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "SIESTE",
+   "d": "Vingt minutes de bonheur",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SOIREE",
+   "d": "Elle commence tard et finit pire",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SOLEIL",
+   "d": "Il fait la queue sur les terrasses",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TEASER",
+   "d": "Trente secondes pour donner envie",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "TECHNO",
+   "d": "Musique à 140 battements par minute",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "TENNIS",
+   "d": "Il se joue en sets",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "TETRIS",
+   "d": "Le jeu des briques qui tombent",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "TINTIN",
+   "d": "Reporter à la houppette",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "VALISE",
+   "d": "Toujours trop lourde",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "VOYAGE",
+   "d": "Il forme la jeunesse",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ARBITRE",
+   "d": "Personne ne l'aime, tout le monde le siffle",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "ASTERIX",
+   "d": "Le Gaulois à la potion magique",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "BADBUZZ",
+   "d": "La communication qui part en vrille",
+   "t": "net",
+   "n": 3
+  },
+  {
+   "m": "CARBONE",
+   "d": "On calcule son empreinte",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "CASTING",
+   "d": "L'étape avant le premier rôle",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "CHATBOT",
+   "d": "Il répond toujours, même n'importe quoi",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "CONCERT",
+   "d": "Les billets partent en huit minutes",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "CONSOLE",
+   "d": "Elle chauffe le salon",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "COUPLET",
+   "d": "Il précède le refrain",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "ENERGIE",
+   "d": "La moins chère est celle qu'on ne consomme pas",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "ENQUETE",
+   "d": "Elle est ouverte",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "GLACIER",
+   "d": "Il fond à vue d'œil",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "HASHTAG",
+   "d": "Le mot précède d'un dièse",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "JOURNAL",
+   "d": "Vingt heures pile",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "MAILLOT",
+   "d": "Il est jaune sur le Tour",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "MANETTE",
+   "d": "Elle vole quand la partie tourne mal",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "MEMOIRE",
+   "d": "Vive, ou de poisson rouge",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "MUSIQUE",
+   "d": "Elle adoucit les mœurs",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "NETFLIX",
+   "d": "Le géant du canapé",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "ORELSAN",
+   "d": "Le rappeur de Caen",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "PARTAGE",
+   "d": "Le bouton qui propage tout",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "PENALTY",
+   "d": "Onze mètres et beaucoup de pression",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "PIKACHU",
+   "d": "La souris jaune qui envoie des éclairs",
+   "t": "gaming",
+   "n": 1
+  },
+  {
+   "m": "PLANETE",
+   "d": "Elle chauffe un peu trop",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "PLATEAU",
+   "d": "Le décor de l'émission",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "PODCAST",
+   "d": "La radio qu'on écoute quand on veut",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "REFRAIN",
+   "d": "Tout le monde le connaît par cœur",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "RESPAWN",
+   "d": "Réapparaître après la mort",
+   "t": "gaming",
+   "n": 3
+  },
+  {
+   "m": "SILENCE",
+   "d": "On le demande sur le plateau",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "SOLAIRE",
+   "d": "Le panneau qui pousse sur les toits",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "SONDAGE",
+   "d": "Il se trompe une fois sur deux",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "SPOILER",
+   "d": "L'ami qui raconte la fin",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "STORIES",
+   "d": "Elles s'enchaînent en boucle",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "TRAILER",
+   "d": "La bande-annonce, en anglais",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "TRIBUNE",
+   "d": "Elle chante debout",
+   "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "URGENCE",
+   "d": "Elle est climatique ou hospitalière",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "ZAPPING",
+   "d": "Passer d'une chaîne à l'autre",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "AMBIANCE",
+   "d": "Elle est électrique",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AUDIENCE",
+   "d": "Le chiffre qui fait trembler les chaînes",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "AVENGERS",
+   "d": "Ils se rassemblent contre Thanos",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "BATTERIE",
+   "d": "A 3 pour cent, c'est la panique",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "CANICULE",
+   "d": "L'été qui devient invivable",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "COMEBACK",
+   "d": "Le retour que personne n'attendait",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "DEEPFAKE",
+   "d": "La vidéo truquée qui fait peur",
+   "t": "net",
+   "n": 3
+  },
+  {
+   "m": "ELECTION",
+   "d": "Le grand rendez-vous démocratique",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "EMISSION",
+   "d": "Elle passé en prime time",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "FESTIVAL",
+   "d": "Boue, musique et camping",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "FORTNITE",
+   "d": "Cent joueurs, un seul survivant",
+   "t": "gaming",
+   "n": 2
+  },
+  {
+   "m": "MARATHON",
+   "d": "42 kilomètres et des poussières",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "MEDAILLE",
+   "d": "Elle se mord sur le podium",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "MINISTRE",
+   "d": "Il change souvent de bureau",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "RECYCLER",
+   "d": "Donner une deuxième vie",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "RETRAITE",
+   "d": "Le sujet qui met la France dans la rue",
+   "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "SCANDALE",
+   "d": "Il éclate toujours un vendredi",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "SPEEDRUN",
+   "d": "Finir le jeu le plus vite possible",
+   "t": "gaming",
+   "n": 3
+  },
+  {
+   "m": "STREAMER",
+   "d": "Il joue devant des milliers d'inconnus",
+   "t": "gaming",
+   "n": 2
+  },
+  {
+   "m": "TENDANCE",
+   "d": "Elle dure trois jours",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "TIMELINE",
+   "d": "Le fil où tout défile",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "TOURNAGE",
+   "d": "Silence, on tourne",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "TRIBUNAL",
+   "d": "On y comparaît",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "INFLATION",
+   "d": "Elle vide le caddie",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "OLYMPIQUE",
+   "d": "Adjectif des Jeux et d'un club marseillais",
+   "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "POLEMIQUE",
+   "d": "Elle dure 48 heures sur les réseaux",
+   "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "PUNCHLINE",
+   "d": "La phrase qui tue dans un couplet",
+   "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "STREAMING",
+   "d": "Il a tué le DVD",
+   "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "SUPPORTER",
+   "d": "Il chante même quand ça perd",
+   "t": "sport",
+   "n": 1
+  },
+  {
+   "m": "TELEPHONE",
+   "d": "On le regarde 150 fois par jour",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "TIKTOKEUR",
+   "d": "Il danse pour l'algorithme",
+   "t": "net",
+   "n": 2
+  },
+  {
+   "m": "TRANSFERT",
+   "d": "Le mercato en fait son beurre",
+   "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "VESTIAIRE",
+   "d": "Où se disent les vraies choses",
+   "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "INFLUENCEUR",
+   "d": "Son métier tient dans un téléphone",
+   "t": "net",
+   "n": 1
+  },
+  {
+   "m": "PRESENTATEUR",
+   "d": "Il tient l'antenne",
+   "t": "pop",
+   "n": 2
+  }
+ ]
+}

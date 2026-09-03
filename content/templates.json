@@ -1,0 +1,302 @@
+{
+ "_lisezmoi": "Une entree par grille. id, niveau (1-4), titre, collection (campagne = parcours des 4 niveaux, quotidien = pool du defi du jour), cols et rows (taille maximale de la grille, elle est recadree sur son contenu), et seed: la graine rend la generation reproductible, changez-la pour retirer une autre grille. Regenerez ensuite avec: npm run grilles",
+ "grilles": [
+  {
+   "id": "n1-1",
+   "niveau": 1,
+   "titre": "Premier café",
+   "collection": "campagne",
+   "seed": 1037,
+   "cols": 6,
+   "rows": 8
+  },
+  {
+   "id": "n1-2",
+   "niveau": 1,
+   "titre": "Échauffement",
+   "collection": "campagne",
+   "seed": 1074,
+   "cols": 6,
+   "rows": 8
+  },
+  {
+   "id": "n1-3",
+   "niveau": 1,
+   "titre": "Sans se fouler",
+   "collection": "campagne",
+   "seed": 1111,
+   "cols": 6,
+   "rows": 8
+  },
+  {
+   "id": "n2-1",
+   "niveau": 2,
+   "titre": "Le pouce chauffe",
+   "collection": "campagne",
+   "seed": 2037,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "n2-2",
+   "niveau": 2,
+   "titre": "Vitesse de croisière",
+   "collection": "campagne",
+   "seed": 2074,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "n2-3",
+   "niveau": 2,
+   "titre": "Ça se corse",
+   "collection": "campagne",
+   "seed": 2111,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "n3-1",
+   "niveau": 3,
+   "titre": "Pour les tenaces",
+   "collection": "campagne",
+   "seed": 3037,
+   "cols": 7,
+   "rows": 11
+  },
+  {
+   "id": "n3-2",
+   "niveau": 3,
+   "titre": "Zone rouge",
+   "collection": "campagne",
+   "seed": 3074,
+   "cols": 7,
+   "rows": 11
+  },
+  {
+   "id": "n3-3",
+   "niveau": 3,
+   "titre": "Tête chercheuse",
+   "collection": "campagne",
+   "seed": 3111,
+   "cols": 7,
+   "rows": 11
+  },
+  {
+   "id": "n4-1",
+   "niveau": 4,
+   "titre": "Boss final",
+   "collection": "campagne",
+   "seed": 4037,
+   "cols": 8,
+   "rows": 12
+  },
+  {
+   "id": "n4-2",
+   "niveau": 4,
+   "titre": "Le mur",
+   "collection": "campagne",
+   "seed": 4074,
+   "cols": 8,
+   "rows": 12
+  },
+  {
+   "id": "n4-3",
+   "niveau": 4,
+   "titre": "Point de non-retour",
+   "collection": "campagne",
+   "seed": 4111,
+   "cols": 8,
+   "rows": 12
+  },
+  {
+   "id": "jour-01",
+   "niveau": 1,
+   "titre": "Défi du jour n°1",
+   "collection": "quotidien",
+   "seed": 50091,
+   "cols": 6,
+   "rows": 8
+  },
+  {
+   "id": "jour-02",
+   "niveau": 2,
+   "titre": "Défi du jour n°2",
+   "collection": "quotidien",
+   "seed": 50182,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "jour-03",
+   "niveau": 3,
+   "titre": "Défi du jour n°3",
+   "collection": "quotidien",
+   "seed": 50273,
+   "cols": 7,
+   "rows": 11
+  },
+  {
+   "id": "jour-04",
+   "niveau": 2,
+   "titre": "Défi du jour n°4",
+   "collection": "quotidien",
+   "seed": 50364,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "jour-05",
+   "niveau": 4,
+   "titre": "Défi du jour n°5",
+   "collection": "quotidien",
+   "seed": 50455,
+   "cols": 8,
+   "rows": 12
+  },
+  {
+   "id": "jour-06",
+   "niveau": 3,
+   "titre": "Défi du jour n°6",
+   "collection": "quotidien",
+   "seed": 50546,
+   "cols": 7,
+   "rows": 11
+  },
+  {
+   "id": "jour-07",
+   "niveau": 2,
+   "titre": "Défi du jour n°7",
+   "collection": "quotidien",
+   "seed": 50637,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "jour-08",
+   "niveau": 1,
+   "titre": "Défi du jour n°8",
+   "collection": "quotidien",
+   "seed": 50728,
+   "cols": 6,
+   "rows": 8
+  },
+  {
+   "id": "jour-09",
+   "niveau": 2,
+   "titre": "Défi du jour n°9",
+   "collection": "quotidien",
+   "seed": 50819,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "jour-10",
+   "niveau": 3,
+   "titre": "Défi du jour n°10",
+   "collection": "quotidien",
+   "seed": 50910,
+   "cols": 7,
+   "rows": 11
+  },
+  {
+   "id": "jour-11",
+   "niveau": 2,
+   "titre": "Défi du jour n°11",
+   "collection": "quotidien",
+   "seed": 51001,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "jour-12",
+   "niveau": 4,
+   "titre": "Défi du jour n°12",
+   "collection": "quotidien",
+   "seed": 51092,
+   "cols": 8,
+   "rows": 12
+  },
+  {
+   "id": "jour-13",
+   "niveau": 3,
+   "titre": "Défi du jour n°13",
+   "collection": "quotidien",
+   "seed": 51183,
+   "cols": 7,
+   "rows": 11
+  },
+  {
+   "id": "jour-14",
+   "niveau": 2,
+   "titre": "Défi du jour n°14",
+   "collection": "quotidien",
+   "seed": 51274,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "jour-15",
+   "niveau": 1,
+   "titre": "Défi du jour n°15",
+   "collection": "quotidien",
+   "seed": 51365,
+   "cols": 6,
+   "rows": 8
+  },
+  {
+   "id": "jour-16",
+   "niveau": 2,
+   "titre": "Défi du jour n°16",
+   "collection": "quotidien",
+   "seed": 51456,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "jour-17",
+   "niveau": 3,
+   "titre": "Défi du jour n°17",
+   "collection": "quotidien",
+   "seed": 51547,
+   "cols": 7,
+   "rows": 11
+  },
+  {
+   "id": "jour-18",
+   "niveau": 2,
+   "titre": "Défi du jour n°18",
+   "collection": "quotidien",
+   "seed": 51638,
+   "cols": 7,
+   "rows": 9
+  },
+  {
+   "id": "jour-19",
+   "niveau": 4,
+   "titre": "Défi du jour n°19",
+   "collection": "quotidien",
+   "seed": 51729,
+   "cols": 8,
+   "rows": 12
+  },
+  {
+   "id": "jour-20",
+   "niveau": 3,
+   "titre": "Défi du jour n°20",
+   "collection": "quotidien",
+   "seed": 51820,
+   "cols": 7,
+   "rows": 11
+  },
+  {
+   "id": "jour-21",
+   "niveau": 2,
+   "titre": "Défi du jour n°21",
+   "collection": "quotidien",
+   "seed": 51911,
+   "cols": 7,
+   "rows": 9
+  }
+ ]
+}

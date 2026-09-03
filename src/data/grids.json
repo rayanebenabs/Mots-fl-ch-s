@@ -1,0 +1,9758 @@
+{
+ "_genere_par": "tools/build_grids.py -- editez content/, pas ce fichier",
+ "grilles": [
+  {
+   "id": "n1-1",
+   "niveau": 1,
+   "titre": "Premier café",
+   "collection": "campagne",
+   "cols": 6,
+   "rows": 8,
+   "mots": [
+    {
+     "id": 2,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 6,
+     "reponse": "MARVEL",
+     "definition": "L'usine à super-héros",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 1,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "SAISON",
+     "definition": "Elle se terminé sur un cliffhanger",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 3,
+     "dir": "v",
+     "long": 7,
+     "reponse": "SILENCE",
+     "definition": "On le demande sur le plateau",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 1,
+     "c": 5,
+     "dir": "v",
+     "long": 7,
+     "reponse": "NETFLIX",
+     "definition": "Le géant du canapé",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 3,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "LIT",
+     "definition": "On y passé un tiers de sa vie",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 3,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "TELE",
+     "definition": "Réalité, elle a envahi les soirées",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 5,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "NUL",
+     "definition": "Le score du match sans vainqueur",
+     "theme": "sport",
+     "fleche": "droite",
+     "defR": 5,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "RAGE",
+     "definition": "Elle fait quitter la partie",
+     "theme": "gaming",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      1,
+      2
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 3,
+     "c": 2,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 5,
+     "c": 2,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 1,
+     "c": 5,
+     "type": "bonus"
+    },
+    {
+     "r": 7,
+     "c": 5,
+     "type": "cadeau"
+    }
+   ],
+   "solution": [
+    "#M####",
+    "SAISON",
+    "#R#I#E",
+    "#V#LIT",
+    "TELE#F",
+    "#L#NUL",
+    "###C#I",
+    "RAGE#X"
+   ]
+  },
+  {
+   "id": "n1-2",
+   "niveau": 1,
+   "titre": "Échauffement",
+   "collection": "campagne",
+   "cols": 6,
+   "rows": 8,
+   "mots": [
+    {
+     "id": 5,
+     "r": 0,
+     "c": 4,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ILE",
+     "definition": "Terre entourée d'eau et de caméras",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 1,
+     "dir": "v",
+     "long": 7,
+     "reponse": "MANETTE",
+     "definition": "Elle vole quand la partie tourne mal",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "CANNES",
+     "definition": "La Croisette et sa montée des marches",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 2,
+     "c": 3,
+     "dir": "v",
+     "long": 6,
+     "reponse": "NIVEAU",
+     "definition": "On le passe, ou on le perd",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 2,
+     "c": 5,
+     "dir": "v",
+     "long": 6,
+     "reponse": "SERIES",
+     "definition": "On les enchaîne sans dormir",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 5,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ETRE",
+     "definition": "Le verbe le plus important",
+     "theme": "vie",
+     "fleche": "bas-droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 6,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ANE",
+     "definition": "Champion du monde de l'entêtement",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 6,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 7,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ELU",
+     "definition": "Il a gagné les élections",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 7,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 1,
+     "c": 3,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 1,
+     "c": 5,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 6,
+     "c": 2,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 7,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 2,
+     "c": 5,
+     "type": "bonus"
+    },
+    {
+     "r": 3,
+     "c": 5,
+     "type": "cadeau"
+    }
+   ],
+   "solution": [
+    "####I#",
+    "#M##L#",
+    "CANNES",
+    "#N#I#E",
+    "#E#V#R",
+    "ETRE#I",
+    "#T#ANE",
+    "#ELU#S"
+   ]
+  },
+  {
+   "id": "n1-3",
+   "niveau": 1,
+   "titre": "Sans se fouler",
+   "collection": "campagne",
+   "cols": 6,
+   "rows": 8,
+   "mots": [
+    {
+     "id": 2,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "CLIMAT",
+     "definition": "Le sujet qui divise les COP",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 3,
+     "dir": "v",
+     "long": 7,
+     "reponse": "MUSIQUE",
+     "definition": "Elle adoucit les mœurs",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 3,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "PRESSE",
+     "definition": "Elle est libre, en principe",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 2,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 3,
+     "c": 5,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ETE",
+     "definition": "La saison des festivals",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 5,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "MASQUE",
+     "definition": "Souvenir de 2020",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 5,
+     "c": 1,
+     "dir": "v",
+     "long": 3,
+     "reponse": "AGE",
+     "definition": "On le demande rarement poliment",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 4,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "RESEAU",
+     "definition": "Social, il vole le temps",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 2,
+     "c": 0,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 2,
+     "c": 5,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 4,
+     "c": 1,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 3,
+     "c": 2,
+     "type": "cadeau"
+    },
+    {
+     "r": 5,
+     "c": 5,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "######",
+    "CLIMAT",
+    "###U##",
+    "PRESSE",
+    "###I#T",
+    "MASQUE",
+    "#G#U##",
+    "RESEAU"
+   ]
+  },
+  {
+   "id": "n2-1",
+   "niveau": 2,
+   "titre": "Le pouce chauffe",
+   "collection": "campagne",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 9,
+     "r": 0,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "FAN",
+     "definition": "Il connaît toutes les paroles",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 3,
+     "reponse": "FIL",
+     "definition": "On le suit sur les réseaux",
+     "theme": "net",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 6,
+     "r": 0,
+     "c": 6,
+     "dir": "v",
+     "long": 3,
+     "reponse": "MUR",
+     "definition": "Celui de Berlin est tombé en 89",
+     "theme": "actu",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 4,
+     "dir": "v",
+     "long": 8,
+     "reponse": "TIMELINE",
+     "definition": "Le fil où tout défile",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "GLACIER",
+     "definition": "Il fond à vue d'œil",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 2,
+     "c": 2,
+     "dir": "v",
+     "long": 3,
+     "reponse": "API",
+     "definition": "La porte d'entrée des développeurs",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "SWIPE",
+     "definition": "Le geste du pouce qui décide de tout",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 4,
+     "c": 6,
+     "dir": "v",
+     "long": 5,
+     "reponse": "TITAN",
+     "definition": "L'attaque de ceux-la",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 6,
+     "c": 1,
+     "dir": "h",
+     "long": 6,
+     "reponse": "SCRIPT",
+     "definition": "Le texte du film, ou du développeur",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 8,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "FUSEE",
+     "definition": "Elle décolle de Kourou",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 7,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      8,
+      9
+     ]
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 1,
+     "c": 2,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 3,
+     "c": 6,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 7,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 1,
+     "c": 6,
+     "type": "mystere"
+    },
+    {
+     "r": 6,
+     "c": 4,
+     "type": "bonus"
+    },
+    {
+     "r": 8,
+     "c": 0,
+     "type": "cadeau"
+    }
+   ],
+   "solution": [
+    "#FAN##M",
+    "#I##T#U",
+    "GLACIER",
+    "##P#M##",
+    "SWIPE#T",
+    "####L#I",
+    "#SCRIPT",
+    "####N#A",
+    "FUSEE#N"
+   ]
+  },
+  {
+   "id": "n2-2",
+   "niveau": 2,
+   "titre": "Vitesse de croisière",
+   "collection": "campagne",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 9,
+     "r": 0,
+     "c": 2,
+     "dir": "h",
+     "long": 4,
+     "reponse": "DUNE",
+     "definition": "Le désert d'Arrakis",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 2,
+     "dir": "v",
+     "long": 3,
+     "reponse": "DUO",
+     "definition": "Ils chantent à deux",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 10,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "JEU",
+     "definition": "Vidéo, ou de société",
+     "theme": "gaming",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 6,
+     "dir": "v",
+     "long": 8,
+     "reponse": "MINISTRE",
+     "definition": "Il change souvent de bureau",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 2,
+     "c": 2,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ONU",
+     "definition": "Elle siège à New York",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 1,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 3,
+     "r": 2,
+     "c": 3,
+     "dir": "v",
+     "long": 6,
+     "reponse": "NARUTO",
+     "definition": "Le ninja au renard à neuf queues",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 3,
+     "c": 1,
+     "dir": "v",
+     "long": 6,
+     "reponse": "TECHNO",
+     "definition": "Musique à 140 battements par minute",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 4,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "TERRE",
+     "definition": "Notre caillou bleu",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "CHATBOT",
+     "definition": "Il répond toujours, même n'importe quoi",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 8,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "SON",
+     "definition": "Il est spatialisé dans les nouveaux casques",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 7,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 8,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "RUE",
+     "definition": "Elle descend dans la manif",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      8,
+      9
+     ]
+    },
+    {
+     "r": 0,
+     "c": 6,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 1,
+     "c": 3,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 2,
+     "c": 1,
+     "mots": [
+      2,
+      6
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 7,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 8,
+     "c": 3,
+     "mots": [
+      7
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 4,
+     "c": 0,
+     "type": "cadeau"
+    },
+    {
+     "r": 4,
+     "c": 3,
+     "type": "bonus"
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "##DUNE#",
+    "JEU###M",
+    "##ONU#I",
+    "#T#A##N",
+    "TERRE#I",
+    "#C#U##S",
+    "CHATBOT",
+    "#N#O##R",
+    "SON#RUE"
+   ]
+  },
+  {
+   "id": "n2-3",
+   "niveau": 2,
+   "titre": "Ça se corse",
+   "collection": "campagne",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 8,
+     "r": 0,
+     "c": 3,
+     "dir": "v",
+     "long": 3,
+     "reponse": "SEL",
+     "definition": "Il donne du goût, même aux blagues",
+     "theme": "vie",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 1,
+     "dir": "v",
+     "long": 8,
+     "reponse": "COMEBACK",
+     "definition": "Le retour que personne n'attendait",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 1,
+     "c": 5,
+     "dir": "v",
+     "long": 8,
+     "reponse": "TRIBUNAL",
+     "definition": "On y comparaît",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "SOUL",
+     "definition": "La musique de l'âme",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 3,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "TIC",
+     "definition": "Petit geste incontrôlable",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 3,
+     "defC": 3,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 7,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "VERT",
+     "definition": "La couleur de l'écologie",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 4,
+     "c": 3,
+     "dir": "v",
+     "long": 4,
+     "reponse": "TOPS",
+     "definition": "Les meilleurs, en langage de classement",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 1,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "ZAPPING",
+     "definition": "Passer d'une chaîne à l'autre",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 8,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "SKI",
+     "definition": "Sport de descente",
+     "theme": "sport",
+     "fleche": "bas-droite",
+     "defR": 7,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 8,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "CLE",
+     "definition": "Elle ouvre les portes, ou se branche en USB",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 0,
+     "c": 2,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 3,
+     "c": 3,
+     "mots": [
+      4,
+      6
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 7,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 8,
+     "c": 3,
+     "mots": [
+      9
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 4,
+     "c": 3,
+     "type": "bonus"
+    },
+    {
+     "r": 5,
+     "c": 5,
+     "type": "cadeau"
+    },
+    {
+     "r": 8,
+     "c": 0,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "###S###",
+    "#C#E#T#",
+    "SOUL#R#",
+    "#M##TIC",
+    "VERT#B#",
+    "#B#O#U#",
+    "ZAPPING",
+    "#C#S#A#",
+    "SKI#CLE"
+   ]
+  },
+  {
+   "id": "n3-1",
+   "niveau": 3,
+   "titre": "Pour les tenaces",
+   "collection": "campagne",
+   "cols": 7,
+   "rows": 11,
+   "mots": [
+    {
+     "id": 7,
+     "r": 0,
+     "c": 2,
+     "dir": "v",
+     "long": 4,
+     "reponse": "JEDI",
+     "definition": "Chevalier au sabre laser",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "CAC",
+     "definition": "L'indice de la Bourse de Paris",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 5,
+     "r": 0,
+     "c": 4,
+     "dir": "v",
+     "long": 5,
+     "reponse": "CESAR",
+     "definition": "L'Oscar à la française",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 10,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "OSE",
+     "definition": "Il ne manque pas de culot",
+     "theme": "vie",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 11,
+     "r": 1,
+     "c": 0,
+     "dir": "v",
+     "long": 3,
+     "reponse": "OIE",
+     "definition": "Elle à un jeu à son nom",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 4,
+     "r": 2,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "DISCO",
+     "definition": "Musique à boule à facettes",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 9,
+     "reponse": "OLYMPIQUE",
+     "definition": "Adjectif des Jeux et d'un club marseillais",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 4,
+     "c": 1,
+     "dir": "v",
+     "long": 7,
+     "reponse": "TRAILER",
+     "definition": "La bande-annonce, en anglais",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 6,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ALGO",
+     "definition": "Il décide de ce que tu regardes ce soir",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 6,
+     "c": 4,
+     "dir": "v",
+     "long": 5,
+     "reponse": "OTAKU",
+     "definition": "Fan absolu de culture japonaise",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 7,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "TRI",
+     "definition": "Le geste écolo de la cuisine",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 7,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 8,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ELU",
+     "definition": "Il a gagné les élections",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 7,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 10,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "TRIBUNE",
+     "definition": "Elle chante debout",
+     "theme": "sport",
+     "fleche": "bas-droite",
+     "defR": 9,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      10,
+      11
+     ]
+    },
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      5,
+      8
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 2,
+     "c": 1,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 3,
+     "c": 1,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 5,
+     "c": 4,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 7,
+     "c": 0,
+     "mots": [
+      12
+     ]
+    },
+    {
+     "r": 7,
+     "c": 3,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 9,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 1,
+     "c": 0,
+     "type": "bonus"
+    },
+    {
+     "r": 2,
+     "c": 2,
+     "type": "bonus"
+    },
+    {
+     "r": 3,
+     "c": 4,
+     "type": "mystere"
+    },
+    {
+     "r": 8,
+     "c": 4,
+     "type": "cadeau"
+    }
+   ],
+   "solution": [
+    "##J#CAC",
+    "OSE#E##",
+    "I#DISCO",
+    "E#I#A#L",
+    "#T##R#Y",
+    "#R####M",
+    "#ALGO#P",
+    "#I##TRI",
+    "ELU#A#Q",
+    "#E##K#U",
+    "TRIBUNE"
+   ]
+  },
+  {
+   "id": "n3-2",
+   "niveau": 3,
+   "titre": "Zone rouge",
+   "collection": "campagne",
+   "cols": 7,
+   "rows": 11,
+   "mots": [
+    {
+     "id": 3,
+     "r": 0,
+     "c": 1,
+     "dir": "h",
+     "long": 6,
+     "reponse": "SEISME",
+     "definition": "La terre tremble",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 2,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 9,
+     "reponse": "STREAMING",
+     "definition": "Il a tué le DVD",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 1,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "ORELSAN",
+     "definition": "Le rappeur de Caen",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 4,
+     "dir": "v",
+     "long": 8,
+     "reponse": "SPEEDRUN",
+     "definition": "Finir le jeu le plus vite possible",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 3,
+     "reponse": "NFT",
+     "definition": "L'image hors de prix que tout le monde peut copier",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 4,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ANNE",
+     "definition": "Prénom de la sœur de Barbe-Bleue",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "HIT",
+     "definition": "Le tube de l'été",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 6,
+     "c": 6,
+     "dir": "v",
+     "long": 5,
+     "reponse": "DEBAT",
+     "definition": "A la télé, il tourne vite au clash",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 11,
+     "r": 7,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "RUE",
+     "definition": "Elle descend dans la manif",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 7,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 8,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "GOKU",
+     "definition": "Le Saiyan aux cheveux dorés",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 8,
+     "c": 2,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ONT",
+     "definition": "Avoir, au pluriel",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 7,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 9,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "NBA",
+     "definition": "La ligue au ballon orange",
+     "theme": "sport",
+     "fleche": "droite",
+     "defR": 9,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 10,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ETE",
+     "definition": "La saison des festivals",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 10,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      2,
+      3
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 1,
+     "c": 4,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 5,
+     "c": 6,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 7,
+     "c": 2,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 7,
+     "c": 3,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 8,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 9,
+     "c": 3,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 10,
+     "c": 0,
+     "mots": [
+      12
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 0,
+     "c": 1,
+     "type": "bonus"
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "type": "cadeau"
+    },
+    {
+     "r": 7,
+     "c": 1,
+     "type": "mystere"
+    },
+    {
+     "r": 8,
+     "c": 1,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "#SEISME",
+    "#T#####",
+    "ORELSAN",
+    "#E##P#F",
+    "#ANNE#T",
+    "#M##E##",
+    "HIT#D#D",
+    "#N##RUE",
+    "#GOKU#B",
+    "##N#NBA",
+    "#ETE##T"
+   ]
+  },
+  {
+   "id": "n3-3",
+   "niveau": 3,
+   "titre": "Tête chercheuse",
+   "collection": "campagne",
+   "cols": 7,
+   "rows": 11,
+   "mots": [
+    {
+     "id": 10,
+     "r": 0,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "FIL",
+     "definition": "On le suit sur les réseaux",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 9,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 3,
+     "reponse": "FOU",
+     "definition": "Aux échecs, il avance en diagonale",
+     "theme": "vie",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 3,
+     "r": 0,
+     "c": 6,
+     "dir": "v",
+     "long": 5,
+     "reponse": "HOUSE",
+     "definition": "La musique née dans les clubs de Chicago",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 1,
+     "c": 4,
+     "dir": "v",
+     "long": 8,
+     "reponse": "DEEPFAKE",
+     "definition": "La vidéo truquée qui fait peur",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "BUT",
+     "definition": "Il fait exploser le stade",
+     "theme": "sport",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 2,
+     "dir": "v",
+     "long": 9,
+     "reponse": "TRANSFERT",
+     "definition": "Le mercato en fait son beurre",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 11,
+     "r": 2,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ELU",
+     "definition": "Il a gagné les élections",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 4,
+     "c": 1,
+     "dir": "h",
+     "long": 6,
+     "reponse": "SAMPLE",
+     "definition": "Le bout de morceau qu'on recycle",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "RESPAWN",
+     "definition": "Réapparaître après la mort",
+     "theme": "gaming",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 6,
+     "c": 6,
+     "dir": "v",
+     "long": 4,
+     "reponse": "NOOB",
+     "definition": "Le débutant qui gêne toute l'équipe",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 8,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "ADELE",
+     "definition": "La voix qui fait pleurer les stades",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 7,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 10,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "DATING",
+     "definition": "La drague par application",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 9,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      9,
+      10
+     ]
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 1,
+     "c": 2,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 2,
+     "c": 3,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 5,
+     "c": 6,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 7,
+     "c": 0,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 9,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 0,
+     "c": 6,
+     "type": "mystere"
+    },
+    {
+     "r": 2,
+     "c": 1,
+     "type": "bonus"
+    },
+    {
+     "r": 6,
+     "c": 1,
+     "type": "cadeau"
+    },
+    {
+     "r": 6,
+     "c": 6,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "#FIL##H",
+    "#O##D#O",
+    "BUT#ELU",
+    "##R#E#S",
+    "#SAMPLE",
+    "##N#F##",
+    "RESPAWN",
+    "##F#K#O",
+    "ADELE#O",
+    "##R###B",
+    "DATING#"
+   ]
+  },
+  {
+   "id": "n4-1",
+   "niveau": 4,
+   "titre": "Boss final",
+   "collection": "campagne",
+   "cols": 8,
+   "rows": 12,
+   "mots": [
+    {
+     "id": 3,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 9,
+     "reponse": "POLEMIQUE",
+     "definition": "Elle dure 48 heures sur les réseaux",
+     "theme": "actu",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 0,
+     "c": 5,
+     "dir": "v",
+     "long": 9,
+     "reponse": "PUNCHLINE",
+     "definition": "La phrase qui tue dans un couplet",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 0,
+     "c": 7,
+     "dir": "v",
+     "long": 8,
+     "reponse": "SCANDALE",
+     "definition": "Il éclate toujours un vendredi",
+     "theme": "actu",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 1,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "OUI",
+     "definition": "Réponse qui engage",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 3,
+     "dir": "v",
+     "long": 9,
+     "reponse": "INFLATION",
+     "definition": "Elle vide le caddie",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 1,
+     "c": 5,
+     "dir": "h",
+     "long": 3,
+     "reponse": "UFC",
+     "definition": "La ligue du combat en cage",
+     "theme": "sport",
+     "fleche": "droite",
+     "defR": 1,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 2,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "NON",
+     "definition": "Le mot préféré des enfants de deux ans",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 3,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "BEEF",
+     "definition": "L'embrouille entre deux rappeurs",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 2,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 5,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "GIGA",
+     "definition": "Préfixe qui multiplie par un milliard",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 8,
+     "reponse": "AUDIENCE",
+     "definition": "Le chiffre qui fait trembler les chaînes",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 9,
+     "c": 2,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ONU",
+     "definition": "Elle siège à New York",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 9,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 9,
+     "c": 4,
+     "dir": "v",
+     "long": 3,
+     "reponse": "USE",
+     "definition": "Fatigué par le temps",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 8,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 14,
+     "r": 9,
+     "c": 6,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ANE",
+     "definition": "Champion du monde de l'entêtement",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 8,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 11,
+     "r": 10,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "SON",
+     "definition": "Il est spatialisé dans les nouveaux casques",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 10,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 13,
+     "r": 11,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "PLUIE",
+     "definition": "Elle ruine les festivals",
+     "theme": "vie",
+     "fleche": "bas-droite",
+     "defR": 10,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 0,
+     "c": 6,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 1,
+     "c": 4,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 2,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 2,
+     "c": 2,
+     "mots": [
+      12
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 8,
+     "c": 4,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 8,
+     "c": 6,
+     "mots": [
+      14
+     ]
+    },
+    {
+     "r": 9,
+     "c": 1,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 10,
+     "c": 0,
+     "mots": [
+      13
+     ]
+    },
+    {
+     "r": 10,
+     "c": 3,
+     "mots": [
+      11
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 2,
+     "c": 7,
+     "type": "mystere"
+    },
+    {
+     "r": 7,
+     "c": 2,
+     "type": "cadeau"
+    },
+    {
+     "r": 7,
+     "c": 3,
+     "type": "bonus"
+    },
+    {
+     "r": 10,
+     "c": 6,
+     "type": "bonus"
+    },
+    {
+     "r": 11,
+     "c": 1,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "#P###P#S",
+    "#OUI#UFC",
+    "#L#NON#A",
+    "BEEF#C#N",
+    "#M#L#H#D",
+    "GIGA#L#A",
+    "#Q#T#I#L",
+    "AUDIENCE",
+    "#E#O#E##",
+    "##ONU#A#",
+    "####SON#",
+    "PLUIE#E#"
+   ]
+  },
+  {
+   "id": "n4-2",
+   "niveau": 4,
+   "titre": "Le mur",
+   "collection": "campagne",
+   "cols": 8,
+   "rows": 12,
+   "mots": [
+    {
+     "id": 14,
+     "r": 0,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ELU",
+     "definition": "Il a gagné les élections",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 5,
+     "reponse": "EMOJI",
+     "definition": "Petit dessin qui remplace les mots",
+     "theme": "net",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 10,
+     "r": 0,
+     "c": 6,
+     "dir": "v",
+     "long": 4,
+     "reponse": "ANES",
+     "definition": "Ils sont teigneux, au pluriel",
+     "theme": "vie",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 1,
+     "c": 4,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ANNE",
+     "definition": "Prénom de la sœur de Barbe-Bleue",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 1,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 1,
+     "c": 4,
+     "dir": "v",
+     "long": 4,
+     "reponse": "ARTS",
+     "definition": "Ils sont martiaux, ou premiers",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "VOTER",
+     "definition": "Le devoir du citoyen",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "VIBES",
+     "definition": "L'ambiance, en langage jeune",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 4,
+     "c": 2,
+     "dir": "v",
+     "long": 7,
+     "reponse": "BADBUZZ",
+     "definition": "La communication qui part en vrille",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 4,
+     "c": 7,
+     "dir": "v",
+     "long": 6,
+     "reponse": "OCEANS",
+     "definition": "Ils couvrent 70 pour cent du globe",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 7,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 8,
+     "reponse": "MEDAILLE",
+     "definition": "Elle se mord sur le podium",
+     "theme": "sport",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 4,
+     "r": 6,
+     "c": 0,
+     "dir": "v",
+     "long": 6,
+     "reponse": "MATRIX",
+     "definition": "La pilule rouge ou la bleue",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 3,
+     "r": 6,
+     "c": 5,
+     "dir": "v",
+     "long": 4,
+     "reponse": "LOFT",
+     "definition": "L'ancêtre de la télé-réalité",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 11,
+     "r": 9,
+     "c": 4,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ETES",
+     "definition": "Plusieurs saisons chaudes",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 9,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 9,
+     "c": 4,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ERE",
+     "definition": "Longue période de l'Histoire",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 8,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 15,
+     "r": 9,
+     "c": 6,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ETE",
+     "definition": "La saison des festivals",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 8,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 13,
+     "r": 11,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "MERE",
+     "definition": "Elle a toujours raison",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 11,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      8,
+      14
+     ]
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 1,
+     "c": 3,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 3,
+     "c": 2,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 3,
+     "c": 7,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      1,
+      4
+     ]
+    },
+    {
+     "r": 5,
+     "c": 5,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 8,
+     "c": 4,
+     "mots": [
+      12
+     ]
+    },
+    {
+     "r": 8,
+     "c": 6,
+     "mots": [
+      15
+     ]
+    },
+    {
+     "r": 9,
+     "c": 3,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 11,
+     "c": 2,
+     "mots": [
+      13
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 1,
+     "c": 1,
+     "type": "cadeau"
+    },
+    {
+     "r": 3,
+     "c": 1,
+     "type": "mystere"
+    },
+    {
+     "r": 8,
+     "c": 5,
+     "type": "mystere"
+    },
+    {
+     "r": 9,
+     "c": 6,
+     "type": "bonus"
+    },
+    {
+     "r": 11,
+     "c": 4,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "#ELU##A#",
+    "#M##ANNE",
+    "VOTER#E#",
+    "#J##T#S#",
+    "VIBES##O",
+    "##A####C",
+    "MEDAILLE",
+    "A#B##O#A",
+    "T#U##F#N",
+    "R#Z#ETES",
+    "I#Z#R#T#",
+    "X##MERE#"
+   ]
+  },
+  {
+   "id": "n4-3",
+   "niveau": 4,
+   "titre": "Point de non-retour",
+   "collection": "campagne",
+   "cols": 8,
+   "rows": 12,
+   "mots": [
+    {
+     "id": 11,
+     "r": 0,
+     "c": 5,
+     "dir": "v",
+     "long": 3,
+     "reponse": "CRI",
+     "definition": "Le tableau de Munch",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 1,
+     "c": 1,
+     "dir": "v",
+     "long": 8,
+     "reponse": "FORTNITE",
+     "definition": "Cent joueurs, un seul survivant",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 1,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "TIRS",
+     "definition": "La séance qui décide du match",
+     "theme": "sport",
+     "fleche": "droite",
+     "defR": 1,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 3,
+     "dir": "v",
+     "long": 9,
+     "reponse": "TIKTOKEUR",
+     "definition": "Il danse pour l'algorithme",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 15,
+     "r": 2,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "OUI",
+     "definition": "Réponse qui engage",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 2,
+     "c": 7,
+     "dir": "v",
+     "long": 7,
+     "reponse": "SOLAIRE",
+     "definition": "Le panneau qui pousse sur les toits",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 7,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ETAT",
+     "definition": "Il est de droit, ou d'urgence",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 4,
+     "c": 5,
+     "dir": "v",
+     "long": 5,
+     "reponse": "ANIME",
+     "definition": "Le dessin animé japonais",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 14,
+     "r": 5,
+     "c": 5,
+     "dir": "h",
+     "long": 3,
+     "reponse": "NBA",
+     "definition": "La ligue au ballon orange",
+     "theme": "sport",
+     "fleche": "droite",
+     "defR": 5,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 8,
+     "reponse": "STREAMER",
+     "definition": "Il joue devant des milliers d'inconnus",
+     "theme": "gaming",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 9,
+     "c": 2,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ART",
+     "definition": "Il est contemporain, et souvent incompris",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 9,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 13,
+     "r": 9,
+     "c": 2,
+     "dir": "v",
+     "long": 3,
+     "reponse": "APP",
+     "definition": "On la télécharge en trois secondes",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 8,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 9,
+     "c": 4,
+     "dir": "v",
+     "long": 3,
+     "reponse": "TAG",
+     "definition": "Signature sur un mur",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 8,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 9,
+     "c": 6,
+     "dir": "v",
+     "long": 3,
+     "reponse": "MER",
+     "definition": "Bleue, salée et en danger",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 8,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 16,
+     "r": 10,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "RAP",
+     "definition": "Genre numéro un en France",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 9,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 10,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "AVE",
+     "definition": "Salut, chez les Romains",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 10,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 11,
+     "c": 2,
+     "dir": "h",
+     "long": 3,
+     "reponse": "PSG",
+     "definition": "Le club de la capitale",
+     "theme": "sport",
+     "fleche": "droite",
+     "defR": 11,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 1,
+     "c": 2,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 1,
+     "c": 7,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 2,
+     "c": 0,
+     "mots": [
+      15
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 3,
+     "c": 5,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 5,
+     "c": 4,
+     "mots": [
+      14
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 8,
+     "c": 2,
+     "mots": [
+      13
+     ]
+    },
+    {
+     "r": 8,
+     "c": 4,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 8,
+     "c": 6,
+     "mots": [
+      12
+     ]
+    },
+    {
+     "r": 9,
+     "c": 0,
+     "mots": [
+      16
+     ]
+    },
+    {
+     "r": 9,
+     "c": 1,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 10,
+     "c": 3,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 11,
+     "c": 1,
+     "mots": [
+      9
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 5,
+     "c": 7,
+     "type": "bonus"
+    },
+    {
+     "r": 7,
+     "c": 3,
+     "type": "bonus"
+    },
+    {
+     "r": 7,
+     "c": 6,
+     "type": "mystere"
+    },
+    {
+     "r": 8,
+     "c": 1,
+     "type": "cadeau"
+    },
+    {
+     "r": 10,
+     "c": 0,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "#####C##",
+    "#F#TIRS#",
+    "#OUI#I#S",
+    "#R#K###O",
+    "ETAT#A#L",
+    "#N#O#NBA",
+    "#I#K#I#I",
+    "STREAMER",
+    "#E#U#E#E",
+    "##ART#M#",
+    "RAP#AVE#",
+    "##PSG#R#"
+   ]
+  },
+  {
+   "id": "jour-01",
+   "niveau": 1,
+   "titre": "Défi du jour n°1",
+   "collection": "quotidien",
+   "cols": 6,
+   "rows": 8,
+   "mots": [
+    {
+     "id": 2,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 6,
+     "reponse": "CAMERA",
+     "definition": "Elle tourne",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 0,
+     "c": 3,
+     "dir": "v",
+     "long": 6,
+     "reponse": "PODIUM",
+     "definition": "Trois marches, trois heureux",
+     "theme": "sport",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 1,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ADO",
+     "definition": "Il à toujours raison, surtout à quinze ans",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 5,
+     "dir": "v",
+     "long": 7,
+     "reponse": "JOURNAL",
+     "definition": "Vingt heures pile",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 2,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "DUO",
+     "definition": "Ils chantent à deux",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 3,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "DEFI",
+     "definition": "Il est lancé chaque jour",
+     "theme": "gaming",
+     "fleche": "bas-droite",
+     "defR": 2,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 5,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "BATMAN",
+     "definition": "Le justicier de Gotham",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "SCROLL",
+     "definition": "Le geste qui avale les soirées",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 0,
+     "c": 2,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 2,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 2,
+     "c": 2,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 1,
+     "c": 1,
+     "type": "bonus"
+    },
+    {
+     "r": 4,
+     "c": 1,
+     "type": "cadeau"
+    }
+   ],
+   "solution": [
+    "#C#P##",
+    "#ADO#J",
+    "#M#DUO",
+    "DEFI#U",
+    "#R#U#R",
+    "BATMAN",
+    "#####A",
+    "SCROLL"
+   ]
+  },
+  {
+   "id": "jour-02",
+   "niveau": 2,
+   "titre": "Défi du jour n°2",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 10,
+     "r": 0,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "POP",
+     "definition": "Culture de masse, ou musique",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 3,
+     "reponse": "PRO",
+     "definition": "Il en a fait son métier",
+     "theme": "sport",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 5,
+     "r": 1,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "WEB",
+     "definition": "La toile",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 1,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 1,
+     "c": 6,
+     "dir": "v",
+     "long": 6,
+     "reponse": "BANGER",
+     "definition": "Le morceau qui met le feu",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ROSE",
+     "definition": "Fleur, couleur, et film de Barbie",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 7,
+     "r": 2,
+     "c": 0,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ROC",
+     "definition": "Solide comme lui",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 2,
+     "dir": "v",
+     "long": 7,
+     "reponse": "STORIES",
+     "definition": "Elles s'enchaînent en boucle",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 3,
+     "c": 4,
+     "dir": "v",
+     "long": 6,
+     "reponse": "TEASER",
+     "definition": "Trente secondes pour donner envie",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 5,
+     "c": 1,
+     "dir": "h",
+     "long": 6,
+     "reponse": "ARCADE",
+     "definition": "La salle des bornes de jeu",
+     "theme": "gaming",
+     "fleche": "droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "GREVE",
+     "definition": "Le sport national français",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 8,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "RIZ",
+     "definition": "La base de la moitié de la planète",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      8,
+      10
+     ]
+    },
+    {
+     "r": 0,
+     "c": 6,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      6,
+      7
+     ]
+    },
+    {
+     "r": 1,
+     "c": 2,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 1,
+     "c": 3,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 2,
+     "c": 4,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 8,
+     "c": 3,
+     "mots": [
+      9
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 2,
+     "c": 0,
+     "type": "bonus"
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "type": "mystere"
+    },
+    {
+     "r": 4,
+     "c": 6,
+     "type": "cadeau"
+    }
+   ],
+   "solution": [
+    "#POP###",
+    "#R##WEB",
+    "ROSE##A",
+    "O#T#T#N",
+    "C#O#E#G",
+    "#ARCADE",
+    "##I#S#R",
+    "GREVE##",
+    "##S#RIZ"
+   ]
+  },
+  {
+   "id": "jour-03",
+   "niveau": 3,
+   "titre": "Défi du jour n°3",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 11,
+   "mots": [
+    {
+     "id": 8,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 3,
+     "reponse": "CRI",
+     "definition": "Le tableau de Munch",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 0,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "AIR",
+     "definition": "On le pollue, il se joue aussi",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 6,
+     "r": 0,
+     "c": 3,
+     "dir": "v",
+     "long": 3,
+     "reponse": "AVE",
+     "definition": "Salut, chez les Romains",
+     "theme": "vie",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 4,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "LIVE",
+     "definition": "En direct, sans filet",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 5,
+     "r": 2,
+     "c": 0,
+     "dir": "v",
+     "long": 4,
+     "reponse": "LIKE",
+     "definition": "Le petit cœur qu'on distribue",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 2,
+     "dir": "v",
+     "long": 9,
+     "reponse": "VESTIAIRE",
+     "definition": "Où se disent les vraies choses",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 8,
+     "reponse": "RETRAITE",
+     "definition": "Le sujet qui met la France dans la rue",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 11,
+     "r": 3,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ERE",
+     "definition": "Longue période de l'Histoire",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 3,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 3,
+     "c": 4,
+     "dir": "v",
+     "long": 8,
+     "reponse": "ELECTION",
+     "definition": "Le grand rendez-vous démocratique",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 4,
+     "c": 2,
+     "dir": "h",
+     "long": 3,
+     "reponse": "SEL",
+     "definition": "Il donne du goût, même aux blagues",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "IRA",
+     "definition": "Aller, dans le futur",
+     "theme": "vie",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 7,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "TRI",
+     "definition": "Le geste écolo de la cuisine",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 7,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 9,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "CARBONE",
+     "definition": "On calcule son empreinte",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 8,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 0,
+     "c": 2,
+     "mots": [
+      6,
+      7
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      4,
+      5
+     ]
+    },
+    {
+     "r": 1,
+     "c": 2,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 2,
+     "c": 4,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 3,
+     "c": 3,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 4,
+     "c": 1,
+     "mots": [
+      12
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 7,
+     "c": 3,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 8,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 3,
+     "c": 6,
+     "type": "bonus"
+    },
+    {
+     "r": 6,
+     "c": 2,
+     "type": "cadeau"
+    },
+    {
+     "r": 6,
+     "c": 6,
+     "type": "mystere"
+    },
+    {
+     "r": 7,
+     "c": 4,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "#C#AIR#",
+    "#R#V###",
+    "LIVE##R",
+    "I#E#ERE",
+    "K#SEL#T",
+    "E#T#E#R",
+    "##I#C#A",
+    "IRA#TRI",
+    "##I#I#T",
+    "CARBONE",
+    "##E#N##"
+   ]
+  },
+  {
+   "id": "jour-04",
+   "niveau": 2,
+   "titre": "Défi du jour n°4",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 10,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 3,
+     "reponse": "DUO",
+     "definition": "Ils chantent à deux",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 3,
+     "dir": "v",
+     "long": 3,
+     "reponse": "SMS",
+     "definition": "Message court, réponse encore plus courte",
+     "theme": "net",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 1,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "MUR",
+     "definition": "Celui de Berlin est tombé en 89",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 1,
+     "defC": 2,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 5,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "BOSS",
+     "definition": "Le monstre de fin de niveau",
+     "theme": "gaming",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 7,
+     "r": 2,
+     "c": 0,
+     "dir": "v",
+     "long": 4,
+     "reponse": "BLEU",
+     "definition": "La couleur du maillot des Bleus",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 2,
+     "r": 2,
+     "c": 2,
+     "dir": "v",
+     "long": 5,
+     "reponse": "SNAKE",
+     "definition": "Le jeu du Nokia 3310",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 7,
+     "reponse": "SONDAGE",
+     "definition": "Il se trompe une fois sur deux",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 3,
+     "c": 4,
+     "dir": "v",
+     "long": 6,
+     "reponse": "PIXELS",
+     "definition": "Ils composent l'image",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 4,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "ALIEN",
+     "definition": "Dans l'espace, personne ne l'entend crier",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 6,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "MEME",
+     "definition": "Image virale qu'on ne peut plus s'enlever de la tête",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 8,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "SETS",
+     "definition": "Ils s'enchaînent à Roland-Garros",
+     "theme": "sport",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 0,
+     "c": 2,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      5,
+      7
+     ]
+    },
+    {
+     "r": 1,
+     "c": 2,
+     "mots": [
+      2,
+      9
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 2,
+     "c": 4,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 4,
+     "c": 1,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 8,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 2,
+     "c": 2,
+     "type": "bonus"
+    },
+    {
+     "r": 2,
+     "c": 6,
+     "type": "cadeau"
+    },
+    {
+     "r": 6,
+     "c": 1,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "#D#S###",
+    "#U#MUR#",
+    "BOSS##S",
+    "L#N#P#O",
+    "E#ALIEN",
+    "U#K#X#D",
+    "#MEME#A",
+    "####L#G",
+    "#SETS#E"
+   ]
+  },
+  {
+   "id": "jour-05",
+   "niveau": 4,
+   "titre": "Défi du jour n°5",
+   "collection": "quotidien",
+   "cols": 8,
+   "rows": 12,
+   "mots": [
+    {
+     "id": 9,
+     "r": 0,
+     "c": 2,
+     "dir": "v",
+     "long": 4,
+     "reponse": "KPOP",
+     "definition": "La pop coréenne qui remplit les stades",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 13,
+     "r": 0,
+     "c": 4,
+     "dir": "v",
+     "long": 4,
+     "reponse": "ALGO",
+     "definition": "Il décide de ce que tu regardes ce soir",
+     "theme": "net",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 6,
+     "dir": "v",
+     "long": 4,
+     "reponse": "CLIP",
+     "definition": "Trois minutes de vidéo musicale",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "CAP",
+     "definition": "Le franchir, ou le mettre au sud",
+     "theme": "vie",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 14,
+     "r": 1,
+     "c": 0,
+     "dir": "v",
+     "long": 3,
+     "reponse": "CLE",
+     "definition": "Elle ouvre les portes, ou se branche en USB",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 10,
+     "r": 1,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "LOL",
+     "definition": "Le rire d'internet, version 2005",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 1,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 3,
+     "c": 2,
+     "dir": "h",
+     "long": 6,
+     "reponse": "PROMPT",
+     "definition": "Ce qu'on tape pour parler à une IA",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 3,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 3,
+     "c": 3,
+     "dir": "v",
+     "long": 8,
+     "reponse": "RECYCLER",
+     "definition": "Donner une deuxième vie",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 3,
+     "c": 5,
+     "dir": "v",
+     "long": 7,
+     "reponse": "MAILLOT",
+     "definition": "Il est jaune sur le Tour",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 3,
+     "c": 7,
+     "dir": "v",
+     "long": 9,
+     "reponse": "TELEPHONE",
+     "definition": "On le regarde 150 fois par jour",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 7,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 11,
+     "r": 5,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "CLIC",
+     "definition": "Un geste, une commande",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 5,
+     "c": 1,
+     "dir": "v",
+     "long": 4,
+     "reponse": "LUXE",
+     "definition": "Le secteur qui ignore la crise",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 4,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 8,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "REEL",
+     "definition": "Le format vertical qui a tué la photo",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 7,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 10,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "UBER",
+     "definition": "Il à donne son nom à un verbe",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 9,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 11,
+     "c": 4,
+     "dir": "h",
+     "long": 4,
+     "reponse": "WOKE",
+     "definition": "Adjectif devenu champ de bataille politique",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 11,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      12,
+      14
+     ]
+    },
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      13
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 1,
+     "c": 3,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 2,
+     "c": 3,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 2,
+     "c": 5,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 2,
+     "c": 7,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 3,
+     "c": 1,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 4,
+     "c": 1,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 7,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 9,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 11,
+     "c": 3,
+     "mots": [
+      3
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 1,
+     "c": 4,
+     "type": "bonus"
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "type": "bonus"
+    },
+    {
+     "r": 2,
+     "c": 4,
+     "type": "mystere"
+    },
+    {
+     "r": 4,
+     "c": 7,
+     "type": "cadeau"
+    },
+    {
+     "r": 8,
+     "c": 7,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "##K#A#C#",
+    "CAP#LOL#",
+    "L#O#G#I#",
+    "E#PROMPT",
+    "###E#A#E",
+    "CLIC#I#L",
+    "#U#Y#L#E",
+    "#X#C#L#P",
+    "REEL#O#H",
+    "###E#T#O",
+    "UBER###N",
+    "####WOKE"
+   ]
+  },
+  {
+   "id": "jour-06",
+   "niveau": 3,
+   "titre": "Défi du jour n°6",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 11,
+   "mots": [
+    {
+     "id": 11,
+     "r": 0,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "BAL",
+     "definition": "La soirée dansante du 14 juillet",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 7,
+     "r": 0,
+     "c": 4,
+     "dir": "v",
+     "long": 3,
+     "reponse": "BOT",
+     "definition": "Robot de conversation",
+     "theme": "net",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 6,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "FEU",
+     "definition": "Rouge, il arrête tout le monde",
+     "theme": "vie",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 1,
+     "c": 1,
+     "dir": "v",
+     "long": 7,
+     "reponse": "ENQUETE",
+     "definition": "Elle est ouverte",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 2,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ITEM",
+     "definition": "L'objet à ramasser dans le jeu",
+     "theme": "gaming",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 3,
+     "dir": "v",
+     "long": 5,
+     "reponse": "INFOX",
+     "definition": "Fausse nouvelle, en bon français",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 4,
+     "reponse": "META",
+     "definition": "Le nouveau nom de Facebook",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "LUFFY",
+     "definition": "Le pirate au chapeau de paille",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 6,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "TAXE",
+     "definition": "Ce que personne n'aime payer",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 6,
+     "c": 4,
+     "dir": "v",
+     "long": 4,
+     "reponse": "ETAT",
+     "definition": "Il est de droit, ou d'urgence",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 7,
+     "c": 6,
+     "dir": "v",
+     "long": 4,
+     "reponse": "PERE",
+     "definition": "Il fait des blagues nulles",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 6,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 13,
+     "r": 8,
+     "c": 2,
+     "dir": "v",
+     "long": 3,
+     "reponse": "BUG",
+     "definition": "Le cauchemar du développeur",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 7,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 8,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "AVE",
+     "definition": "Salut, chez les Romains",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 9,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "NUIT",
+     "definition": "La blanche empêche de dormir",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 9,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      7,
+      11
+     ]
+    },
+    {
+     "r": 1,
+     "c": 3,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 2,
+     "c": 2,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 5,
+     "c": 4,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 6,
+     "c": 6,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 7,
+     "c": 2,
+     "mots": [
+      13
+     ]
+    },
+    {
+     "r": 8,
+     "c": 3,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 9,
+     "c": 0,
+     "mots": [
+      12
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 0,
+     "c": 4,
+     "type": "bonus"
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "type": "cadeau"
+    },
+    {
+     "r": 5,
+     "c": 1,
+     "type": "mystere"
+    },
+    {
+     "r": 9,
+     "c": 4,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "####BAL",
+    "FEU#O##",
+    "#N#ITEM",
+    "#Q#N##E",
+    "LUFFY#T",
+    "#E#O##A",
+    "#TAXE##",
+    "#E##T#P",
+    "##B#AVE",
+    "#NUIT#R",
+    "##G###E"
+   ]
+  },
+  {
+   "id": "jour-07",
+   "niveau": 2,
+   "titre": "Défi du jour n°7",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 3,
+     "r": 0,
+     "c": 2,
+     "dir": "v",
+     "long": 5,
+     "reponse": "PIXEL",
+     "definition": "Le plus petit carré de l'écran",
+     "theme": "net",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 0,
+     "c": 4,
+     "dir": "v",
+     "long": 3,
+     "reponse": "NEZ",
+     "definition": "Il pousse quand on ment",
+     "theme": "vie",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "NEIGE",
+     "definition": "Elle manque de plus en plus en montagne",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 6,
+     "r": 1,
+     "c": 0,
+     "dir": "v",
+     "long": 4,
+     "reponse": "NIER",
+     "definition": "Tout démentir en bloc",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 6,
+     "dir": "v",
+     "long": 8,
+     "reponse": "AVENGERS",
+     "definition": "Ils se rassemblent contre Thanos",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 4,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "LUPIN",
+     "definition": "Le gentleman cambrioleur d'Assane Diop",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "PARTAGE",
+     "definition": "Le bouton qui propage tout",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 6,
+     "c": 2,
+     "dir": "v",
+     "long": 3,
+     "reponse": "RUE",
+     "definition": "Elle descend dans la manif",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 6,
+     "c": 4,
+     "dir": "v",
+     "long": 3,
+     "reponse": "AIR",
+     "definition": "On le pollue, il se joue aussi",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 8,
+     "c": 1,
+     "dir": "h",
+     "long": 6,
+     "reponse": "TETRIS",
+     "definition": "Le jeu des briques qui tombent",
+     "theme": "gaming",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      4,
+      6
+     ]
+    },
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 0,
+     "c": 6,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 4,
+     "c": 1,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 5,
+     "c": 2,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 5,
+     "c": 4,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 8,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 4,
+     "c": 0,
+     "type": "cadeau"
+    },
+    {
+     "r": 8,
+     "c": 2,
+     "type": "bonus"
+    },
+    {
+     "r": 8,
+     "c": 3,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "##P#N##",
+    "NEIGE#A",
+    "I#X#Z#V",
+    "E#E###E",
+    "R#LUPIN",
+    "######G",
+    "PARTAGE",
+    "##U#I#R",
+    "#TETRIS"
+   ]
+  },
+  {
+   "id": "jour-08",
+   "niveau": 1,
+   "titre": "Défi du jour n°8",
+   "collection": "quotidien",
+   "cols": 6,
+   "rows": 8,
+   "mots": [
+    {
+     "id": 4,
+     "r": 0,
+     "c": 3,
+     "dir": "v",
+     "long": 4,
+     "reponse": "GOLF",
+     "definition": "Sport à petites balles",
+     "theme": "sport",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 0,
+     "c": 5,
+     "dir": "v",
+     "long": 6,
+     "reponse": "ACTEUR",
+     "definition": "Il joue les autres",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "VELO",
+     "definition": "Il a envahi les villes",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 1,
+     "dir": "v",
+     "long": 7,
+     "reponse": "ENERGIE",
+     "definition": "La moins chère est celle qu'on ne consomme pas",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 3,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "SELFIE",
+     "definition": "La photo de soi, par soi",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 2,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 5,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "SUR",
+     "definition": "Certain, ou posé dessus",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 5,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 5,
+     "c": 3,
+     "dir": "v",
+     "long": 3,
+     "reponse": "SON",
+     "definition": "Il est spatialisé dans les nouveaux casques",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 4,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "TENNIS",
+     "definition": "Il se joue en sets",
+     "theme": "sport",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 0,
+     "c": 2,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 2,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 4,
+     "c": 3,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 5,
+     "c": 2,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      3
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 1,
+     "c": 3,
+     "type": "bonus"
+    },
+    {
+     "r": 2,
+     "c": 1,
+     "type": "cadeau"
+    }
+   ],
+   "solution": [
+    "###G#A",
+    "VELO#C",
+    "#N#L#T",
+    "SELFIE",
+    "#R###U",
+    "#G#SUR",
+    "#I#O##",
+    "TENNIS"
+   ]
+  },
+  {
+   "id": "jour-09",
+   "niveau": 2,
+   "titre": "Défi du jour n°9",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 12,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 3,
+     "reponse": "VIF",
+     "definition": "Rapide et piquant",
+     "theme": "vie",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 10,
+     "r": 0,
+     "c": 3,
+     "dir": "v",
+     "long": 3,
+     "reponse": "SMS",
+     "definition": "Message court, réponse encore plus courte",
+     "theme": "net",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 0,
+     "c": 5,
+     "dir": "v",
+     "long": 3,
+     "reponse": "TAG",
+     "definition": "Signature sur un mur",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 11,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "FILM",
+     "definition": "Deux heures dans le noir",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 4,
+     "r": 2,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "SAGA",
+     "definition": "Série de films qui n'en finit plus",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 2,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 3,
+     "r": 2,
+     "c": 4,
+     "dir": "v",
+     "long": 7,
+     "reponse": "ARBITRE",
+     "definition": "Personne ne l'aime, tout le monde le siffle",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 7,
+     "reponse": "ASTERIX",
+     "definition": "Le Gaulois à la potion magique",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 3,
+     "c": 2,
+     "dir": "v",
+     "long": 6,
+     "reponse": "REPLAY",
+     "definition": "Le match, une deuxième fois",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 6,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "VIE",
+     "definition": "Elle est belle, paraît-il",
+     "theme": "vie",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 5,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "PRIME",
+     "definition": "L'horaire où tout se joue",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 5,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "VOL",
+     "definition": "Il décolle, ou il dérobe",
+     "theme": "vie",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 7,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ROI",
+     "definition": "Il porte la couronne",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 7,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 8,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "HYPE",
+     "definition": "L'attente insoutenable avant la sortie",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      11,
+      12
+     ]
+    },
+    {
+     "r": 0,
+     "c": 2,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 1,
+     "c": 4,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 2,
+     "c": 2,
+     "mots": [
+      0,
+      4
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 5,
+     "c": 1,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 7,
+     "c": 3,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 8,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 3,
+     "c": 2,
+     "type": "cadeau"
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "type": "mystere"
+    },
+    {
+     "r": 8,
+     "c": 2,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "#V#S#T#",
+    "FILM#A#",
+    "#F#SAGA",
+    "##R#R#S",
+    "VIE#B#T",
+    "##PRIME",
+    "VOL#T#R",
+    "##A#ROI",
+    "#HYPE#X"
+   ]
+  },
+  {
+   "id": "jour-10",
+   "niveau": 3,
+   "titre": "Défi du jour n°10",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 11,
+   "mots": [
+    {
+     "id": 11,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 3,
+     "reponse": "NBA",
+     "definition": "La ligue au ballon orange",
+     "theme": "sport",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ALGO",
+     "definition": "Il décide de ce que tu regardes ce soir",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 7,
+     "r": 0,
+     "c": 3,
+     "dir": "v",
+     "long": 3,
+     "reponse": "AVE",
+     "definition": "Salut, chez les Romains",
+     "theme": "vie",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 5,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "TAPE",
+     "definition": "Il frappe sur le clavier",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 2,
+     "c": 2,
+     "dir": "v",
+     "long": 9,
+     "reponse": "PUNCHLINE",
+     "definition": "La phrase qui tue dans un couplet",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ETE",
+     "definition": "La saison des festivals",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 3,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "BUT",
+     "definition": "Il fait exploser le stade",
+     "theme": "sport",
+     "fleche": "droite",
+     "defR": 3,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 3,
+     "c": 4,
+     "dir": "v",
+     "long": 8,
+     "reponse": "BATTERIE",
+     "definition": "A 3 pour cent, c'est la panique",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "MANGA",
+     "definition": "La BD qui se lit à l'envers",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 6,
+     "r": 4,
+     "c": 0,
+     "dir": "v",
+     "long": 6,
+     "reponse": "MATRIX",
+     "definition": "La pilule rouge ou la bleue",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 1,
+     "r": 6,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "HATER",
+     "definition": "Il commente pour détruire",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 6,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 6,
+     "c": 6,
+     "dir": "v",
+     "long": 5,
+     "reponse": "REMIX",
+     "definition": "La même chanson, en plus rapide",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 10,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "TETE",
+     "definition": "Elle est bien faite, paraît-il",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 10,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 0,
+     "c": 2,
+     "mots": [
+      7,
+      8
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 1,
+     "c": 2,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      12
+     ]
+    },
+    {
+     "r": 2,
+     "c": 4,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      4,
+      6
+     ]
+    },
+    {
+     "r": 3,
+     "c": 3,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 5,
+     "c": 6,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 6,
+     "c": 1,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 10,
+     "c": 0,
+     "mots": [
+      9
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 4,
+     "c": 2,
+     "type": "bonus"
+    },
+    {
+     "r": 5,
+     "c": 2,
+     "type": "mystere"
+    },
+    {
+     "r": 10,
+     "c": 2,
+     "type": "bonus"
+    },
+    {
+     "r": 10,
+     "c": 3,
+     "type": "cadeau"
+    }
+   ],
+   "solution": [
+    "#N#ALGO",
+    "#B#V###",
+    "TAPE##E",
+    "##U#BUT",
+    "MANGA#E",
+    "A#C#T##",
+    "T#HATER",
+    "R#L#E#E",
+    "I#I#R#M",
+    "X#N#I#I",
+    "#TETE#X"
+   ]
+  },
+  {
+   "id": "jour-11",
+   "niveau": 2,
+   "titre": "Défi du jour n°11",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 5,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 5,
+     "reponse": "VIRAL",
+     "definition": "Ce que tout le monde rêve de devenir",
+     "theme": "net",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 0,
+     "c": 5,
+     "dir": "v",
+     "long": 3,
+     "reponse": "TOC",
+     "definition": "Il frappe à la porte",
+     "theme": "vie",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 3,
+     "dir": "v",
+     "long": 8,
+     "reponse": "TENDANCE",
+     "definition": "Elle dure trois jours",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "URGENCE",
+     "definition": "Elle est climatique ou hospitalière",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 5,
+     "reponse": "ELIRE",
+     "definition": "Choisir par les urnes",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 4,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "DEFI",
+     "definition": "Il est lancé chaque jour",
+     "theme": "gaming",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "PLANETE",
+     "definition": "Elle chauffe un peu trop",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 8,
+     "r": 6,
+     "c": 0,
+     "dir": "v",
+     "long": 3,
+     "reponse": "POP",
+     "definition": "Culture de masse, ou musique",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 9,
+     "r": 6,
+     "c": 5,
+     "dir": "v",
+     "long": 3,
+     "reponse": "TRI",
+     "definition": "Le geste écolo de la cuisine",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 8,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "MEDIA",
+     "definition": "Il informe et il agace",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 4,
+     "c": 2,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      2,
+      8
+     ]
+    },
+    {
+     "r": 5,
+     "c": 5,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 8,
+     "c": 1,
+     "mots": [
+      4
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 0,
+     "c": 1,
+     "type": "cadeau"
+    },
+    {
+     "r": 2,
+     "c": 4,
+     "type": "mystere"
+    },
+    {
+     "r": 4,
+     "c": 3,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "#V###T#",
+    "#I#T#O#",
+    "URGENCE",
+    "#A#N##L",
+    "#L#DEFI",
+    "###A##R",
+    "PLANETE",
+    "O##C#R#",
+    "P#MEDIA"
+   ]
+  },
+  {
+   "id": "jour-12",
+   "niveau": 4,
+   "titre": "Défi du jour n°12",
+   "collection": "quotidien",
+   "cols": 8,
+   "rows": 12,
+   "mots": [
+    {
+     "id": 11,
+     "r": 0,
+     "c": 3,
+     "dir": "v",
+     "long": 3,
+     "reponse": "JEU",
+     "definition": "Vidéo, ou de société",
+     "theme": "gaming",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 13,
+     "r": 0,
+     "c": 5,
+     "dir": "v",
+     "long": 4,
+     "reponse": "IKEA",
+     "definition": "Le labyrinthe suédois du samedi",
+     "theme": "vie",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 15,
+     "r": 0,
+     "c": 7,
+     "dir": "v",
+     "long": 4,
+     "reponse": "ROSE",
+     "definition": "Fleur, couleur, et film de Barbie",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "AILE",
+     "definition": "Il joue sur celle-ci, au foot",
+     "theme": "sport",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 1,
+     "dir": "v",
+     "long": 11,
+     "reponse": "INFLUENCEUR",
+     "definition": "Son métier tient dans un téléphone",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 2,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "USE",
+     "definition": "Fatigué par le temps",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 14,
+     "r": 3,
+     "c": 5,
+     "dir": "h",
+     "long": 3,
+     "reponse": "AGE",
+     "definition": "On le demande rarement poliment",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 3,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "CLASH",
+     "definition": "Embrouille publique entre deux egos",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 4,
+     "c": 3,
+     "dir": "v",
+     "long": 8,
+     "reponse": "SPEEDRUN",
+     "definition": "Finir le jeu le plus vite possible",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 5,
+     "c": 5,
+     "dir": "v",
+     "long": 4,
+     "reponse": "GOAT",
+     "definition": "Le meilleur de tous les temps, en abrégé",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 4,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 6,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "EMOI",
+     "definition": "Trouble et agitation",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 6,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ANNE",
+     "definition": "Prénom de la sœur de Barbe-Bleue",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 8,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "DATA",
+     "definition": "Le pétrole du XXIe siècle",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 8,
+     "c": 6,
+     "dir": "v",
+     "long": 3,
+     "reponse": "AIR",
+     "definition": "On le pollue, il se joue aussi",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 7,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 9,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "PEUR",
+     "definition": "Le moteur du film d'horreur",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 8,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 10,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "USER",
+     "definition": "L'utilisateur, en anglais",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 10,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 0,
+     "c": 2,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "mots": [
+      13
+     ]
+    },
+    {
+     "r": 0,
+     "c": 6,
+     "mots": [
+      15
+     ]
+    },
+    {
+     "r": 2,
+     "c": 2,
+     "mots": [
+      12
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 3,
+     "c": 3,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 3,
+     "c": 4,
+     "mots": [
+      14
+     ]
+    },
+    {
+     "r": 4,
+     "c": 5,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 6,
+     "c": 2,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 7,
+     "c": 6,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 8,
+     "c": 0,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 8,
+     "c": 2,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 10,
+     "c": 2,
+     "mots": [
+      7
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 0,
+     "c": 3,
+     "type": "mystere"
+    },
+    {
+     "r": 0,
+     "c": 7,
+     "type": "mystere"
+    },
+    {
+     "r": 1,
+     "c": 7,
+     "type": "cadeau"
+    },
+    {
+     "r": 4,
+     "c": 3,
+     "type": "bonus"
+    },
+    {
+     "r": 9,
+     "c": 1,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "###J#I#R",
+    "AILE#K#O",
+    "#N#USE#S",
+    "#F###AGE",
+    "CLASH###",
+    "#U#P#G##",
+    "#E#EMOI#",
+    "ANNE#A##",
+    "#C#DATA#",
+    "PEUR##I#",
+    "#U#USER#",
+    "#R#N####"
+   ]
+  },
+  {
+   "id": "jour-13",
+   "niveau": 3,
+   "titre": "Défi du jour n°13",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 11,
+   "mots": [
+    {
+     "id": 11,
+     "r": 0,
+     "c": 2,
+     "dir": "v",
+     "long": 3,
+     "reponse": "FAN",
+     "definition": "Il connaît toutes les paroles",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 0,
+     "c": 4,
+     "dir": "v",
+     "long": 3,
+     "reponse": "IRA",
+     "definition": "Aller, dans le futur",
+     "theme": "vie",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 6,
+     "dir": "v",
+     "long": 3,
+     "reponse": "SKI",
+     "definition": "Sport de descente",
+     "theme": "sport",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 1,
+     "c": 2,
+     "dir": "h",
+     "long": 3,
+     "reponse": "AIR",
+     "definition": "On le pollue, il se joue aussi",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 1,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 2,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "AMI",
+     "definition": "Le contraire d'un ennemi",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 3,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 5,
+     "dir": "v",
+     "long": 8,
+     "reponse": "MARATHON",
+     "definition": "42 kilomètres et des poussières",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 3,
+     "c": 1,
+     "dir": "v",
+     "long": 7,
+     "reponse": "PENALTY",
+     "definition": "Onze mètres et beaucoup de pression",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 3,
+     "c": 3,
+     "dir": "v",
+     "long": 8,
+     "reponse": "TOURNAGE",
+     "definition": "Silence, on tourne",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 1,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "MEMOIRE",
+     "definition": "Vive, ou de poisson rouge",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 6,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "RATE",
+     "definition": "Il a échoué, ou c'est un organe",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 6,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ELON",
+     "definition": "Le prénom du patron de X",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 8,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ADO",
+     "definition": "Il à toujours raison, surtout à quinze ans",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 10,
+     "c": 2,
+     "dir": "h",
+     "long": 3,
+     "reponse": "MER",
+     "definition": "Bleue, salée et en danger",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 10,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 1,
+     "c": 1,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 1,
+     "c": 5,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 2,
+     "c": 1,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 2,
+     "c": 3,
+     "mots": [
+      2,
+      6
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 6,
+     "c": 2,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 8,
+     "c": 2,
+     "mots": [
+      12
+     ]
+    },
+    {
+     "r": 10,
+     "c": 1,
+     "mots": [
+      10
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 1,
+     "c": 3,
+     "type": "cadeau"
+    },
+    {
+     "r": 1,
+     "c": 4,
+     "type": "bonus"
+    },
+    {
+     "r": 2,
+     "c": 5,
+     "type": "bonus"
+    },
+    {
+     "r": 4,
+     "c": 2,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "##F#I#S",
+    "##AIR#K",
+    "##N#AMI",
+    "#P#T#A#",
+    "MEMOIRE",
+    "#N#U#A#",
+    "#A#RATE",
+    "ELON#H#",
+    "#T#ADO#",
+    "#Y#G#N#",
+    "##MER##"
+   ]
+  },
+  {
+   "id": "jour-14",
+   "niveau": 2,
+   "titre": "Défi du jour n°14",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 8,
+     "r": 0,
+     "c": 2,
+     "dir": "h",
+     "long": 3,
+     "reponse": "SON",
+     "definition": "Il est spatialisé dans les nouveaux casques",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 5,
+     "r": 0,
+     "c": 2,
+     "dir": "v",
+     "long": 4,
+     "reponse": "SWAG",
+     "definition": "Classe et assurance, version 2012",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 4,
+     "r": 0,
+     "c": 6,
+     "dir": "v",
+     "long": 4,
+     "reponse": "LOOT",
+     "definition": "Le butin ramasse après le combat",
+     "theme": "gaming",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "NBA",
+     "definition": "La ligue au ballon orange",
+     "theme": "sport",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 4,
+     "dir": "v",
+     "long": 5,
+     "reponse": "FOULE",
+     "definition": "Elle est en délire",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 3,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "GHOST",
+     "definition": "Disparaître sans explication",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 3,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 3,
+     "r": 4,
+     "c": 1,
+     "dir": "v",
+     "long": 4,
+     "reponse": "ZONE",
+     "definition": "À défendre, ou à éviter",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 1,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 2,
+     "r": 5,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "COUPLET",
+     "definition": "Il précède le refrain",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 5,
+     "c": 6,
+     "dir": "v",
+     "long": 4,
+     "reponse": "THOR",
+     "definition": "Le dieu au marteau chez Marvel",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 4,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "JEU",
+     "definition": "Vidéo, ou de société",
+     "theme": "gaming",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 8,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "SOIR",
+     "definition": "Le moment du scroll infini",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      5,
+      8
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 1,
+     "c": 4,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 3,
+     "c": 1,
+     "mots": [
+      1,
+      3
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 4,
+     "c": 6,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 8,
+     "c": 2,
+     "mots": [
+      7
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 0,
+     "c": 3,
+     "type": "cadeau"
+    },
+    {
+     "r": 3,
+     "c": 6,
+     "type": "bonus"
+    },
+    {
+     "r": 6,
+     "c": 1,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "##SON#L",
+    "##W###O",
+    "NBA#F#O",
+    "##GHOST",
+    "#Z##U##",
+    "COUPLET",
+    "#N##E#H",
+    "JEU###O",
+    "###SOIR"
+   ]
+  },
+  {
+   "id": "jour-15",
+   "niveau": 1,
+   "titre": "Défi du jour n°15",
+   "collection": "quotidien",
+   "cols": 6,
+   "rows": 8,
+   "mots": [
+    {
+     "id": 4,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "SMIC",
+     "definition": "Le salaire plancher",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 1,
+     "c": 3,
+     "dir": "v",
+     "long": 7,
+     "reponse": "CASTING",
+     "definition": "L'étape avant le premier rôle",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 5,
+     "dir": "v",
+     "long": 7,
+     "reponse": "SPOILER",
+     "definition": "L'ami qui raconte la fin",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 2,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "APP",
+     "definition": "On la télécharge en trois secondes",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 3,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ETES",
+     "definition": "Plusieurs saisons chaudes",
+     "theme": "vie",
+     "fleche": "bas-droite",
+     "defR": 2,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 3,
+     "c": 1,
+     "dir": "v",
+     "long": 5,
+     "reponse": "TITRE",
+     "definition": "Il fait la une",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 4,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "TRI",
+     "definition": "Le geste écolo de la cuisine",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 6,
+     "reponse": "FRANCE",
+     "definition": "L'Hexagone",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 2,
+     "c": 0,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 2,
+     "c": 1,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 2,
+     "c": 2,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 4,
+     "c": 2,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 3,
+     "c": 2,
+     "type": "cadeau"
+    },
+    {
+     "r": 6,
+     "c": 5,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "######",
+    "SMIC#S",
+    "###APP",
+    "ETES#O",
+    "#I#TRI",
+    "#T#I#L",
+    "FRANCE",
+    "#E#G#R"
+   ]
+  },
+  {
+   "id": "jour-16",
+   "niveau": 2,
+   "titre": "Défi du jour n°16",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 10,
+     "r": 0,
+     "c": 2,
+     "dir": "v",
+     "long": 3,
+     "reponse": "LOL",
+     "definition": "Le rire d'internet, version 2005",
+     "theme": "net",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "CRI",
+     "definition": "Le tableau de Munch",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 2,
+     "r": 0,
+     "c": 4,
+     "dir": "v",
+     "long": 6,
+     "reponse": "COURSE",
+     "definition": "Contre la montre",
+     "theme": "sport",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 1,
+     "r": 2,
+     "c": 1,
+     "dir": "h",
+     "long": 5,
+     "reponse": "CLOUD",
+     "definition": "Le nuage où dorment tes photos",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 1,
+     "dir": "v",
+     "long": 5,
+     "reponse": "COMBO",
+     "definition": "L'enchaînement qui fait mal",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 3,
+     "c": 6,
+     "dir": "v",
+     "long": 4,
+     "reponse": "SEUL",
+     "definition": "Sans personne autour",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 2,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 4,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "MARS",
+     "definition": "La planète rouge",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 5,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ELU",
+     "definition": "Il a gagné les élections",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 5,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 4,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "TOUR",
+     "definition": "Il fait le tour de la France en juillet",
+     "theme": "sport",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 11,
+     "r": 6,
+     "c": 0,
+     "dir": "v",
+     "long": 3,
+     "reponse": "TAG",
+     "definition": "Signature sur un mur",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 7,
+     "r": 6,
+     "c": 3,
+     "dir": "v",
+     "long": 3,
+     "reponse": "RAP",
+     "definition": "Genre numéro un en France",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 3,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 9,
+     "r": 8,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "PLUS",
+     "definition": "Le signe de l'addition",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      2,
+      8
+     ]
+    },
+    {
+     "r": 1,
+     "c": 1,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 2,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 2,
+     "c": 6,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      4,
+      11
+     ]
+    },
+    {
+     "r": 5,
+     "c": 3,
+     "mots": [
+      5,
+      7
+     ]
+    },
+    {
+     "r": 8,
+     "c": 2,
+     "mots": [
+      9
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 1,
+     "c": 4,
+     "type": "cadeau"
+    },
+    {
+     "r": 2,
+     "c": 2,
+     "type": "bonus"
+    },
+    {
+     "r": 4,
+     "c": 6,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "##L#CRI",
+    "##O#O##",
+    "#CLOUD#",
+    "#O##R#S",
+    "#MARS#E",
+    "#B##ELU",
+    "TOUR##L",
+    "A##A###",
+    "G##PLUS"
+   ]
+  },
+  {
+   "id": "jour-17",
+   "niveau": 3,
+   "titre": "Défi du jour n°17",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 11,
+   "mots": [
+    {
+     "id": 7,
+     "r": 0,
+     "c": 4,
+     "dir": "v",
+     "long": 3,
+     "reponse": "NBA",
+     "definition": "La ligue au ballon orange",
+     "theme": "sport",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 0,
+     "c": 6,
+     "dir": "v",
+     "long": 8,
+     "reponse": "STREAMER",
+     "definition": "Il joue devant des milliers d'inconnus",
+     "theme": "gaming",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 1,
+     "c": 2,
+     "dir": "v",
+     "long": 8,
+     "reponse": "FORTNITE",
+     "definition": "Cent joueurs, un seul survivant",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 12,
+     "r": 1,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "BOT",
+     "definition": "Robot de conversation",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 1,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 2,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "YODA",
+     "definition": "Petit, vert et sage il est",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 4,
+     "c": 0,
+     "dir": "h",
+     "long": 5,
+     "reponse": "MATCH",
+     "definition": "Quatre-vingt-dix minutes de tension",
+     "theme": "sport",
+     "fleche": "bas-droite",
+     "defR": 3,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 4,
+     "c": 4,
+     "dir": "v",
+     "long": 5,
+     "reponse": "HOUSE",
+     "definition": "La musique née dans les clubs de Chicago",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "TRIBUNE",
+     "definition": "Elle chante debout",
+     "theme": "sport",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 5,
+     "r": 6,
+     "c": 0,
+     "dir": "v",
+     "long": 4,
+     "reponse": "TIRS",
+     "definition": "La séance qui décide du match",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 8,
+     "r": 8,
+     "c": 2,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ERES",
+     "definition": "Longues périodes, au pluriel",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 8,
+     "c": 3,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ROC",
+     "definition": "Solide comme lui",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 7,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 11,
+     "r": 8,
+     "c": 5,
+     "dir": "v",
+     "long": 3,
+     "reponse": "SON",
+     "definition": "Il est spatialisé dans les nouveaux casques",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 7,
+     "defC": 5,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 10,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "UFC",
+     "definition": "La ligue du combat en cage",
+     "theme": "sport",
+     "fleche": "droite",
+     "defR": 10,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 2,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 0,
+     "c": 5,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 1,
+     "c": 3,
+     "mots": [
+      12
+     ]
+    },
+    {
+     "r": 2,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 3,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 3,
+     "c": 4,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      1,
+      5
+     ]
+    },
+    {
+     "r": 7,
+     "c": 3,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 7,
+     "c": 5,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 8,
+     "c": 1,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 10,
+     "c": 0,
+     "mots": [
+      10
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 2,
+     "c": 6,
+     "type": "mystere"
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "type": "cadeau"
+    },
+    {
+     "r": 6,
+     "c": 2,
+     "type": "bonus"
+    },
+    {
+     "r": 10,
+     "c": 3,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "####N#S",
+    "##F#BOT",
+    "#YODA#R",
+    "##R###E",
+    "MATCH#A",
+    "##N#O#M",
+    "TRIBUNE",
+    "I#T#S#R",
+    "R#ERES#",
+    "S##O#O#",
+    "#UFC#N#"
+   ]
+  },
+  {
+   "id": "jour-18",
+   "niveau": 2,
+   "titre": "Défi du jour n°18",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 5,
+     "r": 0,
+     "c": 2,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ALGO",
+     "definition": "Il décide de ce que tu regardes ce soir",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 2,
+     "r": 0,
+     "c": 2,
+     "dir": "v",
+     "long": 8,
+     "reponse": "AUDIENCE",
+     "definition": "Le chiffre qui fait trembler les chaînes",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 7,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ELU",
+     "definition": "Il a gagné les élections",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 9,
+     "r": 1,
+     "c": 0,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ERE",
+     "definition": "Longue période de l'Histoire",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 3,
+     "r": 1,
+     "c": 6,
+     "dir": "v",
+     "long": 7,
+     "reponse": "CONCERT",
+     "definition": "Les billets partent en huit minutes",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 2,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "DISCO",
+     "definition": "Musique à boule à facettes",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 4,
+     "dir": "v",
+     "long": 7,
+     "reponse": "SOLAIRE",
+     "definition": "Le panneau qui pousse sur les toits",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 5,
+     "c": 0,
+     "dir": "h",
+     "long": 7,
+     "reponse": "SONDAGE",
+     "definition": "Il se trompe une fois sur deux",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 4,
+     "r": 5,
+     "c": 0,
+     "dir": "v",
+     "long": 4,
+     "reponse": "SAGA",
+     "definition": "Série de films qui n'en finit plus",
+     "theme": "pop",
+     "fleche": "bas",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 6,
+     "r": 8,
+     "c": 3,
+     "dir": "h",
+     "long": 3,
+     "reponse": "MER",
+     "definition": "Bleue, salée et en danger",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      7,
+      9
+     ]
+    },
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      2,
+      5
+     ]
+    },
+    {
+     "r": 0,
+     "c": 6,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 1,
+     "c": 4,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 2,
+     "c": 1,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      1,
+      4
+     ]
+    },
+    {
+     "r": 8,
+     "c": 2,
+     "mots": [
+      6
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 0,
+     "c": 4,
+     "type": "mystere"
+    },
+    {
+     "r": 2,
+     "c": 6,
+     "type": "bonus"
+    },
+    {
+     "r": 8,
+     "c": 3,
+     "type": "cadeau"
+    }
+   ],
+   "solution": [
+    "##ALGO#",
+    "ELU###C",
+    "R#DISCO",
+    "E#I#O#N",
+    "##E#L#C",
+    "SONDAGE",
+    "A#C#I#R",
+    "G#E#R#T",
+    "A##MER#"
+   ]
+  },
+  {
+   "id": "jour-19",
+   "niveau": 4,
+   "titre": "Défi du jour n°19",
+   "collection": "quotidien",
+   "cols": 8,
+   "rows": 12,
+   "mots": [
+    {
+     "id": 15,
+     "r": 0,
+     "c": 1,
+     "dir": "h",
+     "long": 3,
+     "reponse": "OIE",
+     "definition": "Elle à un jeu à son nom",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 12,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ONU",
+     "definition": "Elle siège à New York",
+     "theme": "actu",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 11,
+     "r": 0,
+     "c": 7,
+     "dir": "v",
+     "long": 3,
+     "reponse": "NFT",
+     "definition": "L'image hors de prix que tout le monde peut copier",
+     "theme": "net",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 2,
+     "r": 1,
+     "c": 4,
+     "dir": "v",
+     "long": 8,
+     "reponse": "SPEEDRUN",
+     "definition": "Finir le jeu le plus vite possible",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "DUO",
+     "definition": "Ils chantent à deux",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 2,
+     "dir": "v",
+     "long": 9,
+     "reponse": "OLYMPIQUE",
+     "definition": "Adjectif des Jeux et d'un club marseillais",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 2,
+     "c": 4,
+     "dir": "h",
+     "long": 4,
+     "reponse": "POST",
+     "definition": "Publication en ligne",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 8,
+     "reponse": "SCANDALE",
+     "definition": "Il éclate toujours un vendredi",
+     "theme": "actu",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 4,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "HYPE",
+     "definition": "L'attente insoutenable avant la sortie",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 5,
+     "c": 4,
+     "dir": "h",
+     "long": 4,
+     "reponse": "DUNE",
+     "definition": "Le désert d'Arrakis",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 5,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 7,
+     "c": 0,
+     "dir": "h",
+     "long": 8,
+     "reponse": "TRIBUNAL",
+     "definition": "On y comparaît",
+     "theme": "actu",
+     "fleche": "bas-droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 4,
+     "r": 9,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "SOUL",
+     "definition": "La musique de l'âme",
+     "theme": "pop",
+     "fleche": "bas-droite",
+     "defR": 8,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 7,
+     "r": 9,
+     "c": 0,
+     "dir": "v",
+     "long": 3,
+     "reponse": "SMS",
+     "definition": "Message court, réponse encore plus courte",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 8,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 10,
+     "r": 9,
+     "c": 5,
+     "dir": "h",
+     "long": 3,
+     "reponse": "WEB",
+     "definition": "La toile",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 9,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 13,
+     "r": 9,
+     "c": 7,
+     "dir": "v",
+     "long": 3,
+     "reponse": "BOT",
+     "definition": "Robot de conversation",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 8,
+     "defC": 7,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 14,
+     "r": 11,
+     "c": 4,
+     "dir": "h",
+     "long": 4,
+     "reponse": "TOUT",
+     "definition": "Rien, à côté",
+     "theme": "vie",
+     "fleche": "droite",
+     "defR": 11,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      12,
+      15
+     ]
+    },
+    {
+     "r": 0,
+     "c": 4,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 0,
+     "c": 6,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 1,
+     "c": 2,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 2,
+     "c": 3,
+     "mots": [
+      8
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      5
+     ]
+    },
+    {
+     "r": 5,
+     "c": 3,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 8,
+     "c": 0,
+     "mots": [
+      4,
+      7
+     ]
+    },
+    {
+     "r": 8,
+     "c": 7,
+     "mots": [
+      13
+     ]
+    },
+    {
+     "r": 9,
+     "c": 4,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 11,
+     "c": 3,
+     "mots": [
+      14
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 4,
+     "c": 4,
+     "type": "bonus"
+    },
+    {
+     "r": 5,
+     "c": 7,
+     "type": "mystere"
+    },
+    {
+     "r": 8,
+     "c": 2,
+     "type": "mystere"
+    },
+    {
+     "r": 9,
+     "c": 2,
+     "type": "bonus"
+    },
+    {
+     "r": 11,
+     "c": 5,
+     "type": "cadeau"
+    }
+   ],
+   "solution": [
+    "#OIE###N",
+    "#N##S##F",
+    "DUO#POST",
+    "##L#E#C#",
+    "#HYPE#A#",
+    "##M#DUNE",
+    "##P#R#D#",
+    "TRIBUNAL",
+    "##Q#N#L#",
+    "SOUL#WEB",
+    "M#E####O",
+    "S###TOUT"
+   ]
+  },
+  {
+   "id": "jour-20",
+   "niveau": 3,
+   "titre": "Défi du jour n°20",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 11,
+   "mots": [
+    {
+     "id": 11,
+     "r": 0,
+     "c": 2,
+     "dir": "v",
+     "long": 5,
+     "reponse": "DISCO",
+     "definition": "Musique à boule à facettes",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 6,
+     "r": 0,
+     "c": 4,
+     "dir": "h",
+     "long": 3,
+     "reponse": "CAC",
+     "definition": "L'indice de la Bourse de Paris",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 5,
+     "r": 0,
+     "c": 4,
+     "dir": "v",
+     "long": 6,
+     "reponse": "CANNES",
+     "definition": "La Croisette et sa montée des marches",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 12,
+     "r": 1,
+     "c": 0,
+     "dir": "h",
+     "long": 3,
+     "reponse": "ROI",
+     "definition": "Il porte la couronne",
+     "theme": "vie",
+     "fleche": "bas-droite",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 13,
+     "r": 1,
+     "c": 0,
+     "dir": "v",
+     "long": 3,
+     "reponse": "RIZ",
+     "definition": "La base de la moitié de la planète",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 4,
+     "r": 2,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "SENAT",
+     "definition": "La chambre haute",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 2,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 8,
+     "reponse": "TIMELINE",
+     "definition": "Le fil où tout défile",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 4,
+     "c": 1,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ZONE",
+     "definition": "À défendre, ou à éviter",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 6,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "BUZZ",
+     "definition": "Tout le monde le cherche, personne ne le contrôle",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 9,
+     "r": 6,
+     "c": 0,
+     "dir": "v",
+     "long": 4,
+     "reponse": "BOSS",
+     "definition": "Le monstre de fin de niveau",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 0,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 2,
+     "r": 6,
+     "c": 2,
+     "dir": "v",
+     "long": 5,
+     "reponse": "ZELDA",
+     "definition": "La princesse d'Hyrule",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 3,
+     "r": 7,
+     "c": 4,
+     "dir": "v",
+     "long": 4,
+     "reponse": "OPEN",
+     "definition": "Tournoi de tennis, en anglais",
+     "theme": "sport",
+     "fleche": "bas",
+     "defR": 6,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 8,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "LUPIN",
+     "definition": "Le gentleman cambrioleur d'Assane Diop",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 10,
+     "r": 10,
+     "c": 2,
+     "dir": "h",
+     "long": 4,
+     "reponse": "ANNE",
+     "definition": "Prénom de la sœur de Barbe-Bleue",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 10,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      12,
+      13
+     ]
+    },
+    {
+     "r": 0,
+     "c": 1,
+     "mots": [
+      11
+     ]
+    },
+    {
+     "r": 0,
+     "c": 3,
+     "mots": [
+      5,
+      6
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 2,
+     "c": 1,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 4,
+     "c": 0,
+     "mots": [
+      7
+     ]
+    },
+    {
+     "r": 5,
+     "c": 0,
+     "mots": [
+      8,
+      9
+     ]
+    },
+    {
+     "r": 5,
+     "c": 2,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 6,
+     "c": 4,
+     "mots": [
+      3
+     ]
+    },
+    {
+     "r": 8,
+     "c": 1,
+     "mots": [
+      1
+     ]
+    },
+    {
+     "r": 10,
+     "c": 1,
+     "mots": [
+      10
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 0,
+     "c": 4,
+     "type": "bonus"
+    },
+    {
+     "r": 1,
+     "c": 2,
+     "type": "bonus"
+    },
+    {
+     "r": 10,
+     "c": 3,
+     "type": "cadeau"
+    },
+    {
+     "r": 10,
+     "c": 5,
+     "type": "mystere"
+    }
+   ],
+   "solution": [
+    "##D#CAC",
+    "ROI#A##",
+    "I#SENAT",
+    "Z#C#N#I",
+    "#ZONE#M",
+    "####S#E",
+    "BUZZ##L",
+    "O#E#O#I",
+    "S#LUPIN",
+    "S#D#E#E",
+    "##ANNE#"
+   ]
+  },
+  {
+   "id": "jour-21",
+   "niveau": 2,
+   "titre": "Défi du jour n°21",
+   "collection": "quotidien",
+   "cols": 7,
+   "rows": 9,
+   "mots": [
+    {
+     "id": 6,
+     "r": 0,
+     "c": 1,
+     "dir": "v",
+     "long": 4,
+     "reponse": "GOAT",
+     "definition": "Le meilleur de tous les temps, en abrégé",
+     "theme": "sport",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 8,
+     "r": 0,
+     "c": 3,
+     "dir": "h",
+     "long": 4,
+     "reponse": "CHAT",
+     "definition": "Star absolue d'internet",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 3,
+     "r": 0,
+     "c": 3,
+     "dir": "v",
+     "long": 5,
+     "reponse": "CLASH",
+     "definition": "Embrouille publique entre deux egos",
+     "theme": "pop",
+     "fleche": "droite-bas",
+     "defR": 0,
+     "defC": 2,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 4,
+     "r": 2,
+     "c": 0,
+     "dir": "h",
+     "long": 4,
+     "reponse": "DATA",
+     "definition": "Le pétrole du XXIe siècle",
+     "theme": "net",
+     "fleche": "bas-droite",
+     "defR": 1,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 0,
+     "r": 2,
+     "c": 6,
+     "dir": "v",
+     "long": 6,
+     "reponse": "DATING",
+     "definition": "La drague par application",
+     "theme": "net",
+     "fleche": "bas",
+     "defR": 1,
+     "defC": 6,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 1,
+     "r": 4,
+     "c": 2,
+     "dir": "h",
+     "long": 5,
+     "reponse": "GHOST",
+     "definition": "Disparaître sans explication",
+     "theme": "net",
+     "fleche": "droite",
+     "defR": 4,
+     "defC": 1,
+     "defSlot": 0,
+     "defTotal": 2
+    },
+    {
+     "id": 10,
+     "r": 4,
+     "c": 4,
+     "dir": "v",
+     "long": 3,
+     "reponse": "ONT",
+     "definition": "Avoir, au pluriel",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 3,
+     "defC": 4,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 5,
+     "r": 5,
+     "c": 1,
+     "dir": "v",
+     "long": 4,
+     "reponse": "ITEM",
+     "definition": "L'objet à ramasser dans le jeu",
+     "theme": "gaming",
+     "fleche": "bas",
+     "defR": 4,
+     "defC": 1,
+     "defSlot": 1,
+     "defTotal": 2
+    },
+    {
+     "id": 2,
+     "r": 6,
+     "c": 1,
+     "dir": "h",
+     "long": 6,
+     "reponse": "TINTIN",
+     "definition": "Reporter à la houppette",
+     "theme": "pop",
+     "fleche": "droite",
+     "defR": 6,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 9,
+     "r": 6,
+     "c": 3,
+     "dir": "v",
+     "long": 3,
+     "reponse": "NON",
+     "definition": "Le mot préféré des enfants de deux ans",
+     "theme": "vie",
+     "fleche": "bas",
+     "defR": 5,
+     "defC": 3,
+     "defSlot": 0,
+     "defTotal": 1
+    },
+    {
+     "id": 7,
+     "r": 8,
+     "c": 1,
+     "dir": "h",
+     "long": 5,
+     "reponse": "MONDE",
+     "definition": "Le journal du soir, ou la planète",
+     "theme": "actu",
+     "fleche": "droite",
+     "defR": 8,
+     "defC": 0,
+     "defSlot": 0,
+     "defTotal": 1
+    }
+   ],
+   "defs": [
+    {
+     "r": 0,
+     "c": 0,
+     "mots": [
+      6
+     ]
+    },
+    {
+     "r": 0,
+     "c": 2,
+     "mots": [
+      3,
+      8
+     ]
+    },
+    {
+     "r": 1,
+     "c": 0,
+     "mots": [
+      4
+     ]
+    },
+    {
+     "r": 1,
+     "c": 6,
+     "mots": [
+      0
+     ]
+    },
+    {
+     "r": 3,
+     "c": 4,
+     "mots": [
+      10
+     ]
+    },
+    {
+     "r": 4,
+     "c": 1,
+     "mots": [
+      1,
+      5
+     ]
+    },
+    {
+     "r": 5,
+     "c": 3,
+     "mots": [
+      9
+     ]
+    },
+    {
+     "r": 6,
+     "c": 0,
+     "mots": [
+      2
+     ]
+    },
+    {
+     "r": 8,
+     "c": 0,
+     "mots": [
+      7
+     ]
+    }
+   ],
+   "special": [
+    {
+     "r": 1,
+     "c": 3,
+     "type": "mystere"
+    },
+    {
+     "r": 5,
+     "c": 6,
+     "type": "cadeau"
+    },
+    {
+     "r": 6,
+     "c": 4,
+     "type": "bonus"
+    }
+   ],
+   "solution": [
+    "#G#CHAT",
+    "#O#L###",
+    "DATA##D",
+    "#T#S##A",
+    "##GHOST",
+    "#I##N#I",
+    "#TINTIN",
+    "#E#O##G",
+    "#MONDE#"
+   ]
+  }
+ ]
+}
