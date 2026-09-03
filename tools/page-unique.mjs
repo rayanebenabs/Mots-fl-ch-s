@@ -14,9 +14,17 @@ const js = html.match(/<script[^>]+src="\.\/(assets\/[^"]+\.js)"/)?.[1]
 const css = html.match(/<link[^>]+href="\.\/(assets\/[^"]+\.css)"/)?.[1]
 if (!js || !css) { console.error('bundle introuvable dans index.html'); process.exit(1) }
 
+// l'icône est embarquée : la page unique n'a aucun fichier voisin à charger
+const icone = readFileSync(`${racine}/public/icone-180.png`).toString('base64')
+const svg = readFileSync(`${racine}/public/icone.svg`, 'utf8')
+
 const page = [
   '<title>Mots Fléchés Pop &amp; Actu</title>',
   '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',
+  '<meta name="theme-color" content="#14103a">',
+  '<meta name="apple-mobile-web-app-title" content="Mots Fléchés">',
+  `<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}">`,
+  `<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,${icone}">`,
   `<style>\n${readFileSync(`${racine}/dist/${css}`, 'utf8').replaceAll('</style', '<\\/style')}\n</style>`,
   '<div id="root"></div>',
   `<script type="module">\n${readFileSync(`${racine}/dist/${js}`, 'utf8').replaceAll('</script', '<\\/script')}\n</script>`,

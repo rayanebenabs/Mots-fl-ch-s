@@ -7,7 +7,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <link rel="icon" type="image/svg+xml" href="./icone.svg" />
-    <link rel="apple-touch-icon" href="./icone-192.png" />
+    <!-- iOS ignore le manifeste pour l'icône de l'écran d'accueil : 180 px, pleine
+         page, c'est le système qui arrondit les coins. -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./icone-180.png" />
+    <meta name="apple-mobile-web-app-title" content="Mots Fléchés" />
     <title>Mots Fléchés — Pop &amp; Actu</title>
   </head>
   <body>
