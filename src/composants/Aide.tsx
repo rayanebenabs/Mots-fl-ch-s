@@ -7,6 +7,30 @@ const CASES = [
     desc: 'Déjà remplie au départ, cadeau de la maison.' },
 ]
 
+import { useState } from 'react'
+import { chercherMiseAJour, versionDuBuild } from '../jeu/maj'
+
+function Version() {
+  const [etat, setEtat] = useState<'repos' | 'cherche' | 'ajour' | 'trouvee'>('repos')
+  return (
+    <div className="version">
+      <span>Version du {versionDuBuild}</span>
+      <button
+        onClick={async () => {
+          setEtat('cherche')
+          setEtat(await chercherMiseAJour() ? 'trouvee' : 'ajour')
+        }}
+        disabled={etat === 'cherche'}
+      >
+        {etat === 'cherche' ? 'Recherche…'
+          : etat === 'ajour' ? 'Vous êtes à jour'
+            : etat === 'trouvee' ? 'Mise à jour trouvée !'
+              : 'Chercher une mise à jour'}
+      </button>
+    </div>
+  )
+}
+
 export default function Aide({ onFermer, compact }: { onFermer?: () => void; compact?: boolean }) {
   const corps = (
     <div className="aide">
@@ -80,6 +104,7 @@ export default function Aide({ onFermer, compact }: { onFermer?: () => void; com
       <div className="feuille" onClick={e => e.stopPropagation()}>
         <h2>Comment jouer</h2>
         {corps}
+        <Version />
         <button className="bouton" onClick={onFermer}>C’est parti</button>
       </div>
     </div>

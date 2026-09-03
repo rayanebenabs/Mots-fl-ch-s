@@ -128,6 +128,28 @@ Les tarifs et le taux de gain sont des constantes à ajuster : `COUT_LETTRE`,
 dans `src/jeu/partie.ts`, `ETOILES_DEPART` et `etoilesPour()` dans
 `src/jeu/stockage.ts`.
 
+## Mises à jour de l'application installée
+
+Une fois l'app ajoutée à l'écran d'accueil, il n'y a plus de barre d'adresse,
+donc plus de bouton *recharger*. C'est un piège classique des PWA : le service
+worker sert les fichiers déjà en cache, et sans mécanisme explicite la page
+tourne indéfiniment sur l'ancienne version.
+
+Le service worker est donc enregistré à la main (`src/App.tsx`), en mode
+`prompt` :
+
+- une vérification a lieu au lancement, toutes les trente minutes, et chaque
+  fois que l'app revient au premier plan ;
+- quand une version est prête, un bandeau *Nouvelle version* apparaît **sans
+  recharger** — c'est le seul chemin vers la mise à jour en mode application ;
+- l'aide affiche la date du build et propose une recherche manuelle, en dernier
+  recours.
+
+Le rechargement n'est pas délégué à `vite-plugin-pwa` : sa fonction attend un
+changement de contrôleur marqué comme mise à jour, ce qui ne se produit pas
+quand la page n'avait pas encore de service worker. On écoute donc
+`controllerchange` soi-même, avec un délai de sécurité.
+
 ## Modifier le contenu
 
 Tout le contenu éditorial vit dans `content/`, et rien dans le code.
