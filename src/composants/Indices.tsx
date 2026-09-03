@@ -1,6 +1,7 @@
 import type { PlanGrille } from '../jeu/grille'
 import {
-  COUT_LETTRE, casesADevoiler, coutDuMot, type EtatPartie,
+  COUT_LETTRE, COUT_INDEX, COUT_SOLUTIONS, casesADevoiler, coutDuMot,
+  type EtatPartie,
 } from '../jeu/partie'
 
 interface Props {
@@ -9,10 +10,14 @@ interface Props {
   etoiles: number
   onLettre: () => void
   onMot: () => void
+  onIndex: () => void
+  onSolutions: () => void
   onFermer: () => void
 }
 
-export default function Indices({ plan, etat, etoiles, onLettre, onMot, onFermer }: Props) {
+export default function Indices(
+  { plan, etat, etoiles, onLettre, onMot, onIndex, onSolutions, onFermer }: Props,
+) {
   const restantes = casesADevoiler(plan, etat).length
   const prixMot = coutDuMot(plan, etat)
   const mot = plan.parId.get(etat.motActif)
@@ -35,6 +40,24 @@ export default function Indices({ plan, etat, etoiles, onLettre, onMot, onFermer
       prix: prixMot,
       possible: restantes > 0,
       action: onMot,
+    },
+    {
+      cle: 'index',
+      titre: 'L’index',
+      detail: etat.indexOuvert
+        ? 'Déjà ouvert pour cette grille.'
+        : 'La liste de toutes les définitions, comme au dos du magazine.',
+      prix: COUT_INDEX,
+      possible: !etat.indexOuvert,
+      action: onIndex,
+    },
+    {
+      cle: 'solutions',
+      titre: 'La page des solutions',
+      detail: 'Toute la grille se remplit. La partie ne rapporte plus d’étoiles.',
+      prix: COUT_SOLUTIONS,
+      possible: restantes > 0 || plan.mots.some(m => !etat.motsTrouves.includes(m.id)),
+      action: onSolutions,
     },
   ]
 

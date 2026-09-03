@@ -4,10 +4,12 @@ import Clavier from './Clavier'
 import BarreDefinition from './BarreDefinition'
 import FinPartie from './FinPartie'
 import Indices from './Indices'
+import IndexGrille from './IndexGrille'
 import { cle, cellulesDe, preparer } from '../jeu/grille'
 import {
   nouvellePartie, taper, effacer, selectionner, deplacerCurseur, motVoisin, resultat,
-  revelerLettre, revelerMot, coutDuMot, casesADevoiler, COUT_LETTRE,
+  revelerLettre, revelerMot, ouvrirIndex, revelerTout, coutDuMot,
+  COUT_LETTRE, COUT_INDEX, COUT_SOLUTIONS,
   type EtatPartie,
 } from '../jeu/partie'
 import { depenser, enregistrerGrille, enregistrerQuotidien, lire } from '../jeu/stockage'
@@ -26,6 +28,7 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
   const [etat, setEtat] = useState<EtatPartie>(() => nouvellePartie(plan))
   const [feuille, setFeuille] = useState(false)
   const [indices, setIndices] = useState(false)
+  const [index, setIndex] = useState(false)
   const [etoiles, setEtoiles] = useState(() => lire().etoiles)
   const [gagnees, setGagnees] = useState(0)
 
@@ -121,9 +124,14 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
         <button
           className="rond"
           onClick={() => setIndices(true)}
-          disabled={!!etat.finiA || casesADevoiler(plan, etat).length === 0}
+          disabled={!!etat.finiA}
           aria-label="Demander un indice"
         >💡</button>
+        {etat.indexOuvert && (
+          <button className="rond" onClick={() => setIndex(true)} aria-label="Ouvrir l’index">
+            ☰
+          </button>
+        )}
         <span className="jeton" aria-label={`${etoiles} étoiles`}>★ {etoiles}</span>
       </header>
 
@@ -150,8 +158,14 @@ export default function EcranJeu({ grille, quotidien, onQuitter, onRejouer }: Pr
           etoiles={etoiles}
           onLettre={() => acheter(COUT_LETTRE, s => revelerLettre(plan, s))}
           onMot={() => acheter(coutDuMot(plan, etat), s => revelerMot(plan, s))}
+          onIndex={() => { acheter(COUT_INDEX, ouvrirIndex); setIndex(true) }}
+          onSolutions={() => acheter(COUT_SOLUTIONS, s => revelerTout(plan, s))}
           onFermer={() => setIndices(false)}
         />
+      )}
+
+      {index && (
+        <IndexGrille plan={plan} etat={etat} onMot={surMot} onFermer={() => setIndex(false)} />
       )}
 
       {feuille && (

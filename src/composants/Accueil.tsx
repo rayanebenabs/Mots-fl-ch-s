@@ -4,11 +4,18 @@ import type { Sauvegarde } from '../jeu/stockage'
 import { grilleDuJour, libelleDate, dateDuJour } from '../jeu/quotidien'
 import Aide from './Aide'
 
+const THEMES = [
+  { cle: 'classique' as const, nom: 'À l’ancienne',
+    accroche: 'Le mot fléché du kiosque : vocabulaire, conjugaisons, tournures.' },
+  { cle: 'moderne' as const, nom: 'Pop, internet & quotidien',
+    accroche: 'Séries, memes, actu et galères de tous les jours.' },
+]
+
 const NIVEAUX = [
-  { n: 1, nom: 'Échauffement', desc: 'Grilles courtes, définitions directes' },
-  { n: 2, nom: 'Ça se corse', desc: 'Plus de mots, plus de croisements' },
-  { n: 3, nom: 'Pour les tenaces', desc: 'Références pointues, grilles longues' },
-  { n: 4, nom: 'Boss final', desc: '8 × 12, aucune pitié' },
+  { n: 1, nom: 'Facile', desc: 'Des mots que tout le monde emploie' },
+  { n: 2, nom: 'Moyen', desc: 'Il faut réfléchir un peu' },
+  { n: 3, nom: 'Costaud', desc: 'Vocabulaire moins courant' },
+  { n: 4, nom: 'Redoutable', desc: 'Mots rares, définitions retorses' },
 ]
 
 interface Props {
@@ -19,17 +26,11 @@ interface Props {
 
 export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
   const [aide, setAide] = useState(false)
-  const [ouvert, setOuvert] = useState<number | null>(null)
   const jour = grilleDuJour(grilles)
   const faitAujourdhui = sauvegarde.quotidien[dateDuJour()]
 
-  const grillesDe = (n: number) =>
-    grilles.filter(g => g.collection === 'campagne' && g.niveau === n)
-  const finies = (n: number) =>
-    grillesDe(n).filter(g => sauvegarde.grilles[g.id]).length
-
-  const debloque = (n: number) =>
-    n === 1 || finies(n - 1) >= Math.max(1, grillesDe(n - 1).length - 1)
+  const grilleDe = (theme: string, n: number) =>
+    grilles.find(g => g.collection === 'campagne' && g.theme === theme && g.niveau === n)
 
   return (
     <div className="appli">
@@ -48,7 +49,8 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
         <div className="marque">
           <h1 className="titre">MOTS<br />FLÉCHÉS</h1>
           <p className="accroche">
-            Pop culture, actu et références qui piquent. Quatre niveaux, une grille par jour.
+            Des grilles pleines, comme au kiosque. Deux univers, quatre niveaux,
+            une grille par jour.
           </p>
         </div>
 
@@ -58,59 +60,51 @@ export default function Accueil({ grilles, sauvegarde, onJouer }: Props) {
             <span className="etiquette or">{faitAujourdhui ? 'Terminé' : 'Nouveau'}</span>
           </div>
           <p className="meta">
-            {libelleDate()} · {jour.cols}×{jour.rows} · {jour.mots.length} mots
+            {libelleDate()} · {jour.mots.length} mots ·{' '}
+            {jour.theme === 'classique' ? 'à l’ancienne' : 'pop & internet'}
             {faitAujourdhui && ` · ★ ${faitAujourdhui.score}`}
           </p>
         </button>
 
-        <p className="section-titre">Les 4 niveaux</p>
-
-        {NIVEAUX.map(niv => {
-          const liste = grillesDe(niv.n)
-          const ok = debloque(niv.n)
-          const fait = finies(niv.n)
+        {THEMES.map(theme => {
+          const finis = NIVEAUX.filter(niv => {
+            const g = grilleDe(theme.cle, niv.n)
+            return g && sauvegarde.grilles[g.id]
+          }).length
           return (
-            <div key={niv.n} className="carte" style={{ opacity: ok ? 1 : .45 }}>
-              <button
-                style={{ all: 'unset', display: 'block', width: '100%', cursor: 'pointer' }}
-                disabled={!ok}
-                onClick={() => setOuvert(ouvert === niv.n ? null : niv.n)}
-              >
-                <div className="carte-entete">
-                  <h2>{niv.n}. {niv.nom}</h2>
-                  <span className="etiquette">{ok ? `${fait}/${liste.length}` : '🔒'}</span>
-                </div>
-                <p className="meta">{ok ? niv.desc : 'Terminez le niveau précédent'}</p>
-                <div className="jauge">
-                  <span style={{ width: `${liste.length ? (fait / liste.length) * 100 : 0}%` }} />
-                </div>
-              </button>
-
-              {ouvert === niv.n && ok && (
-                <div className="puces">
-                  {liste.map((g, i) => {
-                    const res = sauvegarde.grilles[g.id]
-                    return (
-                      <button
-                        key={g.id}
-                        className={`puce ${res ? 'faite' : ''}`}
-                        onClick={() => onJouer(g, false)}
-                      >
-                        <b>Grille {i + 1}</b>
-                        {res ? `★ ${res.score}` : `${g.mots.length} mots`}
-                      </button>
-                    )
-                  })}
-                </div>
-              )}
-            </div>
+            <section key={theme.cle}>
+              <p className="section-titre">{theme.nom} · {finis}/4</p>
+              <p className="section-accroche">{theme.accroche}</p>
+              {NIVEAUX.map(niv => {
+                const g = grilleDe(theme.cle, niv.n)
+                if (!g) return null
+                const precedente = niv.n === 1 ? null : grilleDe(theme.cle, niv.n - 1)
+                const ouvert = niv.n === 1 || !!(precedente && sauvegarde.grilles[precedente.id])
+                const res = sauvegarde.grilles[g.id]
+                return (
+                  <button
+                    key={g.id}
+                    className={`carte niveau ${res ? 'faite' : ''}`}
+                    disabled={!ouvert}
+                    onClick={() => onJouer(g, false)}
+                  >
+                    <span className={`pastille-niveau n${niv.n}`}>{niv.n}</span>
+                    <span className="niveau-corps">
+                      <b>{niv.nom}</b>
+                      <span className="meta">
+                        {ouvert ? `${g.titre} · ${g.mots.length} mots` : 'Terminez le niveau précédent'}
+                      </span>
+                    </span>
+                    <span className="etiquette">{!ouvert ? '🔒' : res ? `★ ${res.score}` : '→'}</span>
+                  </button>
+                )
+              })}
+            </section>
           )
         })}
 
         <p className="section-titre">Cases spéciales et indices</p>
-        <div className="carte">
-          <Aide compact />
-        </div>
+        <div className="carte"><Aide compact /></div>
         <div style={{ height: 20 }} />
       </div>
 

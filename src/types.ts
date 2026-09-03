@@ -25,6 +25,7 @@ export interface Grille {
   niveau: number
   titre: string
   collection: 'campagne' | 'quotidien'
+  theme: 'classique' | 'moderne'
   cols: number
   rows: number
   mots: Mot[]
@@ -44,4 +45,5 @@ export interface Resultat {
   motsTotal: number
   sansFaute: boolean
   indices: number
+  solutions: boolean
 }

@@ -2,6 +2,12 @@
  "_lisezmoi": "Banque de mots et definitions. m=mot (SANS ACCENT, majuscules, A-Z uniquement), d=definition affichee dans la grille, t=theme (pop|net|actu|sport|gaming|vie), n=niveau de difficulte 1 a 4. Ajoutez vos entrees puis relancez: python3 tools/build_grids.py",
  "mots": [
   {
+   "m": "AH",
+   "d": "Interjection de surprise",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "AI",
    "d": "Avoir, à la première personne",
    "t": "vie",
@@ -20,10 +26,76 @@
    "n": 1
   },
   {
+   "m": "AU",
+   "d": "Contraction de à le",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "BD",
    "d": "Le neuvième art",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "BU",
+   "d": "Il a vidé son verre",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CA",
+   "d": "Cela, en plus court",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CC",
+   "d": "Centimètres cubes, en abrégé",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CE",
+   "d": "Démonstratif de tous les jours",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CF",
+   "d": "Renvoie à un autre passage",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CG",
+   "d": "Centigrammes, en abrégé",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CH",
+   "d": "Suisse, sur les plaques",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CI",
+   "d": "Par-ci, par-là",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CL",
+   "d": "Centilitres, en abrégé",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CM",
+   "d": "Centimètres sur la règle",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "CV",
@@ -32,15 +104,51 @@
    "n": 1
   },
   {
+   "m": "DE",
+   "d": "Il roule sur le tapis",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "DG",
+   "d": "Le patron, en abrégé",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "DJ",
    "d": "Il fait vibrer le dancefloor",
    "t": "pop",
    "n": 1
   },
   {
+   "m": "DL",
+   "d": "Décilitres, en abrégé",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "DM",
+   "d": "Décimètres, en abrégé",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "DO",
    "d": "La toute première note",
    "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "DU",
+   "d": "Contraction de de le",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "EH",
+   "d": "Interjection pour appeler",
+   "t": "vie",
    "n": 1
   },
   {
@@ -68,10 +176,52 @@
    "n": 1
   },
   {
+   "m": "EX",
+   "d": "Celui d'avant",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "FA",
+   "d": "Note entre mi et sol",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "FI",
+   "d": "Faire fi de : mépriser",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "GO",
    "d": "Top départ des gamers",
    "t": "gaming",
    "n": 1
+  },
+  {
+   "m": "HA",
+   "d": "Hectare, en abrégé",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "HE",
+   "d": "Interjection pour interpeller",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "HI",
+   "d": "Rire aigu",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HO",
+   "d": "Interjection pour arrêter",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "IA",
@@ -80,8 +230,38 @@
    "n": 1
   },
   {
+   "m": "IF",
+   "d": "Arbre des cimetières",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "IL",
    "d": "Pronom de la troisième place",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "IN",
+   "d": "À la mode, en anglais",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "JE",
+   "d": "Pronom de celui qui parle",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "KG",
+   "d": "Kilogrammes, en abrégé",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "KM",
+   "d": "Kilomètres, en abrégé",
    "t": "vie",
    "n": 1
   },
@@ -98,16 +278,64 @@
    "n": 1
   },
   {
+   "m": "LE",
+   "d": "L'article le plus fréquent",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "LI",
+   "d": "Mesure chinoise de distance",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "LU",
    "d": "Le message vu... mais pas répondu",
    "t": "net",
    "n": 1
   },
   {
+   "m": "MA",
+   "d": "Possessif de la première personne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ME",
+   "d": "Pronom de la première personne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MG",
+   "d": "Milligrammes, en abrégé",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "MI",
    "d": "Note entre re et fa",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "MS",
+   "d": "Millisecondes, en abrégé",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MU",
+   "d": "Lettre grecque, ou mis en mouvement",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "NA",
+   "d": "Interjection de gamin boudeur",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "NE",
@@ -124,6 +352,18 @@
   {
    "m": "NU",
    "d": "Sans filtre ni vêtements",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "OC",
+   "d": "La langue du Midi",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "OH",
+   "d": "Interjection d'étonnement",
    "t": "vie",
    "n": 1
   },
@@ -152,14 +392,92 @@
    "n": 2
   },
   {
+   "m": "OU",
+   "d": "Marque l'alternative",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PH",
+   "d": "Il mesure l'acidité",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PI",
+   "d": "3,14 et des poussières",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PU",
+   "d": "Pouvoir, au participe passé",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "RA",
+   "d": "Dieu solaire des Égyptiens",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "RE",
    "d": "Deuxième note de la gamme",
    "t": "pop",
    "n": 1
   },
   {
+   "m": "RI",
+   "d": "Rire, au participe passé",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RU",
+   "d": "Tout petit ruisseau",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SA",
+   "d": "Possessif de la troisième personne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SE",
+   "d": "Pronom réfléchi",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "SI",
    "d": "Condition, ou note de musique",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SU",
+   "d": "Savoir, au participe passé",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TA",
+   "d": "Possessif familier",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TE",
+   "d": "Pronom de la deuxième personne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TU",
+   "d": "Pronom de celui à qui on parle",
    "t": "vie",
    "n": 1
   },
@@ -170,16 +488,46 @@
    "n": 1
   },
   {
+   "m": "UN",
+   "d": "Le premier des chiffres",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "US",
    "d": "Coutumes, avec les mœurs",
    "t": "vie",
    "n": 3
   },
   {
+   "m": "UT",
+   "d": "L'ancien nom du do",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "VA",
+   "d": "Aller, à l'impératif",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "VU",
    "d": "Coché sur la liste",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "XI",
+   "d": "Lettre grecque",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ACE",
+   "d": "Service gagnant au tennis",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "ADO",
@@ -194,10 +542,52 @@
    "n": 1
   },
   {
+   "m": "AGI",
+   "d": "Il est passé à l'action",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AIE",
+   "d": "Cri de douleur",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AIL",
+   "d": "Il éloigne les vampires",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "AIR",
    "d": "On le pollue, il se joue aussi",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "AIS",
+   "d": "Planche de bois, en vieilli",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AIT",
+   "d": "Avoir, au subjonctif",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ALE",
+   "d": "Bière anglaise",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AME",
+   "d": "Elle serait immortelle",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "AMI",
@@ -206,8 +596,20 @@
    "n": 1
   },
   {
+   "m": "ANA",
+   "d": "Recueil de bons mots",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "ANE",
    "d": "Champion du monde de l'entêtement",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ANS",
+   "d": "Ils passent trop vite",
    "t": "vie",
    "n": 1
   },
@@ -224,9 +626,39 @@
    "n": 1
   },
   {
+   "m": "ARA",
+   "d": "Perroquet très coloré",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ARC",
+   "d": "Il envoie des flèches",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ARE",
+   "d": "Cent mètres carrés",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ARS",
+   "d": "Le pli de l'épaule du cheval",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "ART",
    "d": "Il est contemporain, et souvent incompris",
    "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "AUX",
+   "d": "Contraction de à les",
+   "t": "vie",
    "n": 1
   },
   {
@@ -236,16 +668,76 @@
    "n": 3
   },
   {
+   "m": "AXA",
+   "d": "Il centra sur l'essentiel",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AXE",
+   "d": "La roue tourne autour",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "BAC",
    "d": "Le tout premier diplôme",
    "t": "vie",
    "n": 1
   },
   {
+   "m": "BAI",
+   "d": "Cheval brun à crins noirs",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "BAL",
    "d": "La soirée dansante du 14 juillet",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "BAS",
+   "d": "Le contraire de haut",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "BEL",
+   "d": "Beau, devant une voyelle",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "BEN",
+   "d": "Ben oui, quoi",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "BIS",
+   "d": "On en redemande",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "BIT",
+   "d": "La plus petite info d'un ordinateur",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "BOA",
+   "d": "Serpent qui étouffe",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "BOB",
+   "d": "Chapeau de plage revenu à la mode",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "BOT",
@@ -266,6 +758,12 @@
    "n": 1
   },
   {
+   "m": "CAB",
+   "d": "Le taxi londonien",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "CAC",
    "d": "L'indice de la Bourse de Paris",
    "t": "actu",
@@ -278,15 +776,111 @@
    "n": 2
   },
   {
+   "m": "CAR",
+   "d": "Il emmène en excursion",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CET",
+   "d": "Démonstratif devant une voyelle",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CHU",
+   "d": "Tombé, en littéraire",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CIL",
+   "d": "Il protège l'œil",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "CLE",
    "d": "Elle ouvre les portes, ou se branche en USB",
    "t": "vie",
    "n": 1
   },
   {
+   "m": "COI",
+   "d": "Muet de surprise",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "COR",
+   "d": "Instrument de chasse, ou au pied",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "COU",
+   "d": "Entre la tête et les épaules",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "CRI",
    "d": "Le tableau de Munch",
    "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "CRU",
+   "d": "Vin d'un terroir, ou pas cuit",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CUL",
+   "d": "Le bas du dos, familièrement",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "DAM",
+   "d": "Au grand dam de : au détriment de",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "DIA",
+   "d": "Cri pour faire aller le cheval à gauche",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "DIS",
+   "d": "Dire, à l'impératif",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "DIT",
+   "d": "Il prend la parole",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "DIV",
+   "d": "Division, en abrégé",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "DOS",
+   "d": "Il fait mal quand on se baisse",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "DUE",
+   "d": "Elle est à rendre",
+   "t": "vie",
    "n": 2
   },
   {
@@ -296,10 +890,28 @@
    "n": 1
   },
   {
+   "m": "DUS",
+   "d": "Devoir, au passé simple",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "EAU",
    "d": "H2O",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "ECU",
+   "d": "Monnaie du royaume",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EGO",
+   "d": "Il est parfois surdimensionné",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "ELU",
@@ -308,10 +920,40 @@
    "n": 1
   },
   {
+   "m": "EME",
+   "d": "Suffixe des nombres ordinaux",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EMU",
+   "d": "La gorge nouée",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EPI",
+   "d": "Il tient mal dans les cheveux",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "ERE",
    "d": "Longue période de l'Histoire",
    "t": "vie",
    "n": 2
+  },
+  {
+   "m": "EST",
+   "d": "Le côté du soleil levant",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ETC",
+   "d": "Et le reste, en abrégé",
+   "t": "vie",
+   "n": 1
   },
   {
    "m": "ETE",
@@ -320,9 +962,57 @@
    "n": 1
   },
   {
+   "m": "EUE",
+   "d": "Avoir, au participe passé féminin",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EUH",
+   "d": "L'hésitation à l'oral",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "EUS",
+   "d": "Avoir, au passé simple",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EUT",
+   "d": "Avoir, au passé simple",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "FAN",
    "d": "Il connaît toutes les paroles",
    "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "FAR",
+   "d": "Gâteau breton aux pruneaux",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "FAT",
+   "d": "Vaniteux, en vieilli",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "FEE",
+   "d": "Elle a une baguette magique",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "FER",
+   "d": "On le bat tant qu'il est chaud",
+   "t": "vie",
    "n": 1
   },
   {
@@ -330,6 +1020,12 @@
    "d": "Rouge, il arrête tout le monde",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "FIG",
+   "d": "Figure, en abrégé dans un livre",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "FIL",
@@ -344,10 +1040,106 @@
    "n": 2
   },
   {
+   "m": "FUI",
+   "d": "Il a pris la poudre d'escampette",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "GAL",
+   "d": "Unité d'accélération",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "GAP",
+   "d": "L'écart, en anglais",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "GEL",
+   "d": "Il fige l'eau, ou pour les cheveux",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "GIN",
+   "d": "L'alcool du tonic",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "GIT",
+   "d": "Ci-gît, sur les tombes",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "HAI",
+   "d": "Détesté de tous",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "HAN",
+   "d": "Cri du bûcheron qui frappe",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HEM",
+   "d": "Petit raclement de gorge",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "HEU",
+   "d": "L'hésitation à voix haute",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "HIT",
    "d": "Le tube de l'été",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "HOP",
+   "d": "Interjection du saut",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "HOU",
+   "d": "Cri pour faire peur",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "HUE",
+   "d": "On le crie au cheval",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "HUM",
+   "d": "Marque le doute",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ICI",
+   "d": "À cet endroit précis",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "IDE",
+   "d": "Infirmier diplômé, en abrégé",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "ILE",
@@ -356,8 +1148,44 @@
    "n": 1
   },
   {
+   "m": "ILS",
+   "d": "Pronom masculin pluriel",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ION",
+   "d": "Atome qui a perdu son équilibre",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "IRA",
    "d": "Aller, dans le futur",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "IRE",
+   "d": "Colère, en vieux français",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "IVE",
+   "d": "Herbe aromatique, dite aussi ivette",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "JAN",
+   "d": "Prénom néerlandais courant",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "JET",
+   "d": "Avion privé, ou giclée",
    "t": "vie",
    "n": 2
   },
@@ -368,10 +1196,82 @@
    "n": 1
   },
   {
+   "m": "JUS",
+   "d": "D'orange au petit déjeuner",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "KAN",
+   "d": "Chef mongol",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "LAC",
    "d": "Étendue d'eau douce",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "LAD",
+   "d": "Garçon d'écurie",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LAI",
+   "d": "Court poème du Moyen Âge",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LAS",
+   "d": "Fatigué, en littéraire",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "LEI",
+   "d": "Monnaies roumaines",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LES",
+   "d": "Article au pluriel",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "LET",
+   "d": "Au tennis, la balle à rejouer",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LEU",
+   "d": "Monnaie roumaine",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LIE",
+   "d": "Attaché, ou dépôt au fond du vin",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "LIN",
+   "d": "Tissu qui se froisse",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LIS",
+   "d": "Fleur royale, ou lire à l'impératif",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "LIT",
@@ -386,10 +1286,94 @@
    "n": 1
   },
   {
+   "m": "MAC",
+   "d": "L'ordinateur à la pomme",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MAN",
+   "d": "Île de la mer d'Irlande",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MAT",
+   "d": "Sans brillance, ou fin de partie",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MAX",
+   "d": "Maximum, en abrégé",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MEC",
+   "d": "Type, en familier",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MEN",
+   "d": "Hommes, en anglais",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "MER",
    "d": "Bleue, salée et en danger",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "MES",
+   "d": "Possessif au pluriel",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MET",
+   "d": "Il pose sur la table",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MIL",
+   "d": "Céréale d'Afrique",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "MIS",
+   "d": "Posé là",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MOI",
+   "d": "Le pronom des égoïstes",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MON",
+   "d": "Possessif de la première personne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "MOU",
+   "d": "Sans le moindre tonus",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "MUE",
+   "d": "Le changement de voix de l'ado",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "MUR",
@@ -398,10 +1382,40 @@
    "n": 2
   },
   {
+   "m": "MUS",
+   "d": "Mis en mouvement",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "NBA",
    "d": "La ligue au ballon orange",
    "t": "sport",
    "n": 1
+  },
+  {
+   "m": "NEE",
+   "d": "Venue au monde",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "NEO",
+   "d": "Préfixe du nouveau, ou l'élu de Matrix",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "NES",
+   "d": "Venus au monde, au pluriel",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "NET",
+   "d": "Sans bavure",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "NEZ",
@@ -416,16 +1430,52 @@
    "n": 3
   },
   {
+   "m": "NIA",
+   "d": "Il a tout démenti",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "NID",
+   "d": "L'oiseau y pond",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "NIE",
+   "d": "Il dément tout en bloc",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "NON",
    "d": "Le mot préféré des enfants de deux ans",
    "t": "vie",
    "n": 1
   },
   {
+   "m": "NOS",
+   "d": "Possessif pluriel",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "NUE",
+   "d": "Sans un fil sur le dos",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "NUL",
    "d": "Le score du match sans vainqueur",
    "t": "sport",
    "n": 1
+  },
+  {
+   "m": "ODE",
+   "d": "Poème d'admiration",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "OIE",
@@ -446,10 +1496,28 @@
    "n": 2
   },
   {
+   "m": "ORS",
+   "d": "Les dorures du palais",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "OSE",
    "d": "Il ne manque pas de culot",
    "t": "vie",
    "n": 2
+  },
+  {
+   "m": "OTE",
+   "d": "Il enlève",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "OUF",
+   "d": "Le soulagement en une syllabe",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "OUI",
@@ -458,10 +1526,70 @@
    "n": 1
   },
   {
+   "m": "PAL",
+   "d": "Pieu de supplice",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PAN",
+   "d": "Bruit du coup de feu",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PAT",
+   "d": "Match nul aux échecs",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PEP",
+   "d": "Du tonus, en anglais",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PHI",
+   "d": "Lettre grecque",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PIN",
+   "d": "Il sent bon la forêt",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PLI",
+   "d": "Le pantalon en a un",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PLU",
+   "d": "Il est tombé de l'eau",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "POP",
    "d": "Culture de masse, ou musique",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "POT",
+   "d": "On l'arrose entre collègues",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PRE",
+   "d": "Champ où broutent les vaches",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "PRO",
@@ -476,16 +1604,100 @@
    "n": 1
   },
   {
+   "m": "PSI",
+   "d": "Lettre grecque",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PUB",
+   "d": "Elle coupe le film",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PUS",
+   "d": "Liquide d'une infection",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RAI",
+   "d": "Rayon de lumière, en poésie",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "RAP",
    "d": "Genre numéro un en France",
    "t": "pop",
    "n": 1
   },
   {
+   "m": "RAS",
+   "d": "Coupé très court",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "RAT",
+   "d": "Il quitte le navire",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "REA",
+   "d": "La roue de la poulie",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "REF",
+   "d": "Référence, en abrégé",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "REM",
+   "d": "Ancienne unité de dose de radiation",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RIA",
+   "d": "Il a éclaté de rire",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RIE",
+   "d": "Rire, au subjonctif",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RIS",
+   "d": "De veau, sur la carte",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RIT",
+   "d": "Il se marre",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "RIZ",
    "d": "La base de la moitié de la planète",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "ROB",
+   "d": "Sirop de fruits cuits",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "ROC",
@@ -500,16 +1712,82 @@
    "n": 1
   },
   {
+   "m": "ROT",
+   "d": "Bruit d'après le repas",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "RUE",
    "d": "Elle descend dans la manif",
    "t": "actu",
    "n": 1
   },
   {
+   "m": "SAC",
+   "d": "On y met tout en vrac",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SAS",
+   "d": "Petit espace entre deux portes",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SEC",
+   "d": "Sans une goutte d'eau",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "SEL",
    "d": "Il donne du goût, même aux blagues",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "SEN",
+   "d": "Centième de yen",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SEP",
+   "d": "Pièce de la charrue",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SES",
+   "d": "Possessif au pluriel",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SET",
+   "d": "Manche de tennis",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SIC",
+   "d": "Cité tel quel, fautes comprises",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SIR",
+   "d": "Monsieur, en anglais",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SIS",
+   "d": "Situé, en langage de notaire",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "SKI",
@@ -524,10 +1802,52 @@
    "n": 1
   },
   {
+   "m": "SOC",
+   "d": "La lame de la charrue",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SOL",
+   "d": "On marche dessus, ou note de musique",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "SON",
    "d": "Il est spatialisé dans les nouveaux casques",
    "t": "net",
    "n": 2
+  },
+  {
+   "m": "SOT",
+   "d": "Il n'est pas très malin",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SOU",
+   "d": "Il n'en a plus un seul",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SUA",
+   "d": "Il a transpiré",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SUD",
+   "d": "Le côté du soleil de midi",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SUE",
+   "d": "Il transpire",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "SUR",
@@ -536,14 +1856,56 @@
    "n": 1
   },
   {
+   "m": "SUT",
+   "d": "Savoir, au passé simple",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "TAG",
    "d": "Signature sur un mur",
    "t": "pop",
    "n": 1
   },
   {
+   "m": "TAN",
+   "d": "Écorce utilisée pour le cuir",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TEE",
+   "d": "Support de la balle de golf",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TEL",
+   "d": "Pareil, un vrai",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TES",
+   "d": "Possessif familier au pluriel",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "THE",
+   "d": "Boisson de cinq heures",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "TIC",
    "d": "Petit geste incontrôlable",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TIR",
+   "d": "Coup de feu, ou au but",
    "t": "vie",
    "n": 2
   },
@@ -554,10 +1916,52 @@
    "n": 2
   },
   {
+   "m": "TOI",
+   "d": "Le pronom de l'autre",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TON",
+   "d": "Il monte quand ça chauffe",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TOP",
+   "d": "Le signal du départ",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TOT",
+   "d": "Avant l'heure",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "TRI",
    "d": "Le geste écolo de la cuisine",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "TUE",
+   "d": "Il ôte la vie",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TUS",
+   "d": "Passés sous silence",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TUT",
+   "d": "Taire, au passé simple",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "UFC",
@@ -566,10 +1970,46 @@
    "n": 3
   },
   {
+   "m": "UNE",
+   "d": "La première page du journal",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "UNS",
+   "d": "Les uns et les autres",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "USA",
+   "d": "Le pays de l'oncle Sam",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "USE",
    "d": "Fatigué par le temps",
    "t": "vie",
    "n": 2
+  },
+  {
+   "m": "VAN",
+   "d": "Il transporte les chevaux",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "VAS",
+   "d": "Aller, deuxième personne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "VER",
+   "d": "Il est dans la pomme",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "VIE",
@@ -584,8 +2024,26 @@
    "n": 2
   },
   {
+   "m": "VIL",
+   "d": "Bas et méprisable",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "VIS",
+   "d": "Elle se tourne au tournevis",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "VOL",
    "d": "Il décolle, ou il dérobe",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "VOS",
+   "d": "Possessif, à vous",
    "t": "vie",
    "n": 1
   },
@@ -594,6 +2052,66 @@
    "d": "La toile",
    "t": "net",
    "n": 1
+  },
+  {
+   "m": "ABAT",
+   "d": "Il fait tomber",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ABBE",
+   "d": "Il dirige une abbaye",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ABRI",
+   "d": "On s'y met quand ça tombe",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ACNE",
+   "d": "Le cauchemar de l'adolescence",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ACRE",
+   "d": "Il pique le nez",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ACTA",
+   "d": "Acta est fabula : la pièce est jouée",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ACTE",
+   "d": "Partie d'une pièce de théâtre",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AERE",
+   "d": "On a ouvert les fenêtres",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AFRO",
+   "d": "Coupe de cheveux en boule",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AGEE",
+   "d": "Elle a de la bouteille",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "AILE",
@@ -608,10 +2126,58 @@
    "n": 1
   },
   {
+   "m": "AINE",
+   "d": "Le premier de la fratrie",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AIRE",
+   "d": "Surface, ou de repos sur l'autoroute",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AIRS",
+   "d": "On les fredonne",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ALEA",
+   "d": "Le hasard qui s'en mêle",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "ALGO",
    "d": "Il décide de ce que tu regardes ce soir",
    "t": "net",
    "n": 2
+  },
+  {
+   "m": "ALLO",
+   "d": "Premier mot au téléphone",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AMAS",
+   "d": "Tas informe",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AMEN",
+   "d": "Le dernier mot de la prière",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AMER",
+   "d": "Le goût du café sans sucre",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "AMES",
@@ -632,8 +2198,20 @@
    "n": 1
   },
   {
+   "m": "ANAL",
+   "d": "Une phase, chez Freud",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "ANES",
    "d": "Ils sont teigneux, au pluriel",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ANGE",
+   "d": "Il a des ailes et de la patience",
    "t": "vie",
    "n": 2
   },
@@ -644,9 +2222,63 @@
    "n": 3
   },
   {
+   "m": "ANSE",
+   "d": "L'oreille du panier",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ANTE",
+   "d": "Pilier engagé dans un mur",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ANUS",
+   "d": "Fin du tube digestif",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ARCS",
+   "d": "Ils envoient des flèches",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ARDU",
+   "d": "Sacrément difficile",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ARIA",
+   "d": "Air d'opéra, ou vieil ennui",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ARME",
+   "d": "Elle fait des dégâts",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "ARTS",
    "d": "Ils sont martiaux, ou premiers",
    "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "ASSE",
+   "d": "Le club de Saint-Étienne",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AUBE",
+   "d": "Le tout début du jour",
+   "t": "vie",
    "n": 2
   },
   {
@@ -654,6 +2286,60 @@
    "d": "Préposition d'accompagnement",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "AVEU",
+   "d": "Il soulage celui qui le fait",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AVIS",
+   "d": "Chacun le sien",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AXES",
+   "d": "Les grandes routes",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "BABY",
+   "d": "Bébé, en anglais",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "BAIE",
+   "d": "Petit fruit, ou golfe",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "BANC",
+   "d": "On s'y assoit au parc",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "BASE",
+   "d": "Le point de départ",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "BATI",
+   "d": "Construit de pied en cap",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "BECS",
+   "d": "Les oiseaux picorent avec",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "BEEF",
@@ -668,10 +2354,34 @@
    "n": 1
   },
   {
+   "m": "BLOC",
+   "d": "D'un seul tenant",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "BOSS",
    "d": "Le monstre de fin de niveau",
    "t": "gaming",
    "n": 1
+  },
+  {
+   "m": "BOUM",
+   "d": "Fête d'ado, ou explosion",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "BRIO",
+   "d": "Avec panache",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "BRUT",
+   "d": "Sans rien enlever, ou le pétrole",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "BUZZ",
@@ -680,16 +2390,82 @@
    "n": 1
   },
   {
+   "m": "CACA",
+   "d": "Le mot des enfants",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CAFE",
+   "d": "Le carburant du matin",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "CAKE",
    "d": "Gâteau, ou râteau en langage ado",
    "t": "vie",
    "n": 2
   },
   {
+   "m": "CAMP",
+   "d": "On y plante la tente",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CAPS",
+   "d": "Pointes de terre dans la mer",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CARS",
+   "d": "Ils partent en excursion",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "CASE",
    "d": "Elle attend sa lettre",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "CASH",
+   "d": "Payé en liquide, ou dit sans détour",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CAVE",
+   "d": "On y descend chercher le vin",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CELA",
+   "d": "Ça, en plus soigné",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CENE",
+   "d": "Le dernier repas du Christ",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CHAI",
+   "d": "L'entrepôt du vigneron",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CHAR",
+   "d": "Blindé, ou de carnaval",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "CHAT",
@@ -704,10 +2480,58 @@
    "n": 1
   },
   {
+   "m": "CHIE",
+   "d": "Défèque, en très familier",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CHUT",
+   "d": "Demande le silence",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CIEL",
+   "d": "On y cherche des nuages",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CILS",
+   "d": "Ils battent",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CIRE",
+   "d": "On la passe sur le parquet",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CITE",
+   "d": "Ensemble d'immeubles",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CLES",
+   "d": "Toujours introuvables au moment de partir",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "CLIC",
    "d": "Un geste, une commande",
    "t": "net",
    "n": 1
+  },
+  {
+   "m": "CLIN",
+   "d": "D'œil complice",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "CLIP",
@@ -716,15 +2540,63 @@
    "n": 1
   },
   {
+   "m": "CLOU",
+   "d": "Le clou du spectacle",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "COCO",
+   "d": "Noix des tropiques",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "COCU",
+   "d": "Trompé par sa moitié",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "CODE",
    "d": "On le casse, ou on l'écrit",
    "t": "net",
    "n": 1
   },
   {
+   "m": "CRAN",
+   "d": "Il n'en manque pas",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CREA",
+   "d": "Il inventa de toutes pièces",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CRIA",
+   "d": "Il a hurlé",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CUIR",
+   "d": "Le blouson du motard",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "DATA",
    "d": "Le pétrole du XXIe siècle",
    "t": "net",
+   "n": 2
+  },
+  {
+   "m": "DECU",
+   "d": "Il attendait mieux",
+   "t": "vie",
    "n": 2
   },
   {
@@ -734,16 +2606,82 @@
    "n": 1
   },
   {
+   "m": "DENI",
+   "d": "Le refus de voir",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "DIEU",
+   "d": "On jure par lui",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "DING",
+   "d": "Bruit de la sonnette",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "DIVA",
+   "d": "Cantatrice à caprices",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "DROP",
+   "d": "Coup de pied au rugby",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "DUNE",
    "d": "Le désert d'Arrakis",
    "t": "pop",
    "n": 3
   },
   {
+   "m": "EAUX",
+   "d": "Elles montent avec la marée",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "ECHO",
    "d": "Il répète tout",
    "t": "vie",
    "n": 2
+  },
+  {
+   "m": "ECUS",
+   "d": "Vieilles pièces sonnantes",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EGAL",
+   "d": "Ni plus ni moins",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ELAN",
+   "d": "Le grand cerf du Nord, ou la course d'avant",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ELFE",
+   "d": "Créature aux oreilles pointues",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ELIT",
+   "d": "Il choisit par les urnes",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "ELLE",
@@ -758,10 +2696,34 @@
    "n": 2
   },
   {
+   "m": "ELUS",
+   "d": "Ils ont gagné les urnes",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "EMET",
+   "d": "Il diffuse un signal",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "EMOI",
    "d": "Trouble et agitation",
    "t": "vie",
    "n": 3
+  },
+  {
+   "m": "EMUS",
+   "d": "Touchés, au pluriel",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EPEE",
+   "d": "L'arme du mousquetaire",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "ERES",
@@ -770,10 +2732,22 @@
    "n": 3
   },
   {
+   "m": "ERRE",
+   "d": "Il tourne en rond sans but",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "ETAT",
    "d": "Il est de droit, ou d'urgence",
    "t": "actu",
    "n": 2
+  },
+  {
+   "m": "ETAU",
+   "d": "Il serre la pièce",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "ETES",
@@ -784,6 +2758,42 @@
   {
    "m": "ETRE",
    "d": "Le verbe le plus important",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ETUI",
+   "d": "On y range les lunettes",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EUES",
+   "d": "Avoir, au féminin pluriel",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EXIL",
+   "d": "Loin de son pays, et pas de son plein gré",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "FACE",
+   "d": "Pile ou elle",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "FADE",
+   "d": "Il manque de sel",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "FERA",
+   "d": "Faire, au futur",
    "t": "vie",
    "n": 1
   },
@@ -800,10 +2810,40 @@
    "n": 2
   },
   {
+   "m": "FOIE",
+   "d": "Il souffre après les fêtes",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "FOND",
+   "d": "Le contraire de la forme",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "FOOT",
    "d": "Le sport roi",
    "t": "sport",
    "n": 1
+  },
+  {
+   "m": "FUIS",
+   "d": "Fuir, à l'impératif",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "FULL",
+   "d": "Main du poker",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "FUME",
+   "d": "Il sort de la cheminée",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "FUNK",
@@ -812,10 +2852,28 @@
    "n": 2
   },
   {
+   "m": "GELS",
+   "d": "Ils figent les nuits d'hiver",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "GIGA",
    "d": "Préfixe qui multiplie par un milliard",
    "t": "net",
    "n": 2
+  },
+  {
+   "m": "GLAS",
+   "d": "La cloche des enterrements",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "GOAL",
+   "d": "Le gardien, en anglais",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "GOAT",
@@ -836,6 +2894,36 @@
    "n": 1
   },
   {
+   "m": "GREC",
+   "d": "D'Athènes",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "GRIS",
+   "d": "Entre le noir et le blanc",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "GUET",
+   "d": "Faire le guet",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HATE",
+   "d": "L'impatience",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "HEIN",
+   "d": "On le dit quand on n'a pas compris",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "HULK",
    "d": "Il devient vert quand il s'énerve",
    "t": "pop",
@@ -846,6 +2934,12 @@
    "d": "L'attente insoutenable avant la sortie",
    "t": "net",
    "n": 2
+  },
+  {
+   "m": "IBIS",
+   "d": "Échassier des marais",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "IDEE",
@@ -866,10 +2960,82 @@
    "n": 2
   },
   {
+   "m": "ILOT",
+   "d": "Toute petite île",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "IMAM",
+   "d": "Il dirige la prière",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "INCA",
+   "d": "Empire du Pérou",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "INNE",
+   "d": "On naît avec",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "INOX",
+   "d": "L'acier de l'évier",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "IRAI",
+   "d": "J'y serai",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "IRAS",
+   "d": "Tu partiras",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "IRIS",
+   "d": "Fleur, ou partie colorée de l'œil",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ISSU",
+   "d": "Il en vient",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "ITEM",
    "d": "L'objet à ramasser dans le jeu",
    "t": "gaming",
    "n": 2
+  },
+  {
+   "m": "JACK",
+   "d": "Prise du casque audio",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "JANV",
+   "d": "Le premier mois, en abrégé",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "JAVA",
+   "d": "Danse de bal musette",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "JEDI",
@@ -896,16 +3062,88 @@
    "n": 2
   },
   {
+   "m": "LAIC",
+   "d": "Sans lien avec la religion",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LAMA",
+   "d": "Il crache quand il s'énerve",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LESE",
+   "d": "Il a été floué",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LEST",
+   "d": "On le largue pour monter",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LEVA",
+   "d": "Il se mit debout",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LICE",
+   "d": "Entrer en lice : se lancer",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LIEE",
+   "d": "Attachée",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "LIER",
+   "d": "Attacher ensemble",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LIES",
+   "d": "Attachés, ou dépôts du vin",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "LIKE",
    "d": "Le petit cœur qu'on distribue",
    "t": "net",
    "n": 1
   },
   {
+   "m": "LINO",
+   "d": "Revêtement de sol bon marché",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "LIRE",
    "d": "Ce qu'on ne fait plus assez",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "LISE",
+   "d": "Lire, au subjonctif",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LITS",
+   "d": "On y passe un tiers de sa vie",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "LIVE",
@@ -924,6 +3162,24 @@
    "d": "Le butin ramasse après le combat",
    "t": "gaming",
    "n": 2
+  },
+  {
+   "m": "LORI",
+   "d": "Petit perroquet coloré",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LOUE",
+   "d": "Il paie un loyer, ou il complimente",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LUGE",
+   "d": "Elle descend la pente",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "LUNE",
@@ -950,10 +3206,22 @@
    "n": 1
   },
   {
+   "m": "MATA",
+   "d": "Il a regardé en douce",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "MEME",
    "d": "Image virale qu'on ne peut plus s'enlever de la tête",
    "t": "net",
    "n": 1
+  },
+  {
+   "m": "MENE",
+   "d": "Il conduit le jeu",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "MENU",
@@ -968,10 +3236,28 @@
    "n": 1
   },
   {
+   "m": "MESS",
+   "d": "La cantine des militaires",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "META",
    "d": "Le nouveau nom de Facebook",
    "t": "net",
    "n": 2
+  },
+  {
+   "m": "MINE",
+   "d": "On y descend chercher le charbon",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MIRA",
+   "d": "Il visa",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "MODE",
@@ -992,6 +3278,48 @@
    "n": 1
   },
   {
+   "m": "MUTE",
+   "d": "Il change de poste, ou de forme",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "NAGE",
+   "d": "Il traverse le bassin",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "NANA",
+   "d": "Fille, en familier",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "NEES",
+   "d": "Venues au monde",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "NEFS",
+   "d": "Les grands vaisseaux des églises",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "NERF",
+   "d": "Il transmet la douleur",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "NETS",
+   "d": "Sans bavure, au pluriel",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "NIER",
    "d": "Tout démentir en bloc",
    "t": "actu",
@@ -1004,10 +3332,22 @@
    "n": 1
   },
   {
+   "m": "NOIX",
+   "d": "Elle se casse",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "NOOB",
    "d": "Le débutant qui gêne toute l'équipe",
    "t": "gaming",
    "n": 2
+  },
+  {
+   "m": "NOTA",
+   "d": "Nota bene : à remarquer",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "NOTE",
@@ -1016,10 +3356,46 @@
    "n": 1
   },
   {
+   "m": "NOVA",
+   "d": "Étoile qui s'illumine d'un coup",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "NUIT",
    "d": "La blanche empêche de dormir",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "OBUS",
+   "d": "Projectile de canon",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "OCRE",
+   "d": "Le jaune des falaises",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "OEUF",
+   "d": "Il se casse pour l'omelette",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "OGRE",
+   "d": "Il mange les enfants dans les contes",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "OIES",
+   "d": "Elles ont un jeu à leur nom",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "ONDE",
@@ -1040,16 +3416,64 @@
    "n": 2
   },
   {
+   "m": "OREE",
+   "d": "À l'orée du bois",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ORES",
+   "d": "D'ores et déjà",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ORNE",
+   "d": "Décoré avec soin",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "OSER",
    "d": "Tenter le coup",
    "t": "vie",
    "n": 2
   },
   {
+   "m": "OSES",
+   "d": "Tu te lances",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "OSEZ",
+   "d": "Lancez-vous",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "OTER",
    "d": "Enlever, en plus chic",
    "t": "vie",
    "n": 2
+  },
+  {
+   "m": "PAON",
+   "d": "Il fait la roue",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PARU",
+   "d": "Le livre est sorti",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PAVE",
+   "d": "Il vole pendant les manifs",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "PAYS",
@@ -1064,10 +3488,34 @@
    "n": 1
   },
   {
+   "m": "PERI",
+   "d": "Mort, en littéraire",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PESE",
+   "d": "Il fait le poids",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "PEUR",
    "d": "Le moteur du film d'horreur",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "PIEU",
+   "d": "Piquet, ou lit en argot",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PLAT",
+   "d": "Sans le moindre relief",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "PLUS",
@@ -1076,10 +3524,58 @@
    "n": 1
   },
   {
+   "m": "PLUT",
+   "d": "Il tomba de l'eau",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "POIS",
+   "d": "Petits et verts",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PONT",
+   "d": "Il enjambe la rivière",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "POST",
    "d": "Publication en ligne",
    "t": "net",
    "n": 1
+  },
+  {
+   "m": "PRIS",
+   "d": "Attrapé",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PROF",
+   "d": "Il fait cours",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PUNI",
+   "d": "Privé de dessert",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PUNK",
+   "d": "Crête et épingles à nourrice",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PUTE",
+   "d": "Insulte, malheureusement courante",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "RAGE",
@@ -1088,10 +3584,64 @@
    "n": 1
   },
   {
+   "m": "RAID",
+   "d": "L'opération éclair",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RAIE",
+   "d": "Poisson plat, ou dans les cheveux",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RAIL",
+   "d": "Le train ne le quitte pas",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RAMA",
+   "d": "Héros de l'Inde",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RAME",
+   "d": "Elle fait avancer la barque",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RAMI",
+   "d": "Jeu de cartes en famille",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RANG",
+   "d": "On s'y met en file",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "RATE",
    "d": "Il a échoué, ou c'est un organe",
    "t": "vie",
    "n": 2
+  },
+  {
+   "m": "RATS",
+   "d": "Ils quittent le navire",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "REAL",
+   "d": "La monnaie du Brésil",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "REEL",
@@ -1100,10 +3650,40 @@
    "n": 2
   },
   {
+   "m": "REGI",
+   "d": "Soumis à des règles",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RELU",
+   "d": "On l'a lu deux fois",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "REND",
+   "d": "Il restitue",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "RIEN",
    "d": "Le contraire de tout",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "RIFT",
+   "d": "Grande faille africaine",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RIME",
+   "d": "Elle finit le vers",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "RIRE",
@@ -1112,16 +3692,70 @@
    "n": 1
   },
   {
+   "m": "RITE",
+   "d": "Il se répète à l'identique",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RIXE",
+   "d": "Bagarre générale",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "ROCK",
    "d": "Il n'est toujours pas mort",
    "t": "pop",
    "n": 1
   },
   {
+   "m": "ROIS",
+   "d": "On tire leur galette en janvier",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ROLE",
+   "d": "L'acteur l'apprend",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ROND",
+   "d": "Sans le moindre angle",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ROSA",
+   "d": "La rose des déclinaisons latines",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "ROSE",
    "d": "Fleur, couleur, et film de Barbie",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "ROTE",
+   "d": "Il fait du bruit à table",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ROTI",
+   "d": "Il sort du four le dimanche",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RUEE",
+   "d": "Vers l'or",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "RUER",
@@ -1136,16 +3770,76 @@
    "n": 2
   },
   {
+   "m": "SAIS",
+   "d": "Savoir, à la première personne",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "SALE",
    "d": "Le contraire de propre",
    "t": "vie",
    "n": 1
   },
   {
+   "m": "SALI",
+   "d": "Il a fait une tache",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SANA",
+   "d": "Maison de repos, en abrégé",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "SANS",
    "d": "Le contraire d'avec",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "SCIE",
+   "d": "Elle coupe le bois",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SEAU",
+   "d": "On le remplit d'eau",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SELF",
+   "d": "Restaurant où l'on se sert",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SEME",
+   "d": "Il jette la graine",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SEPT",
+   "d": "Les jours de la semaine",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SERA",
+   "d": "Être, au futur",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SERS",
+   "d": "Servir, à l'impératif",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "SETS",
@@ -1158,6 +3852,42 @@
    "d": "Sans personne autour",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "SEVE",
+   "d": "Elle monte au printemps",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SIED",
+   "d": "Cela lui va bien",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SIEN",
+   "d": "Ce qui est à lui",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SIRE",
+   "d": "On l'appelait ainsi, le roi",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SITE",
+   "d": "Adresse sur la Toile",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SLIP",
+   "d": "Sous-vêtement masculin",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "SMIC",
@@ -1178,6 +3908,24 @@
    "n": 1
   },
   {
+   "m": "SONO",
+   "d": "Elle crache la musique",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SORT",
+   "d": "Il quitte les lieux, ou un mauvais tour",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SOUK",
+   "d": "Marché arabe, ou joyeux bazar",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "SOUL",
    "d": "La musique de l'âme",
    "t": "pop",
@@ -1190,10 +3938,34 @@
    "n": 1
   },
   {
+   "m": "SPOT",
+   "d": "Publicité courte, ou projecteur",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "STAR",
    "d": "Elle brille au cinéma comme au ciel",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "STOP",
+   "d": "Il faut marquer l'arrêt",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SUER",
+   "d": "Transpirer à grosses gouttes",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SURF",
+   "d": "Sport de vague",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "SWAG",
@@ -1205,6 +3977,12 @@
    "m": "TAPE",
    "d": "Il frappe sur le clavier",
    "t": "net",
+   "n": 1
+  },
+  {
+   "m": "TAUX",
+   "d": "Celui du crédit fait mal",
+   "t": "vie",
    "n": 1
   },
   {
@@ -1220,6 +3998,18 @@
    "n": 1
   },
   {
+   "m": "TELS",
+   "d": "Pareils, au pluriel",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TEST",
+   "d": "L'épreuve de contrôle",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "TETE",
    "d": "Elle est bien faite, paraît-il",
    "t": "vie",
@@ -1230,6 +4020,12 @@
    "d": "Le dieu au marteau chez Marvel",
    "t": "pop",
    "n": 2
+  },
+  {
+   "m": "TIRA",
+   "d": "Il a fait feu",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "TIRE",
@@ -1244,9 +4040,21 @@
    "n": 2
   },
   {
+   "m": "TOME",
+   "d": "Volume d'une longue saga",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "TOPS",
    "d": "Les meilleurs, en langage de classement",
    "t": "net",
+   "n": 2
+  },
+  {
+   "m": "TORT",
+   "d": "Il l'a, et il le sait",
+   "t": "vie",
    "n": 2
   },
   {
@@ -1262,10 +4070,58 @@
    "n": 1
   },
   {
+   "m": "TRAM",
+   "d": "Il roule en ville sur des rails",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TRIE",
+   "d": "Il fait le tri",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TRIP",
+   "d": "Délire personnel",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "TROP",
    "d": "Au-delà du raisonnable",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "TROT",
+   "d": "L'allure entre le pas et le galop",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TSAR",
+   "d": "L'empereur de Russie",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TUEE",
+   "d": "Elle a perdu la vie",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TUER",
+   "d": "Ôter la vie",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TUES",
+   "d": "Passés sous silence",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "UBER",
@@ -1274,10 +4130,52 @@
    "n": 2
   },
   {
+   "m": "UNES",
+   "d": "Les premières pages des journaux",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "UNIE",
+   "d": "Sans motif, ou soudée",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "UNIT",
+   "d": "Il rassemble",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "URNE",
+   "d": "On y glisse son bulletin",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "USEE",
+   "d": "Fatiguée par le temps",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "USER",
    "d": "L'utilisateur, en anglais",
    "t": "net",
    "n": 2
+  },
+  {
+   "m": "VAUT",
+   "d": "Il a cette valeur",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "VEAU",
+   "d": "Le petit de la vache",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "VELO",
@@ -1292,8 +4190,32 @@
    "n": 1
   },
   {
+   "m": "VILE",
+   "d": "Basse et méprisable",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "VINS",
+   "d": "Rouges, blancs ou rosés",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "VIOL",
+   "d": "Crime contre la personne",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "VOIR",
    "d": "Utiliser ses yeux",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "VOIS",
+   "d": "Voir, à la première personne",
    "t": "vie",
    "n": 1
   },
@@ -1301,6 +4223,12 @@
    "m": "VOTE",
    "d": "Le geste du dimanche matin",
    "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "VRAI",
+   "d": "Pas du tout inventé",
+   "t": "vie",
    "n": 1
   },
   {
@@ -1328,10 +4256,94 @@
    "n": 2
   },
   {
+   "m": "ACRES",
+   "d": "Mesures anglaises de surface",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ACTES",
+   "d": "Les parties de la pièce",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "ADELE",
    "d": "La voix qui fait pleurer les stades",
    "t": "pop",
    "n": 2
+  },
+  {
+   "m": "AERER",
+   "d": "Ouvrir grand les fenêtres",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AGACE",
+   "d": "Il tape sur les nerfs",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AGEES",
+   "d": "Elles ont vécu",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AGORA",
+   "d": "La place publique grecque",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AGREE",
+   "d": "Officiellement accepté",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AIGUS",
+   "d": "Les sons très hauts",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AIMEE",
+   "d": "Elle a son cœur",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AIMEZ",
+   "d": "Vous avez un faible pour",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AINEE",
+   "d": "La première de la fratrie",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AINES",
+   "d": "Les plus vieux de la famille",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AINSI",
+   "d": "De cette façon",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AISEE",
+   "d": "Sans difficulté",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "ALBUM",
@@ -1352,14 +4364,92 @@
    "n": 1
   },
   {
+   "m": "AMUSE",
+   "d": "Il fait rire",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ANALE",
+   "d": "Une phase, chez Freud",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ANCRE",
+   "d": "Elle retient le bateau",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ANGES",
+   "d": "Ils ont des ailes",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ANIMA",
+   "d": "Il mit de l'ambiance",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "ANIME",
    "d": "Le dessin animé japonais",
    "t": "pop",
    "n": 2
   },
   {
+   "m": "ANTRE",
+   "d": "La tanière de la bête",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "APERO",
    "d": "Le rituel du vendredi soir",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "APPEL",
+   "d": "On y répond ou pas",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ARENE",
+   "d": "Le taureau y entre",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AROME",
+   "d": "Le parfum du café",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ASSEZ",
+   "d": "On en a jusque-là",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ATLAS",
+   "d": "Recueil de cartes",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AUCUN",
+   "d": "Pas un seul",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AVAIS",
+   "d": "Avoir, à l'imparfait",
    "t": "vie",
    "n": 1
   },
@@ -1370,10 +4460,46 @@
    "n": 1
   },
   {
+   "m": "AVOIR",
+   "d": "Posséder",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AZOTE",
+   "d": "78 % de l'air qu'on respire",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "BANCO",
    "d": "Pari accepté",
    "t": "vie",
    "n": 3
+  },
+  {
+   "m": "BASER",
+   "d": "Fonder là-dessus",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "BATTU",
+   "d": "Il a perdu le match",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "BEBES",
+   "d": "Ils pleurent la nuit",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "BERGE",
+   "d": "Le bord de la rivière",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "BIERE",
@@ -1382,16 +4508,94 @@
    "n": 1
   },
   {
+   "m": "BOSSE",
+   "d": "Il travaille dur",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "BUTIN",
+   "d": "Le fruit du pillage",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CACAO",
+   "d": "La base du chocolat",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CEDER",
+   "d": "Baisser les bras",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CEDRE",
+   "d": "Arbre du Liban",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CELUI",
+   "d": "Démonstratif masculin",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CERNE",
+   "d": "Il trahit la nuit blanche",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "CESAR",
    "d": "L'Oscar à la française",
    "t": "pop",
    "n": 2
   },
   {
+   "m": "CESSE",
+   "d": "Il arrête tout",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CHAMP",
+   "d": "Le paysan le laboure",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CHERI",
+   "d": "Mot doux du quotidien",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CHUTE",
+   "d": "La fin d'une blague",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CIRER",
+   "d": "Faire briller le parquet",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "CLASH",
    "d": "Embrouille publique entre deux egos",
    "t": "pop",
    "n": 2
+  },
+  {
+   "m": "CLIPS",
+   "d": "Vidéos musicales",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "CLOUD",
@@ -1406,6 +4610,24 @@
    "n": 2
   },
   {
+   "m": "CRABE",
+   "d": "Il marche de travers",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CRACK",
+   "d": "Le champion, ou la drogue",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CREER",
+   "d": "Faire naître de rien",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "CRISE",
    "d": "Climatique, économique ou de nerfs",
    "t": "actu",
@@ -1418,10 +4640,40 @@
    "n": 1
   },
   {
+   "m": "CUIRE",
+   "d": "Passer au four",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "DATEE",
+   "d": "Elle a pris un coup de vieux",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "DEBAT",
    "d": "A la télé, il tourne vite au clash",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "DEDIE",
+   "d": "Il l'offre à quelqu'un",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "DEFIS",
+   "d": "Ils se relèvent",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "DIETE",
+   "d": "Régime sévère",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "DISCO",
@@ -1430,10 +4682,40 @@
    "n": 2
   },
   {
+   "m": "DOIGT",
+   "d": "Il montre la lune",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "DRIVE",
+   "d": "On y récupère ses courses",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "DRONE",
    "d": "Il filme tout d'en haut",
    "t": "net",
    "n": 1
+  },
+  {
+   "m": "DUPES",
+   "d": "On les a bien eus",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EBENE",
+   "d": "Bois noir précieux",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ECLAT",
+   "d": "Un morceau de verre, ou de rire",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "ECRAN",
@@ -1442,10 +4724,28 @@
    "n": 1
   },
   {
+   "m": "ECRIN",
+   "d": "La boîte de la bague",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "ELIRE",
    "d": "Choisir par les urnes",
    "t": "actu",
    "n": 2
+  },
+  {
+   "m": "EMEUT",
+   "d": "Il touche en plein cœur",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EMISE",
+   "d": "Envoyée sur les ondes",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "EMOJI",
@@ -1454,16 +4754,148 @@
    "n": 1
   },
   {
+   "m": "ENTRE",
+   "d": "Il franchit la porte",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ENVOI",
+   "d": "Le colis est parti",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ENVOL",
+   "d": "L'oiseau quitte le sol",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EPAIS",
+   "d": "Le contraire de fin",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EPAVE",
+   "d": "Bateau au fond de l'eau",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ERIGE",
+   "d": "Dressé bien droit",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ESSAI",
+   "d": "Il se transforme au rugby",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ETAGE",
+   "d": "On y monte par l'ascenseur",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ETALS",
+   "d": "Les tables du marché",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ETEND",
+   "d": "Il étale le linge",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ETRES",
+   "d": "Les vivants",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ETUDE",
+   "d": "Le bureau du notaire, ou du travail",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "EUROS",
+   "d": "La monnaie du portefeuille",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "EVEIL",
+   "d": "Le contraire du sommeil",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EVIER",
+   "d": "La vaisselle s'y entasse",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EXACT",
+   "d": "Juste au poil",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "FASSE",
+   "d": "Faire, au subjonctif",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "FIGER",
+   "d": "Immobiliser d'un coup",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "FOULE",
    "d": "Elle est en délire",
    "t": "pop",
    "n": 2
   },
   {
+   "m": "FROID",
+   "d": "Il fait grelotter",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "FUSEE",
    "d": "Elle décolle de Kourou",
    "t": "actu",
    "n": 2
+  },
+  {
+   "m": "GAMME",
+   "d": "Do ré mi fa sol",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "GENRE",
+   "d": "Le style, ou masculin et féminin",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "GERES",
+   "d": "Tu t'en occupes",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "GHOST",
@@ -1478,6 +4910,12 @@
    "n": 1
   },
   {
+   "m": "HARAS",
+   "d": "L'élevage de chevaux",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "HATER",
    "d": "Il commente pour détruire",
    "t": "net",
@@ -1490,16 +4928,64 @@
    "n": 3
   },
   {
+   "m": "IDEAL",
+   "d": "On ne fait pas mieux",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "IMPUR",
+   "d": "Mélangé à autre chose",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "INFOX",
    "d": "Fausse nouvelle, en bon français",
    "t": "actu",
    "n": 3
   },
   {
+   "m": "INUIT",
+   "d": "Peuple du Grand Nord",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ISLAM",
+   "d": "Religion du Coran",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ISSUE",
+   "d": "La sortie de secours",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ISSUS",
+   "d": "Ils en viennent",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "JETER",
+   "d": "Mettre à la poubelle",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "JOKER",
    "d": "Le clown le plus inquiétant du cinéma",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "JOUIT",
+   "d": "Il en profite pleinement",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "KEBAB",
@@ -1512,6 +4998,24 @@
    "d": "Rayon de lumière concentré",
    "t": "net",
    "n": 1
+  },
+  {
+   "m": "LENTS",
+   "d": "Ils prennent leur temps",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LEURS",
+   "d": "Possessif au pluriel",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "LIENS",
+   "d": "On clique dessus",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "LOYER",
@@ -1532,10 +5036,22 @@
    "n": 2
   },
   {
+   "m": "MALLE",
+   "d": "Grosse valise d'autrefois",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "MANGA",
    "d": "La BD qui se lit à l'envers",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "MANGE",
+   "d": "Il passe à table",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "MARIO",
@@ -1562,10 +5078,46 @@
    "n": 1
   },
   {
+   "m": "MERES",
+   "d": "Elles ont toujours raison",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MESSE",
+   "d": "L'office du dimanche",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "METAL",
+   "d": "Musique saturée, ou l'or et le fer",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "METIS",
+   "d": "De deux origines",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "METRO",
    "d": "Boulot, dodo, et lui",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "MILLE",
+   "d": "Dix fois cent",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MISES",
+   "d": "Placées, ou paris au casino",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "MONDE",
@@ -1574,10 +5126,46 @@
    "n": 1
   },
   {
+   "m": "MORDU",
+   "d": "Passionné, ou croqué",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "MOTOS",
+   "d": "Elles se faufilent",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "MUNIS",
+   "d": "Équipés de ce qu'il faut",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "MYTHO",
    "d": "Il raconte n'importe quoi",
    "t": "vie",
    "n": 2
+  },
+  {
+   "m": "NANAS",
+   "d": "Filles, en familier",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "NAPPE",
+   "d": "Elle protège la table",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "NEGRE",
+   "d": "Il écrit pour les autres",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "NEIGE",
@@ -1586,10 +5174,58 @@
    "n": 1
   },
   {
+   "m": "NUAGE",
+   "d": "Il cache le soleil",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "OBEIR",
+   "d": "Filer droit",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "OBEIT",
+   "d": "Il file droit",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "OBESE",
+   "d": "En très fort surpoids",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "OCEAN",
    "d": "Il monte, et ça inquiète",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "OMEGA",
+   "d": "La dernière lettre grecque",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ONGLE",
+   "d": "On le ronge quand ça stresse",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "OPERA",
+   "d": "Il finit toujours mal",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "OPTER",
+   "d": "Faire son choix",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "ORAGE",
@@ -1598,10 +5234,40 @@
    "n": 1
   },
   {
+   "m": "ORNEE",
+   "d": "Décorée avec soin",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ORNER",
+   "d": "Décorer",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "OSAIT",
+   "d": "Il se lançait",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "OSCAR",
    "d": "La statuette dorée d'Hollywood",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "OSENT",
+   "d": "Ils se lancent",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "OSERA",
+   "d": "Il tentera le coup",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "OTAKU",
@@ -1610,10 +5276,82 @@
    "n": 3
   },
   {
+   "m": "OUAIS",
+   "d": "Oui, en traînant",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PAIRE",
+   "d": "Deux qui vont ensemble",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PAPAS",
+   "d": "Ils font des blagues nulles",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PARER",
+   "d": "Bloquer le coup",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "PARIS",
    "d": "Elle a accueilli les Jeux en 2024",
    "t": "sport",
    "n": 1
+  },
+  {
+   "m": "PENAL",
+   "d": "Du code qui punit",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PEPIN",
+   "d": "Ennui, ou dans la pomme",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PERCE",
+   "d": "Il fait un trou",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PESER",
+   "d": "Passer sur la balance",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PHOTO",
+   "d": "Un souvenir en un clic",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PIECE",
+   "d": "De théâtre, ou de monnaie",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PIETE",
+   "d": "La ferveur religieuse",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PIVOT",
+   "d": "Tout tourne autour de lui",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "PIXEL",
@@ -1634,10 +5372,34 @@
    "n": 1
   },
   {
+   "m": "PLAIS",
+   "d": "Plaire, à la première personne",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "PLUIE",
    "d": "Elle ruine les festivals",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "PNEUS",
+   "d": "Ils se dégonflent au mauvais moment",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PRETS",
+   "d": "Ils peuvent y aller",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PREVU",
+   "d": "C'était au programme",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "PRIME",
@@ -1646,10 +5408,76 @@
    "n": 2
   },
   {
+   "m": "RADAR",
+   "d": "Il flashe les excès de vitesse",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "RADIO",
    "d": "Elle se réveille avec vous",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "RAGER",
+   "d": "Bouillir intérieurement",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RAIES",
+   "d": "Poissons tout plats",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RATER",
+   "d": "Passer juste à côté",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "RECEL",
+   "d": "Garder ce qui a été volé",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RECTO",
+   "d": "L'endroit de la feuille",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RECUT",
+   "d": "Recevoir, au passé simple",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "REELU",
+   "d": "Il a été reconduit",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "REGIS",
+   "d": "Prénom, ou tu diriges",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "REGNE",
+   "d": "Le roi l'exerce",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "RELIE",
+   "d": "Il fait le lien",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "RELOU",
@@ -1658,10 +5486,40 @@
    "n": 2
   },
   {
+   "m": "REMET",
+   "d": "Il en rajoute",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "REMIX",
    "d": "La même chanson, en plus rapide",
    "t": "pop",
    "n": 2
+  },
+  {
+   "m": "RENEE",
+   "d": "Prénom, ou revenue à la vie",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RENES",
+   "d": "On les tient à cheval",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "REPLI",
+   "d": "Recul stratégique",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RIRES",
+   "d": "Ils sont enregistrés dans les sitcoms",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "ROBOT",
@@ -1676,16 +5534,40 @@
    "n": 1
   },
   {
+   "m": "RUSSE",
+   "d": "De Moscou",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "SABLE",
    "d": "Il colle à la crème solaire",
    "t": "vie",
    "n": 1
   },
   {
+   "m": "SACHE",
+   "d": "Savoir, au subjonctif",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SALES",
+   "d": "Il faudrait les laver",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "SANTE",
    "d": "On trinque à la sienne",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "SCEAU",
+   "d": "Il ferme officiellement",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "SCENE",
@@ -1700,9 +5582,21 @@
    "n": 1
   },
   {
+   "m": "SECHE",
+   "d": "Il n'est pas allé en cours",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "SENAT",
    "d": "La chambre haute",
    "t": "actu",
+   "n": 2
+  },
+  {
+   "m": "SERAS",
+   "d": "Être, au futur",
+   "t": "vie",
    "n": 2
   },
   {
@@ -1710,6 +5604,42 @@
    "d": "On la terminé en un week-end",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "SERVI",
+   "d": "Le plat est arrivé",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SEXES",
+   "d": "Masculin et féminin",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SINON",
+   "d": "Autrement dit, sans quoi",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SIOUX",
+   "d": "Peuple des grandes plaines",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SITES",
+   "d": "Adresses de la Toile",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SITUE",
+   "d": "Il le place sur la carte",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "SNAKE",
@@ -1724,16 +5654,46 @@
    "n": 1
   },
   {
+   "m": "SORTE",
+   "d": "Espèce, genre",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SOURD",
+   "d": "Il n'entend rien",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "SPORT",
    "d": "Trente minutes par jour, dit-on",
    "t": "sport",
    "n": 1
   },
   {
+   "m": "SPRAY",
+   "d": "On appuie et ça pulvérise",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "STADE",
    "d": "Il se remplit les soirs de match",
    "t": "sport",
    "n": 1
+  },
+  {
+   "m": "STAFF",
+   "d": "L'équipe, en anglais",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "STELE",
+   "d": "Pierre dressée en mémoire",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "STORY",
@@ -1754,10 +5714,82 @@
    "n": 2
   },
   {
+   "m": "TANKS",
+   "d": "Les blindés",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TAUPE",
+   "d": "Elle creuse, ou elle espionne",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TELES",
+   "d": "Postes de télévision",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TERNE",
+   "d": "Sans le moindre éclat",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "TERRE",
    "d": "Notre caillou bleu",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "TESTE",
+   "d": "Il l'essaie",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TETES",
+   "d": "Elles pensent, au pluriel",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "THESE",
+   "d": "On la soutient devant un jury",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TIENT",
+   "d": "Il ne lâche rien",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TIERS",
+   "d": "Une part sur trois",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TIREE",
+   "d": "Elle a été sortie de là",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TISSE",
+   "d": "Il fait la toile",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TISSU",
+   "d": "Il sort du métier à tisser",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "TITAN",
@@ -1772,10 +5804,28 @@
    "n": 1
   },
   {
+   "m": "TONTE",
+   "d": "On tond les moutons",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TRACE",
+   "d": "Elle mène au coupable",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "TRAIN",
    "d": "Souvent en retard, jamais coupable",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "TRIAL",
+   "d": "Moto tout-terrain",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "TROLL",
@@ -1784,10 +5834,94 @@
    "n": 1
   },
   {
+   "m": "TUANT",
+   "d": "Épuisant à la longue",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TUEES",
+   "d": "Elles ont perdu la vie",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TUERA",
+   "d": "Il ôtera la vie",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TWIST",
+   "d": "Danse des années soixante",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "UNIES",
+   "d": "Sans motif, ou rassemblées",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "UNION",
+   "d": "Elle fait la force",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "URNES",
+   "d": "On s'y rend le dimanche",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "USEES",
+   "d": "Fatiguées par le temps",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "USENT",
+   "d": "Ils abîment à force",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "USUEL",
+   "d": "De tous les jours",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "USURE",
+   "d": "Ce que le temps fait aux choses",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "UTILE",
+   "d": "Qui sert à quelque chose",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "VEGAN",
    "d": "Il refuse tout produit animal",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "VESTE",
+   "d": "On la ramasse quand on perd",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "VEUVE",
+   "d": "Elle a perdu son mari",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "VIBES",
@@ -1808,10 +5942,22 @@
    "n": 1
   },
   {
+   "m": "VISES",
+   "d": "Tu pointes la cible",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "VOTER",
    "d": "Le devoir du citoyen",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "VRAIS",
+   "d": "Authentiques",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "ZELDA",
@@ -1826,10 +5972,106 @@
    "n": 1
   },
   {
+   "m": "ACCORD",
+   "d": "Tout le monde dit oui",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ACHETA",
+   "d": "Il passa à la caisse",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "ACTEUR",
    "d": "Il joue les autres",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "ACTUEL",
+   "d": "D'aujourd'hui",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AERIEN",
+   "d": "Du ciel, ou léger comme l'air",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AISEES",
+   "d": "Confortables, au féminin pluriel",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AJOUTE",
+   "d": "Il en remet une couche",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AMANTS",
+   "d": "Ils s'aiment en cachette",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AMASSE",
+   "d": "Il entasse",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AMENEE",
+   "d": "Conduite jusqu'ici",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AMENER",
+   "d": "Faire venir avec soi",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AMENES",
+   "d": "Tu les fais venir",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AMICAL",
+   "d": "Sans la moindre hostilité",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AMPUTE",
+   "d": "Il a perdu un membre",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ANANAS",
+   "d": "Sur la pizza, il divise",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ANGLES",
+   "d": "Droits, aigus ou obtus",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "APPUIE",
+   "d": "Il presse le bouton",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "ARCADE",
@@ -1838,10 +6080,52 @@
    "n": 2
   },
   {
+   "m": "ARMURE",
+   "d": "Le chevalier la porte",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ASILES",
+   "d": "Refuges pour ceux qui fuient",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "AVATAR",
    "d": "Ton visage numérique",
    "t": "net",
    "n": 1
+  },
+  {
+   "m": "AVERES",
+   "d": "Prouvés, confirmés",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AVERTI",
+   "d": "Il a été prévenu",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "AVIONS",
+   "d": "Ils volent, ou nous les possédions",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AVOCAT",
+   "d": "Il plaide, ou il se mange",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "AVOUER",
+   "d": "Passer aux aveux",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "BANGER",
@@ -1866,6 +6150,18 @@
    "d": "Le justicier de Gotham",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "BERGES",
+   "d": "Les bords de la rivière",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "BLESSE",
+   "d": "Il fait mal",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "BOULOT",
@@ -1898,16 +6194,52 @@
    "n": 1
   },
   {
+   "m": "CARAFE",
+   "d": "Elle se met sur la table",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CASINO",
+   "d": "La maison gagne toujours",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CHAISE",
+   "d": "On la tire pour s'asseoir",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CHAMPS",
+   "d": "Les Élysées à Paris",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "CINEMA",
    "d": "La salle obscure",
    "t": "pop",
    "n": 1
   },
   {
+   "m": "CLARTE",
+   "d": "Elle manque aux explications embrouillées",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "CLIMAT",
    "d": "Le sujet qui divise les COP",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "COMETE",
+   "d": "Elle traîne une queue lumineuse",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "COMPTE",
@@ -1922,10 +6254,148 @@
    "n": 1
   },
   {
+   "m": "CRETIN",
+   "d": "Imbécile, en pas gentil",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "DATING",
    "d": "La drague par application",
    "t": "net",
    "n": 2
+  },
+  {
+   "m": "DECIDE",
+   "d": "Il tranche",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "DEFEND",
+   "d": "Il prend sa défense",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "DEMAIN",
+   "d": "Le jour d'après",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "DENUEE",
+   "d": "Elle en est totalement dépourvue",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "DERAPE",
+   "d": "La voiture part de côté",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "DERIVE",
+   "d": "Le bateau part à la",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "DETTES",
+   "d": "Elles s'accumulent",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "DEVINE",
+   "d": "Il trouve tout seul",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "DILUER",
+   "d": "Rendre moins concentré",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "DRUIDE",
+   "d": "Panoramix en est un",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EBLOUI",
+   "d": "Aveuglé par la lumière",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ECARTS",
+   "d": "Les différences",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ECOLES",
+   "d": "On y apprend à lire",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ECRIRE",
+   "d": "Poser des mots",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "EDITER",
+   "d": "Publier un texte",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EGERIE",
+   "d": "L'inspiratrice de l'artiste",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ELITES",
+   "d": "On les accuse de tout",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EMMENE",
+   "d": "Il l'embarque avec lui",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EMOTIF",
+   "d": "Il pleure devant les publicités",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EOLIEN",
+   "d": "Qui vient du vent",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EPINES",
+   "d": "La rose en a",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EPUISE",
+   "d": "Il n'en peut plus",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "EQUIPE",
@@ -1934,10 +6404,52 @@
    "n": 1
   },
   {
+   "m": "ESCROC",
+   "d": "Il vous fait les poches en souriant",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ETENDU",
+   "d": "Il s'est allongé",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ETHNIE",
+   "d": "Groupe humain qui partage une culture",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "ETOILE",
    "d": "Le chef en veut trois",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "ETROIT",
+   "d": "On y passe à peine",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EVINCE",
+   "d": "Il a été écarté",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EVITER",
+   "d": "Passer à côté exprès",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "FAUTIF",
+   "d": "C'est de sa faute",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "FILTRE",
@@ -1958,10 +6470,28 @@
    "n": 1
   },
   {
+   "m": "FORCER",
+   "d": "Y aller à la dure",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "FRANCE",
    "d": "L'Hexagone",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "FRANCS",
+   "d": "Anciennes monnaies, ou sincères",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "FUREUR",
+   "d": "Colère noire",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "GALERE",
@@ -1970,8 +6500,68 @@
    "n": 1
   },
   {
+   "m": "GENESE",
+   "d": "Le premier livre de la Bible",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "GEREES",
+   "d": "On s'en est occupé",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "GREFFE",
+   "d": "On lui doit un nouveau cœur",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "GRILLE",
    "d": "Celle que vous remplissez",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "GUERIR",
+   "d": "Retrouver la santé",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HAINES",
+   "d": "Elles se recuisent longtemps",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "HAMEAU",
+   "d": "Village minuscule",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HESITE",
+   "d": "Il n'arrive pas à choisir",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "HIATUS",
+   "d": "Deux voyelles qui se cognent",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "IDIOTE",
+   "d": "Elle a dit une bêtise",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "IGNORE",
+   "d": "Il fait comme s'il n'existait pas",
    "t": "vie",
    "n": 2
   },
@@ -1982,10 +6572,112 @@
    "n": 1
   },
   {
+   "m": "INEGAL",
+   "d": "Pas régulier pour un sou",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "INGRAT",
+   "d": "Il ne dit jamais merci",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "INSTAR",
+   "d": "À l'instar de : à la manière de",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "INVITE",
+   "d": "Il est convié à la fête",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "IRRITE",
+   "d": "Il agace prodigieusement",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ISOLEE",
+   "d": "Loin de tout",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ISOLES",
+   "d": "Coupés du monde",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ISSUES",
+   "d": "Les sorties de secours",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "IVOIRE",
+   "d": "Défense d'éléphant",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "LABELS",
+   "d": "Ils garantissent l'origine",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LACUNE",
+   "d": "Le trou dans le savoir",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "LETTRE",
    "d": "Elle remplit la case",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "LIEUES",
+   "d": "À mille de là",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LISAIS",
+   "d": "Lire, à l'imparfait",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LISAIT",
+   "d": "Il avait le nez dans son livre",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LITRES",
+   "d": "Ce que contiennent les bouteilles",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "LOCALE",
+   "d": "Du coin",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "LOTION",
+   "d": "On s'en frictionne",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "MAIRIE",
@@ -2006,6 +6698,12 @@
    "n": 1
   },
   {
+   "m": "MASSUE",
+   "d": "L'argument qui met fin au débat",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "MATRIX",
    "d": "La pilule rouge ou la bleue",
    "t": "pop",
@@ -2024,6 +6722,12 @@
    "n": 1
   },
   {
+   "m": "MITIGE",
+   "d": "Ni bon ni mauvais",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "MOMENT",
    "d": "Il faut le saisir",
    "t": "vie",
@@ -2036,16 +6740,82 @@
    "n": 2
   },
   {
+   "m": "NATURE",
+   "d": "Sans rien dedans",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "NECTAR",
+   "d": "Boisson des dieux",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "NIVEAU",
    "d": "On le passe, ou on le perd",
    "t": "gaming",
    "n": 1
   },
   {
+   "m": "NOURRI",
+   "d": "Il a bien mangé",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "OCEANS",
    "d": "Ils couvrent 70 pour cent du globe",
    "t": "actu",
    "n": 2
+  },
+  {
+   "m": "OISEAU",
+   "d": "Il a des plumes",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PANAMA",
+   "d": "Chapeau de paille, ou canal",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PAROLE",
+   "d": "Il a tenu la sienne",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PECHES",
+   "d": "Fruits d'été, ou fautes",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PEGASE",
+   "d": "Le cheval ailé",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PEINES",
+   "d": "Les grosses journées, ou les chagrins",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PHRASE",
+   "d": "Elle finit par un point",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PINCEE",
+   "d": "Une toute petite quantité de sel",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "PIXELS",
@@ -2060,10 +6830,22 @@
    "n": 1
   },
   {
+   "m": "POTEAU",
+   "d": "Le ballon a fini dessus",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "PRESSE",
    "d": "Elle est libre, en principe",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "PRIORI",
+   "d": "A priori : avant d'y regarder",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "PROMPT",
@@ -2072,10 +6854,52 @@
    "n": 2
   },
   {
+   "m": "PSAUME",
+   "d": "Chant de la Bible",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RAPPEL",
+   "d": "Le public le réclame",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "RARETE",
+   "d": "Ce qui la rend précieuse",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "RECORD",
    "d": "Il est fait pour être battu",
    "t": "sport",
    "n": 1
+  },
+  {
+   "m": "REELUE",
+   "d": "Elle a été reconduite",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RENARD",
+   "d": "Il a un fromage en tête",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RENDRE",
+   "d": "Restituer ce qu'on a pris",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "REPERE",
+   "d": "Point qui aide à s'orienter",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "REPLAY",
@@ -2090,10 +6914,52 @@
    "n": 1
   },
   {
+   "m": "RESTER",
+   "d": "Ne pas bouger de là",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "RETENU",
+   "d": "Gardé de côté",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "RETIRA",
+   "d": "Il ôta",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RINCER",
+   "d": "Passer sous l'eau claire",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ROBERT",
+   "d": "Prénom d'un dictionnaire",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ROMANO",
+   "d": "Pecorino de ce nom",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "RUMEUR",
    "d": "Elle court plus vite que la vérité",
    "t": "net",
    "n": 1
+  },
+  {
+   "m": "SABOTS",
+   "d": "Chaussures de bois",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "SAISON",
@@ -2105,6 +6971,18 @@
    "m": "SAMPLE",
    "d": "Le bout de morceau qu'on recycle",
    "t": "pop",
+   "n": 3
+  },
+  {
+   "m": "SATIRE",
+   "d": "La moquerie en écriture",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SCORES",
+   "d": "Ils s'affichent à la fin",
+   "t": "vie",
    "n": 3
   },
   {
@@ -2150,6 +7028,30 @@
    "n": 1
   },
   {
+   "m": "SITUER",
+   "d": "Placer sur la carte",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SLOGAN",
+   "d": "La formule qui reste en tête",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SOCIAL",
+   "d": "Réseau du même nom",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SOIENT",
+   "d": "Être, au subjonctif pluriel",
+   "t": "vie",
+   "n": 1
+  },
+  {
    "m": "SOIREE",
    "d": "Elle commence tard et finit pire",
    "t": "vie",
@@ -2160,6 +7062,30 @@
    "d": "Il fait la queue sur les terrasses",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "STABLE",
+   "d": "Il ne bouge plus",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "STELES",
+   "d": "Pierres dressées en mémoire",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TALENT",
+   "d": "Il en a à revendre",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TANDEM",
+   "d": "Vélo pour deux",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "TEASER",
@@ -2174,10 +7100,22 @@
    "n": 2
   },
   {
+   "m": "TELLES",
+   "d": "Pareilles",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "TENNIS",
    "d": "Il se joue en sets",
    "t": "sport",
    "n": 1
+  },
+  {
+   "m": "TETONS",
+   "d": "Bouts des seins",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "TETRIS",
@@ -2186,10 +7124,64 @@
    "n": 1
   },
   {
+   "m": "TEXTES",
+   "d": "Ils s'apprennent par cœur",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "THESES",
+   "d": "On les soutient devant un jury",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TIMIDE",
+   "d": "Il rougit dès qu'on lui parle",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "TINTIN",
    "d": "Reporter à la houppette",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "TOMATE",
+   "d": "Fruit qu'on prend pour un légume",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TRANSE",
+   "d": "L'état second",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TUERIE",
+   "d": "Massacre, ou excellent en argot",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "UNITES",
+   "d": "Mètres, litres et compagnie",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "URBAIN",
+   "d": "De la ville",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "UTOPIE",
+   "d": "Le monde parfait qui n'existe pas",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "VALISE",
@@ -2198,10 +7190,76 @@
    "n": 1
   },
   {
+   "m": "VAPEUR",
+   "d": "Elle sort de la casserole",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "VENGER",
+   "d": "Rendre la pareille",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "VIELLE",
+   "d": "Instrument à roue et à manivelle",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "VIKING",
+   "d": "Guerrier venu du Nord",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "VISUEL",
+   "d": "Qui passe par l'œil",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "VOISIN",
+   "d": "Il est de l'autre côté du mur",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "VOLCAN",
+   "d": "Il crache de la lave",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "VOYAGE",
    "d": "Il forme la jeunesse",
    "t": "vie",
    "n": 1
+  },
+  {
+   "m": "AIMERAI",
+   "d": "Je l'aimerai toujours",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "AJOUTER",
+   "d": "En remettre une couche",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ALARMES",
+   "d": "Elles hurlent en pleine nuit",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ALTESSE",
+   "d": "On l'appelle Votre...",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "ARBITRE",
@@ -2210,10 +7268,58 @@
    "n": 1
   },
   {
+   "m": "ARRETEE",
+   "d": "Elle ne bouge plus",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ARSENIC",
+   "d": "Le poison des romans policiers",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ASSOCIE",
+   "d": "Le partenaire en affaires",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ASSUMEE",
+   "d": "Elle est revendiquée haut et fort",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ASSUMER",
+   "d": "Prendre sur soi",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "ASTERIX",
    "d": "Le Gaulois à la potion magique",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "ATTARDE",
+   "d": "Il est resté bien trop longtemps",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ATTERRI",
+   "d": "L'avion s'est posé",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ATTIREE",
+   "d": "Elle n'y résiste pas",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "BADBUZZ",
@@ -2222,10 +7328,40 @@
    "n": 3
   },
   {
+   "m": "BALISES",
+   "d": "Elles marquent le chemin",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "BARRAGE",
+   "d": "Il retient l'eau",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "BEAUTES",
+   "d": "Elles font tourner les têtes",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CAPTIFS",
+   "d": "Prisonniers",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "CARBONE",
    "d": "On calcule son empreinte",
    "t": "actu",
    "n": 2
+  },
+  {
+   "m": "CARENCE",
+   "d": "Il manque quelque chose",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "CASTING",
@@ -2234,10 +7370,22 @@
    "n": 1
   },
   {
+   "m": "CHAINES",
+   "d": "Elles se zappent",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "CHATBOT",
    "d": "Il répond toujours, même n'importe quoi",
    "t": "net",
    "n": 2
+  },
+  {
+   "m": "COLOREE",
+   "d": "Pleine de couleurs",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "CONCERT",
@@ -2258,10 +7406,76 @@
    "n": 1
   },
   {
+   "m": "COURSES",
+   "d": "On les fait au supermarché",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CREUSEE",
+   "d": "On y a fait un trou",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CROATES",
+   "d": "Habitants de Zagreb",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CULASSE",
+   "d": "Pièce du moteur",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "DINGUES",
+   "d": "Complètement fous",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ECLATER",
+   "d": "Exploser bruyamment",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ECURIES",
+   "d": "Celles d'Augias",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ECUSSON",
+   "d": "Le blason sur le maillot",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EMEUTES",
+   "d": "Nuits d'affrontements",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "ENERGIE",
    "d": "La moins chère est celle qu'on ne consomme pas",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "ENERVEE",
+   "d": "À bout de nerfs",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ENFOIRE",
+   "d": "Insulte des Restos du Cœur",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "ENQUETE",
@@ -2270,10 +7484,136 @@
    "n": 1
   },
   {
+   "m": "ENUMERE",
+   "d": "Il compte un par un",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ERIGEES",
+   "d": "Dressées, au pluriel",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EROSION",
+   "d": "Le vent et l'eau usent la roche",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ERUDITS",
+   "d": "Ils savent tout sur tout",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ESCORTE",
+   "d": "Le convoi qui accompagne",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ESCRIME",
+   "d": "Sport à l'épée",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ETEINTS",
+   "d": "Plus aucune lumière",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ETERNEL",
+   "d": "Qui ne finit jamais",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ETOILES",
+   "d": "Le chef en veut trois",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ETUDIEE",
+   "d": "Elle a été analysée",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ETUDIER",
+   "d": "Bosser ses cours",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "EVEILLE",
+   "d": "Vif d'esprit",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EXCEDER",
+   "d": "Dépasser la limite, ou agacer",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "FROTTER",
+   "d": "Astiquer avec énergie",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "FUSIBLE",
+   "d": "Il saute quand ça surchauffe",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "GLACIER",
    "d": "Il fond à vue d'œil",
    "t": "actu",
    "n": 2
+  },
+  {
+   "m": "GLISSER",
+   "d": "Ce que fait la peau de banane",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "GOUTTES",
+   "d": "Elles tombent du robinet",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "GRAPHIE",
+   "d": "La façon d'écrire un mot",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "GRASSES",
+   "d": "Matières que l'on évite",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "GUICHET",
+   "d": "On y fait la queue",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HANTISE",
+   "d": "La peur qui ne lâche pas",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "HASHTAG",
@@ -2282,10 +7622,130 @@
    "n": 1
   },
   {
+   "m": "HERCULE",
+   "d": "Il a fait douze travaux",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HEROINE",
+   "d": "La femme au centre de l'histoire",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HESITER",
+   "d": "Ne pas savoir choisir",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ICEBERG",
+   "d": "On n'en voit que la pointe",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "IGNORER",
+   "d": "Faire comme si de rien n'était",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "IMITANT",
+   "d": "Qui fait pareil",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "INCARNE",
+   "d": "Il lui donne un corps",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "INCONNU",
+   "d": "On ne sait pas qui c'est",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "INDICES",
+   "d": "Ce que cherche l'enquêteur",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "INITIER",
+   "d": "Faire les premiers pas",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "IRAIENT",
+   "d": "Aller, au conditionnel pluriel",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "IRANIEN",
+   "d": "De Téhéran",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ISOLANT",
+   "d": "Il garde la chaleur dedans",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ISOLEES",
+   "d": "Loin de tout",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "JOURNAL",
    "d": "Vingt heures pile",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "LACUNES",
+   "d": "Les trous dans les connaissances",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LEADERS",
+   "d": "Ceux qui mènent",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LEGUMES",
+   "d": "Cinq par jour, paraît-il",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "LEXICAL",
+   "d": "Qui touche au vocabulaire",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LIMITER",
+   "d": "Poser des bornes",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MAESTRO",
+   "d": "Le chef d'orchestre",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "MAILLOT",
@@ -2294,10 +7754,46 @@
    "n": 1
   },
   {
+   "m": "MAIRIES",
+   "d": "Les hôtels de ville",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "MALTAIS",
+   "d": "Habitant de La Valette",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "MANETTE",
    "d": "Elle vole quand la partie tourne mal",
    "t": "gaming",
    "n": 1
+  },
+  {
+   "m": "MARTINI",
+   "d": "Vermouth italien",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "MATINEE",
+   "d": "Avant midi",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MAXIMUM",
+   "d": "On ne fait pas plus",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MECENAT",
+   "d": "Le soutien financier aux arts",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "MEMOIRE",
@@ -2306,10 +7802,52 @@
    "n": 1
   },
   {
+   "m": "MENSUEL",
+   "d": "Il paraît chaque mois",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "METISSE",
+   "d": "De deux origines",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "MINEURS",
+   "d": "Ils ne votent pas encore",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MINIMUM",
+   "d": "On ne fait pas moins",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MOISSON",
+   "d": "La récolte des blés",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "MURALES",
+   "d": "Peintures sur les murs",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "MUSIQUE",
    "d": "Elle adoucit les mœurs",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "NAIVETE",
+   "d": "Elle se fait avoir",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "NETFLIX",
@@ -2318,10 +7856,34 @@
    "n": 1
   },
   {
+   "m": "OBTIENT",
+   "d": "Il finit par l'avoir",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "OMNIBUS",
+   "d": "Le train qui s'arrête partout",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ORATEUR",
+   "d": "Il tient la salle",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "ORELSAN",
    "d": "Le rappeur de Caen",
    "t": "pop",
    "n": 2
+  },
+  {
+   "m": "PARFAIT",
+   "d": "Rien à redire",
+   "t": "vie",
+   "n": 1
   },
   {
    "m": "PARTAGE",
@@ -2360,9 +7922,99 @@
    "n": 1
   },
   {
+   "m": "PRECISE",
+   "d": "Il apporte un détail",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PRODUIT",
+   "d": "Article en rayon",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "PSAUMES",
+   "d": "Chants de la Bible",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RAMASSE",
+   "d": "Il le prend par terre",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RAMENEE",
+   "d": "On l'a rapportée",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RAPPELS",
+   "d": "Le public en redemande",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RASSURE",
+   "d": "Il calme les inquiétudes",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "REFRAIN",
    "d": "Tout le monde le connaît par cœur",
    "t": "pop",
+   "n": 1
+  },
+  {
+   "m": "RELEVER",
+   "d": "Remettre debout, ou pimenter",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "REMPLIR",
+   "d": "Ce que vous faites avec cette grille",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "RENARDS",
+   "d": "Ils ont un fromage en tête",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RENCARD",
+   "d": "Rendez-vous, en argot",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RENTREE",
+   "d": "Septembre et ses cartables",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "REPERES",
+   "d": "Ils aident à s'orienter",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "REPETER",
+   "d": "Redire la même chose",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "RESEAUX",
+   "d": "Sociaux, ils avalent les soirées",
+   "t": "vie",
    "n": 1
   },
   {
@@ -2372,10 +8024,118 @@
    "n": 3
   },
   {
+   "m": "RESTEES",
+   "d": "Elles n'ont pas bougé",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RETIRER",
+   "d": "Sortir de l'argent, ou enlever",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "REUNIES",
+   "d": "Rassemblées",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "REUNIRA",
+   "d": "Il rassemblera tout le monde",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "REVELES",
+   "d": "Mis au jour",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RICAINS",
+   "d": "Américains, en familier",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RISOTTO",
+   "d": "Riz crémeux italien",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ROMANCE",
+   "d": "Chanson d'amour un peu sucrée",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RURALES",
+   "d": "Des campagnes",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SAINTES",
+   "d": "Elles ont leur jour au calendrier",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SECOURU",
+   "d": "Les pompiers sont arrivés",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SECRETE",
+   "d": "Elle ne se dit à personne",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SECTEUR",
+   "d": "Zone d'activité",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "SEPARER",
+   "d": "Mettre à distance",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SIEMENS",
+   "d": "Unité de conductance",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SIGNEES",
+   "d": "Elles portent une signature",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "SILENCE",
    "d": "On le demande sur le plateau",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "SIRENES",
+   "d": "Elles chantent, ou elles hurlent",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SOIREES",
+   "d": "Elles commencent tard et finissent pire",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "SOLAIRE",
@@ -2390,6 +8150,24 @@
    "n": 2
   },
   {
+   "m": "SOPRANO",
+   "d": "La voix la plus haute",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SOUDAIN",
+   "d": "D'un seul coup",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SPIRALE",
+   "d": "Elle tourne en s'éloignant",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "SPOILER",
    "d": "L'ami qui raconte la fin",
    "t": "pop",
@@ -2402,10 +8180,58 @@
    "n": 2
   },
   {
+   "m": "TAMBOUR",
+   "d": "On y bat la mesure",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TEMPETE",
+   "d": "Elle arrache les toits",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TERROIR",
+   "d": "Ce qui donne son goût au vin",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TOITURE",
+   "d": "Elle protège de la pluie",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "TRAILER",
    "d": "La bande-annonce, en anglais",
    "t": "pop",
    "n": 2
+  },
+  {
+   "m": "TRANCHE",
+   "d": "Part de gâteau, ou il décide",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "TRAPPES",
+   "d": "Elles s'ouvrent sous les pieds",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TRAVAIL",
+   "d": "Entre métro et dodo",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "TRAVERS",
+   "d": "Petit défaut",
+   "t": "vie",
+   "n": 1
   },
   {
    "m": "TRIBUNE",
@@ -2414,10 +8240,52 @@
    "n": 2
   },
   {
+   "m": "TULIPES",
+   "d": "Fleurs des Pays-Bas",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ULTIMES",
+   "d": "Les tout derniers",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "UNICITE",
+   "d": "Le fait d'être unique",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "URGENCE",
    "d": "Elle est climatique ou hospitalière",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "VANILLE",
+   "d": "La gousse de Madagascar",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "VIEILLE",
+   "d": "Elle a de la bouteille",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "VITRINE",
+   "d": "On y lèche du regard",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "VOTERAI",
+   "d": "J'irai aux urnes",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "ZAPPING",
@@ -2426,16 +8294,118 @@
    "n": 2
   },
   {
+   "m": "ABORDAGE",
+   "d": "Les pirates montent à bord",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ABSTENUS",
+   "d": "Ils ne sont pas allés voter",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ACCALMIE",
+   "d": "Le calme entre deux tempêtes",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AGISSONS",
+   "d": "Passons à l'action",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AISEMENT",
+   "d": "Sans le moindre effort",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ALBATROS",
+   "d": "Grand oiseau de Baudelaire",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ALSACIEN",
+   "d": "De Strasbourg",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ALTERITE",
+   "d": "Le fait d'être autre",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "AMBIANCE",
    "d": "Elle est électrique",
    "t": "vie",
    "n": 1
   },
   {
+   "m": "AMICALES",
+   "d": "Chaleureuses, sans arrière-pensée",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AMIRAUTE",
+   "d": "Le commandement de la flotte",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ANOMALIE",
+   "d": "Quelque chose cloche",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "APPROUVE",
+   "d": "Il dit oui",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ARMAGNAC",
+   "d": "Eau-de-vie du Gers",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ASPHALTE",
+   "d": "Le revêtement des routes",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ASSEMBLE",
+   "d": "Il monte le meuble",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ASSURAIT",
+   "d": "Il en était certain",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "AUDIENCE",
    "d": "Le chiffre qui fait trembler les chaînes",
    "t": "pop",
    "n": 2
+  },
+  {
+   "m": "AVANCERA",
+   "d": "Il ira de l'avant",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "AVENGERS",
@@ -2450,10 +8420,70 @@
    "n": 1
   },
   {
+   "m": "BLESSANT",
+   "d": "Ses mots font mal",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "BRAVOURE",
+   "d": "Courage à toute épreuve",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CADAVRES",
+   "d": "Les corps du polar",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CALVADOS",
+   "d": "Eau-de-vie de pomme",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "CANICULE",
    "d": "L'été qui devient invivable",
    "t": "actu",
    "n": 1
+  },
+  {
+   "m": "CATIMINI",
+   "d": "En douce, précédé de en",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CENTIMES",
+   "d": "Les petites pièces",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CERTAINE",
+   "d": "Sûre et certaine",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "CHALEURS",
+   "d": "L'été les rend invivables",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CHINOISE",
+   "d": "De Pékin",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "COMBATTU",
+   "d": "Il s'est battu jusqu'au bout",
+   "t": "vie",
+   "n": 3
   },
   {
    "m": "COMEBACK",
@@ -2462,9 +8492,75 @@
    "n": 2
   },
   {
+   "m": "COMPAREE",
+   "d": "Mise en face d'une autre",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "COOPERER",
+   "d": "Travailler main dans la main",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "CUPIDITE",
+   "d": "L'amour de l'argent",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "DECEVOIR",
+   "d": "Ne pas être à la hauteur",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "DEEPFAKE",
    "d": "La vidéo truquée qui fait peur",
    "t": "net",
+   "n": 3
+  },
+  {
+   "m": "DIAMETRE",
+   "d": "Il traverse le cercle",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "DIFFUSER",
+   "d": "Passer à l'antenne",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "DRAINAGE",
+   "d": "L'évacuation de l'eau du sol",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ECLATENT",
+   "d": "Ils explosent",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ECOUTONS",
+   "d": "Prêtons l'oreille",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EGALISER",
+   "d": "Revenir au score",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ELABORER",
+   "d": "Mettre au point",
+   "t": "vie",
    "n": 3
   },
   {
@@ -2474,10 +8570,88 @@
    "n": 1
   },
   {
+   "m": "ELEMENTS",
+   "d": "Terre, eau, air et feu",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ELOIGNER",
+   "d": "Mettre à distance",
+   "t": "vie",
+   "n": 2
+  },
+  {
    "m": "EMISSION",
    "d": "Elle passé en prime time",
    "t": "pop",
    "n": 1
+  },
+  {
+   "m": "EMPREINT",
+   "d": "Empreint de : tout imprégné de",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ENCHAINE",
+   "d": "Il passe à la suite",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ENNEMIES",
+   "d": "Elles se détestent",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EPILOGUE",
+   "d": "Ce qui vient après la fin",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ESSAIERA",
+   "d": "Il tentera le coup",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ESTIMONS",
+   "d": "Nous évaluons",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ETERNITE",
+   "d": "Le temps qui ne finit pas",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ETUDIANT",
+   "d": "Il vit de pâtes",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "EVOLUERA",
+   "d": "Ça finira par changer",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "EXECUTEE",
+   "d": "Elle a été menée à bien",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "EXISTERA",
+   "d": "Il verra le jour",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "FESTIVAL",
@@ -2486,16 +8660,166 @@
    "n": 1
   },
   {
+   "m": "FLAMENCO",
+   "d": "Danse andalouse",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "FORTNITE",
    "d": "Cent joueurs, un seul survivant",
    "t": "gaming",
    "n": 2
   },
   {
+   "m": "GALETTES",
+   "d": "On y cache une fève",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "GENERALE",
+   "d": "La dernière répétition",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "GLACIERS",
+   "d": "Ils fondent à vue d'œil",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "GLUCIDES",
+   "d": "Les sucres de l'étiquette",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "GUITARES",
+   "d": "Elles sont sèches ou électriques",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HEMATOME",
+   "d": "Le bleu après le choc",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "HORRIBLE",
+   "d": "À faire fuir",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "HOSTILES",
+   "d": "Franchement pas accueillantes",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HOULETTE",
+   "d": "Sous la houlette de : sous la direction de",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "INSECTES",
+   "d": "Six pattes chacun",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "INSTINCT",
+   "d": "Il ne s'explique pas",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "INTENSES",
+   "d": "Très fortes",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "INTRIGUE",
+   "d": "L'histoire d'un roman",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LEGERETE",
+   "d": "Le contraire du sérieux",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LEUCEMIE",
+   "d": "Cancer du sang",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LIMITANT",
+   "d": "Qui restreint",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LOCALISE",
+   "d": "Repéré sur la carte",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LOINTAIN",
+   "d": "Tout au fond du décor",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LUNAIRES",
+   "d": "Du satellite de la Terre",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "LUNETTES",
+   "d": "On les cherche sur son front",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MAINTIEN",
+   "d": "Le fait de garder en place",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MAMMOUTH",
+   "d": "Il a disparu avec la glace",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "MARATHON",
    "d": "42 kilomètres et des poussières",
    "t": "sport",
    "n": 1
+  },
+  {
+   "m": "MASCULIN",
+   "d": "Le genre du monsieur",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "MATERIEL",
+   "d": "L'équipement",
+   "t": "vie",
+   "n": 2
   },
   {
    "m": "MEDAILLE",
@@ -2510,9 +8834,159 @@
    "n": 2
   },
   {
+   "m": "MISSILES",
+   "d": "Ils partent des silos",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "MODIFIEE",
+   "d": "Elle a été changée",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "MONOTONE",
+   "d": "Toujours pareil, et ça lasse",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "NEURONES",
+   "d": "On en perd, dit-on",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "NEUTRONS",
+   "d": "Ils peuplent le noyau",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "NICOTINE",
+   "d": "Ce qui rend la cigarette accrocheuse",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "NITRATES",
+   "d": "Polluants des nappes",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "NOVEMBRE",
+   "d": "Le mois des chrysanthèmes",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "OBSTACLE",
+   "d": "Il faut le franchir",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ONEREUSE",
+   "d": "Elle coûte cher",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "OREILLES",
+   "d": "Elles sifflent quand on parle de vous",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "OUVRIERE",
+   "d": "L'abeille qui bosse",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PARAITRE",
+   "d": "Sembler, ou sortir en librairie",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PATINAGE",
+   "d": "Sport de glace et de paillettes",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "PLETHORE",
+   "d": "Bien plus qu'il n'en faut",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "POLIMENT",
+   "d": "Avec les bonnes manières",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PROTHESE",
+   "d": "Elle remplace un membre",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RALENTIR",
+   "d": "Lever le pied",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RECENSES",
+   "d": "Ils ont été comptés",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RECEVAIT",
+   "d": "Il avait du monde à dîner",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RECOLTES",
+   "d": "Elles se font en fin d'été",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "RECYCLER",
    "d": "Donner une deuxième vie",
    "t": "actu",
+   "n": 1
+  },
+  {
+   "m": "REMETTRA",
+   "d": "Il en rajoutera",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RENTRERA",
+   "d": "Il reviendra à la maison",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RESOUDRE",
+   "d": "Venir à bout du problème",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "RESULTAT",
+   "d": "On l'attend en fin de match",
+   "t": "vie",
    "n": 1
   },
   {
@@ -2522,10 +8996,76 @@
    "n": 1
   },
   {
+   "m": "RETROUVE",
+   "d": "Il remet la main dessus",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "ROMANCES",
+   "d": "Chansons d'amour un peu sucrées",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RUISSEAU",
+   "d": "Le petit cours d'eau",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SAILLANT",
+   "d": "Qui dépasse nettement",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "SCANDALE",
    "d": "Il éclate toujours un vendredi",
    "t": "actu",
    "n": 2
+  },
+  {
+   "m": "SCENARIO",
+   "d": "Il s'écrit avant le tournage",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SCOOTERS",
+   "d": "Ils encombrent les trottoirs",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SEMELLES",
+   "d": "Elles collent au chewing-gum",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "SEMESTRE",
+   "d": "Six mois d'affilée",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SENATEUR",
+   "d": "Il siège au Palais du Luxembourg",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SERAIENT",
+   "d": "Être, au conditionnel pluriel",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "SILICONE",
+   "d": "Le joint de la salle de bains",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "SPEEDRUN",
@@ -2540,16 +9080,64 @@
    "n": 2
   },
   {
+   "m": "SURPREND",
+   "d": "Il ne s'y attendait pas",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "TARTINER",
+   "d": "Étaler sur le pain",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TEMPETES",
+   "d": "Elles arrachent les toits",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "TENDANCE",
    "d": "Elle dure trois jours",
    "t": "net",
    "n": 1
   },
   {
+   "m": "TERRIENS",
+   "d": "Nous tous, vus de l'espace",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "THEATRAL",
+   "d": "Un peu trop appuyé",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "THERAPIE",
+   "d": "On y parle de soi",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "TIMELINE",
    "d": "Le fil où tout défile",
    "t": "net",
    "n": 2
+  },
+  {
+   "m": "TORRENTS",
+   "d": "Ils dévalent la montagne",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "TOUCHERA",
+   "d": "Il recevra son dû",
+   "t": "vie",
+   "n": 4
   },
   {
    "m": "TOURNAGE",
@@ -2564,15 +9152,201 @@
    "n": 2
   },
   {
+   "m": "UNANIMES",
+   "d": "Tous du même avis",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "UNITAIRE",
+   "d": "Le prix, pièce par pièce",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "URINAIRE",
+   "d": "Relatif à la vessie",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "UTILISEE",
+   "d": "On s'en est servi",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "UTILISER",
+   "d": "Se servir de",
+   "t": "vie",
+   "n": 1
+  },
+  {
+   "m": "VITAMINE",
+   "d": "La C contre la fatigue",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ACCUEILLI",
+   "d": "Reçu comme il faut",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ADORATION",
+   "d": "Amour sans réserve",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ARRETERAI",
+   "d": "Je mettrai fin à tout ça",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "AVALANCHE",
+   "d": "Elle dévale la montagne",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "BLESSURES",
+   "d": "Elles mettent du temps à guérir",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "CANALISER",
+   "d": "Contenir l'énergie",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "CLIENTELE",
+   "d": "L'ensemble des acheteurs",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "COLLISION",
+   "d": "Choc entre deux véhicules",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "DEDUCTION",
+   "d": "Le raisonnement de Sherlock",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ENTRETIEN",
+   "d": "Le rendez-vous d'embauche",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ESCLAVAGE",
+   "d": "Aboli en 1848",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ETERNELLE",
+   "d": "Qui ne finit jamais",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "ETRANGLER",
+   "d": "Serrer le cou",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "GEOMETRIE",
+   "d": "Elle est variable",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "HONNETETE",
+   "d": "Elle paie, dit-on",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "INATTENDU",
+   "d": "Personne ne l'avait vu venir",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "INCIDENCE",
+   "d": "L'effet que ça produit",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "INFLATION",
    "d": "Elle vide le caddie",
    "t": "actu",
    "n": 2
   },
   {
+   "m": "INITIALES",
+   "d": "Les premières lettres du nom",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "INTITULEE",
+   "d": "Qui porte ce titre",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "IRANIENNE",
+   "d": "De Téhéran, au féminin",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "LOGEMENTS",
+   "d": "Ils manquent dans les grandes villes",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "NOCTURNES",
+   "d": "Ouvertures tardives des magasins",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "OLYMPIQUE",
    "d": "Adjectif des Jeux et d'un club marseillais",
    "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "ORIENTAUX",
+   "d": "Ils viennent du Levant",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "ORPHELINE",
+   "d": "Elle a perdu ses parents",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "PLASTIQUE",
+   "d": "Il pollue les océans",
+   "t": "vie",
    "n": 2
   },
   {
@@ -2582,9 +9356,63 @@
    "n": 2
   },
   {
+   "m": "PRESENTEE",
+   "d": "On a fait les présentations",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "PRESSENTI",
+   "d": "Il l'avait deviné avant",
+   "t": "vie",
+   "n": 4
+  },
+  {
    "m": "PUNCHLINE",
    "d": "La phrase qui tue dans un couplet",
    "t": "pop",
+   "n": 2
+  },
+  {
+   "m": "RECLAMENT",
+   "d": "Ils exigent haut et fort",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RESIDENTE",
+   "d": "Elle habite là",
+   "t": "vie",
+   "n": 4
+  },
+  {
+   "m": "RETOURNEE",
+   "d": "On l'a mise à l'envers",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "RETOURNER",
+   "d": "Repartir d'où l'on vient",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "ROULEMENT",
+   "d": "À billes, il fait tourner",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SCENARIOS",
+   "d": "Ils s'écrivent avant le tournage",
+   "t": "vie",
+   "n": 3
+  },
+  {
+   "m": "SPECIALES",
+   "d": "Pas comme les autres",
+   "t": "vie",
    "n": 2
   },
   {
@@ -2606,6 +9434,12 @@
    "n": 1
   },
   {
+   "m": "TERMINALE",
+   "d": "La dernière année du lycée",
+   "t": "vie",
+   "n": 3
+  },
+  {
    "m": "TIKTOKEUR",
    "d": "Il danse pour l'algorithme",
    "t": "net",
@@ -2615,6 +9449,18 @@
    "m": "TRANSFERT",
    "d": "Le mercato en fait son beurre",
    "t": "sport",
+   "n": 2
+  },
+  {
+   "m": "TRENTAINE",
+   "d": "L'âge des premières rides",
+   "t": "vie",
+   "n": 2
+  },
+  {
+   "m": "UTILISENT",
+   "d": "Ils s'en servent",
+   "t": "vie",
    "n": 2
   },
   {

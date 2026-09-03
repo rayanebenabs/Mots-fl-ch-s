@@ -9,6 +9,8 @@ export const BONUS_SANS_FAUTE = 120
 export const COUT_LETTRE = 25
 export const COUT_MOT_PAR_LETTRE = 15
 export const COUT_MOT_MINIMUM = 45
+export const COUT_INDEX = 40
+export const COUT_SOLUTIONS = 200
 
 export interface EtatPartie {
   saisie: Record<string, string>
@@ -26,6 +28,10 @@ export interface EtatPartie {
   /** cases devoilees par un indice: on ne les masque plus */
   revelees: Record<string, true>
   indices: number
+  /** l index du magazine: la liste de toutes les definitions */
+  indexOuvert: boolean
+  /** la page des solutions a ete achetee: la grille ne rapporte plus rien */
+  solutions: boolean
 }
 
 export function nouvellePartie(plan: PlanGrille): EtatPartie {
@@ -46,6 +52,8 @@ export function nouvellePartie(plan: PlanGrille): EtatPartie {
     rate: null,
     revelees: {},
     indices: 0,
+    indexOuvert: false,
+    solutions: false,
   }
 }
 
@@ -126,6 +134,24 @@ export function revelerLettre(plan: PlanGrille, etat: EtatPartie): EtatPartie {
 /** Indice "le mot entier": devoile toutes les cases manquantes du mot actif. */
 export function revelerMot(plan: PlanGrille, etat: EtatPartie): EtatPartie {
   return devoiler(plan, etat, casesADevoiler(plan, etat))
+}
+
+/** L index: la liste de toutes les definitions, comme au dos du magazine. */
+export function ouvrirIndex(etat: EtatPartie): EtatPartie {
+  return { ...etat, indexOuvert: true }
+}
+
+/** La page des solutions: toute la grille d un coup. */
+export function revelerTout(plan: PlanGrille, etat: EtatPartie): EtatPartie {
+  const cases: Array<[number, number]> = []
+  plan.solution.forEach((lettre, k) => {
+    if (etat.saisie[k] !== lettre) {
+      const [r, c] = k.split(',').map(Number)
+      cases.push([r, c])
+    }
+  })
+  const suite = devoiler(plan, { ...etat, solutions: true }, cases)
+  return { ...suite, indices: etat.indices, solutions: true }
 }
 
 function contientBonus(plan: PlanGrille, mot: MotNumerote) {
@@ -221,6 +247,7 @@ export function resultat(plan: PlanGrille, etat: EtatPartie): Resultat {
     motsTotal: plan.mots.length,
     sansFaute: etat.erreurs === 0,
     indices: etat.indices,
+    solutions: etat.solutions,
   }
 }
 

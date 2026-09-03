@@ -17,14 +17,23 @@ npm run preview    # sert le build
 
 ## Le jeu
 
-**Quatre niveaux**, de plus en plus durs et de plus en plus grands :
+Des grilles **9 × 11 pleines**, comme au kiosque : chaque case est soit une
+lettre, soit une case de définition. Pas de trou, pas de case noire décorative.
+Une trentaine de mots par grille, et la grille occupe toute la place
+disponible à l'écran.
 
-| Niveau | Nom | Taille | Mots | Contenu |
-|---|---|---|---|---|
-| 1 | Échauffement | 6 × 8 | ~8 | Références grand public |
-| 2 | Ça se corse | 7 × 9 | ~10 | Plus de croisements |
-| 3 | Pour les tenaces | 7 × 11 | ~13 | Culture plus pointue |
-| 4 | Boss final | 8 × 12 | ~16 | Tout est permis |
+**Deux univers**, huit grilles de campagne :
+
+| Univers | Vocabulaire |
+|---|---|
+| À l'ancienne | Le mot fléché de kiosque : vocabulaire courant, conjugaisons, tournures |
+| Pop, internet & quotidien | Séries, memes, actu, galères de tous les jours |
+
+**Quatre niveaux** dans chaque univers. Ils ne changent ni la taille de la
+grille ni le nombre de mots — seulement la **rareté des mots à trouver**. La
+difficulté s'appuie sur la fréquence d'usage réelle du français (échelle Zipf) :
+le niveau 1 vise des mots que tout le monde emploie (Zipf 5,2), le niveau 4 des
+mots qu'on connaît sans jamais les dire (Zipf 3,1).
 
 Le **défi du jour** tire une grille du pool quotidien selon la date : tout le
 monde a la même le même jour, et le score se partage en pastilles (façon Wordle)
@@ -35,27 +44,32 @@ une flèche — illisible autrement sur un écran de téléphone. Le texte compl
 s'affiche dans la barre entre la grille et le clavier, et la rangée de numéros
 juste au-dessus permet de sauter directement au mot voulu. La flèche indique où
 le mot commence et dans quel sens il se lit : `→` à droite, `↓` en dessous,
-`↳` en dessous puis vers la droite, `↴` à droite puis vers le bas.
+`↳` en dessous puis vers la droite, `↴` à droite puis vers le bas. La case du
+coin, qui ne peut annoncer aucun mot, porte le badge de la grille.
 
-**Cases spéciales**, une par grille au niveau 1, jusqu'à cinq au niveau 4 :
+**Cases spéciales**, de trois à six selon le niveau :
 
 - **Bonus** (point doré) — le mot qui la traverse rapporte le double.
 - **Mystère** (point violet) — la lettre saisie reste masquée jusqu'à ce que le
   mot soit validé.
 - **Cadeau** (point cyan) — lettre offerte, déjà en place au démarrage.
 
-**Indices et étoiles.** Le bouton 💡 ouvre deux coups de pouce : dévoiler une
-lettre du mot en cours (★ 25) ou le mot entier (★ 15 par case encore
-manquante, ★ 45 minimum). Une lettre dévoilée est verrouillée — impossible de
-l'effacer — et reste lisible même sur une case mystère.
+**Indices et étoiles.** Le bouton 💡 ouvre quatre coups de pouce, comme les
+pages du fond du magazine :
+
+| Coup de pouce | Prix | Effet |
+|---|---|---|
+| Une lettre | ★ 25 | Dévoile et verrouille une case du mot en cours |
+| Le mot entier | ★ 15 par case manquante, ★ 45 minimum | Complète et valide le mot |
+| L'index | ★ 40 | La liste de toutes les définitions, consultable à volonté |
+| La page des solutions | ★ 200 | Remplit toute la grille — elle ne rapporte alors plus rien |
 
 Les étoiles ne sont pas le score. Le score se joue sur une grille ; les étoiles
 suivent le joueur d'une grille à l'autre et ne servent qu'à payer des indices.
-On démarre avec 80 étoiles, de quoi s'offrir trois lettres ou un mot court dès
-la première grille. Ensuite on en gagne **une pour cinq points marqués**, et
-seulement sur ce qui dépasse son propre record : une grille bien jouée rapporte
-environ 130 étoiles, la refaire à l'identique n'en rapporte aucune. Tout
-l'arbitrage est là : dépenser maintenant, ou garder pour le Boss final.
+On démarre avec 80 étoiles. Ensuite on en gagne **une pour cinq points marqués**,
+et seulement sur ce qui dépasse son propre record : refaire une grille à
+l'identique ne rapporte rien, et une grille ouverte à la page des solutions
+n'est ni enregistrée ni payée.
 
 **Score.** 10 points par lettre d'un mot juste, doublés par une case bonus.
 Un mot complété faux coûte 15 points et ses lettres fautives s'effacent ; les
@@ -66,9 +80,9 @@ La progression, les meilleurs scores, la cagnotte d'étoiles et la série
 quotidienne sont stockés dans le `localStorage` du navigateur — rien ne part
 sur un serveur.
 
-Les tarifs et le taux de gain sont trois constantes à ajuster :
-`COUT_LETTRE`, `COUT_MOT_PAR_LETTRE` et `COUT_MOT_MINIMUM` dans
-`src/jeu/partie.ts`, `ETOILES_DEPART` et `etoilesPour()` dans
+Les tarifs et le taux de gain sont des constantes à ajuster : `COUT_LETTRE`,
+`COUT_MOT_PAR_LETTRE`, `COUT_MOT_MINIMUM`, `COUT_INDEX` et `COUT_SOLUTIONS`
+dans `src/jeu/partie.ts`, `ETOILES_DEPART` et `etoilesPour()` dans
 `src/jeu/stockage.ts`.
 
 ## Modifier le contenu
@@ -110,23 +124,62 @@ ponctuellement — mais toute régénération l'écrase.
 
 ## Comment les grilles sont construites
 
-Remplir un gabarit pré-dessiné, à la manière des mots croisés, demande un
-dictionnaire de plusieurs dizaines de milliers de mots ; ici la banque est
-écrite à la main, elle en compte quelques centaines. `tools/build_grids.py`
-procède donc dans l'autre sens : il pose un premier mot, puis accroche les
-suivants à chaque fois qu'ils croisent une lettre déjà posée, en réservant au
-passage la case de définition et la case de séparation de chaque mot. Une
-grille sans case de définition disponible est refusée d'emblée, et un
-vérificateur relit la grille finale comme le ferait un joueur : toute suite de
-deux lettres ou plus doit correspondre exactement à un mot posé, sinon la
-grille est rejetée.
+Une grille pleine demande un dictionnaire de plusieurs dizaines de milliers de
+mots : les quelques centaines de définitions écrites à la main ne suffisent pas
+à faire tenir trente mots entrecroisés sans trou. Le contenu vient donc de deux
+sources, et `tools/` en fait deux étapes.
+
+**1. Le lexique** — `tools/build_lexique.py` part des 336 000 formes du paquet
+npm `an-array-of-french-words`, les débarrasse de leurs accents (convention des
+mots fléchés) et les note avec `wordfreq`, qui donne la fréquence d'usage réelle
+sur l'échelle Zipf. Sans ce filtre le remplissage sort des mots comme AGUEUSIE
+ou OSASSENT : injouables, et impossibles à définir. Seuls les 24 000 mots
+au-dessus de Zipf 2,8 sont conservés, avec leur score — c'est lui qui sert
+ensuite d'échelle de difficulté.
+
+```bash
+pip install wordfreq
+python3 tools/build_lexique.py     # -> content/lexique.json
+```
+
+**2. Les grilles** — `tools/build_grids.py` dessine d'abord le gabarit. Un mot
+ne peut démarrer que juste après une case de définition, ce qui impose la
+première ligne et la première colonne ; des *encoches* de deux lettres mordent
+sur ces bords pour casser le mot pleine hauteur qu'ils créeraient sinon. Les
+cases de définition intérieures viennent découper les mots trop longs, sans
+jamais isoler une lettre, sans laisser une case de définition qui n'annonce
+rien, et en tolérant au plus trois mots de deux lettres. Puis un remplissage par
+retour arrière pose les mots, en proposant d'abord les mots vedettes du thème,
+ensuite le lexique trié par écart à la fréquence visée pour le niveau.
+
+Un vérificateur relit la grille finale comme le ferait un joueur : toute suite
+de deux lettres ou plus doit correspondre exactement à un mot posé, aucune case
+ne peut être à la fois vide et sans définition, et aucune case de définition ne
+peut recouvrir une lettre.
+
+**Le contenu est reproductible.** Deux exécutions donnent les mêmes grilles, et
+surtout : ajouter une définition à la banque ne les change pas. C'est une
+propriété qu'il a fallu construire — l'ordre de préférence ne dépend que de la
+fréquence du mot et d'un bruit calculé à partir du mot lui-même, jamais de
+l'ordre d'un dictionnaire ni d'un `set` Python. Sans cela, chaque définition
+ajoutée rebattait le tirage, faisait apparaître de nouveaux mots à définir, et
+le travail ne convergeait jamais.
+
+**La boucle de travail** est donc : lancer le générateur, lire
+`content/a-definir.json` (les mots utilisés qui n'ont pas encore de
+définition), les écrire dans `content/wordbank.json`, relancer. Le fichier finit
+vide, et les grilles n'ont pas bougé.
 
 ## Structure
 
 ```
-content/          contenu éditorial (banque de mots, liste des grilles)
-tools/            générateur de grilles (Python 3, aucune dépendance)
-src/data/         grilles générées, figées
-src/jeu/          modèle de grille, règles de partie, score, sauvegarde
-src/composants/   écrans et composants React
+content/wordbank.json    les définitions, écrites à la main
+content/lexique.json     les mots français courants et leur fréquence (généré)
+content/templates.json   la liste des grilles : thème, niveau, graine
+content/a-definir.json   les mots qu'il reste à définir (généré)
+tools/build_lexique.py   construit le lexique (nécessite pip install wordfreq)
+tools/build_grids.py     dessine et remplit les grilles
+src/data/grids.json      les grilles générées, figées
+src/jeu/                 modèle de grille, règles de partie, score, sauvegarde
+src/composants/          écrans et composants React
 ```

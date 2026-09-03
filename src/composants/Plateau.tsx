@@ -57,7 +57,19 @@ export default function Plateau({ grille, plan, etat, onCase, onMot }: Props) {
           }
 
           const ids = plan.parCase.get(k)
-          if (!ids) return <div key={k} className="cellule" />
+          if (!ids) {
+            // le coin ne peut annoncer aucun mot: il porte le badge de la
+            // grille, comme le numero de page dans le magazine
+            if (r === 0 && c === 0) {
+              return (
+                <div key={k} className={`cellule coin n${grille.niveau}`}>
+                  <b>{grille.niveau}</b>
+                  <i>{grille.theme === 'classique' ? 'rétro' : 'pop'}</i>
+                </div>
+              )
+            }
+            return <div key={k} className="cellule" />
+          }
 
           const lettre = etat.saisie[k] ?? ''
           const type = plan.special.get(k)

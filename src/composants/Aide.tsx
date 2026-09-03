@@ -19,9 +19,11 @@ export default function Aide({ onFermer, compact }: { onFermer?: () => void; com
       <div className="rang">
         <span className="pastille" style={{ background: 'rgba(255,255,255,.14)' }}>💡</span>
         <span>
-          <b>Indices</b> — le bouton 💡 dévoile une lettre (★ 25) ou le mot entier
-          (★ 15 par case manquante). Vous gagnez une étoile pour cinq points
-          marqués, chaque fois que vous battez votre record sur une grille.
+          <b>Indices</b> — le bouton 💡 dévoile une lettre (★ 25), le mot entier
+          (★ 15 par case manquante), ouvre l’<b>index</b> des définitions (★ 40)
+          ou la <b>page des solutions</b> (★ 200, la grille ne rapporte alors
+          plus rien). Vous gagnez une étoile pour cinq points marqués, chaque
+          fois que vous battez votre record sur une grille.
         </span>
       </div>
       {!compact && (
@@ -29,7 +31,16 @@ export default function Aide({ onFermer, compact }: { onFermer?: () => void; com
           <p style={{ marginTop: 18 }}>
             <b>Comment jouer.</b> Chaque définition porte un numéro, visible dans sa case
             et dans la barre sous la grille. Touchez un numéro pour choisir le mot, la
-            flèche vous indique dans quel sens l’écrire.
+            flèche vous indique dans quel sens l’écrire : <b>→</b> à droite,
+            <b> ↓</b> en dessous, <b>↳</b> en dessous puis vers la droite,
+            <b> ↴</b> à droite puis vers le bas.
+          </p>
+          <p>
+            <b>Deux univers.</b> <i>À l’ancienne</i> reprend le vocabulaire du mot
+            fléché de kiosque ; <i>Pop, internet &amp; quotidien</i> pioche dans les
+            séries, les memes et l’actu. Dans chacun, les quatre niveaux ne changent
+            pas la taille de la grille : ils changent la <b>rareté des mots</b> à
+            trouver.
           </p>
           <p>
             Un mot complet se vérifie tout seul : juste, il se verrouille en vert et

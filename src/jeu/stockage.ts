@@ -48,6 +48,9 @@ export interface Gain { sauvegarde: Sauvegarde; etoilesGagnees: number }
 
 export function enregistrerGrille(id: string, r: Resultat): Gain {
   const s = lire()
+  // une grille ouverte a la page des solutions ne compte pas: ni record,
+  // ni etoiles, sinon on rachete des indices avec ce qu ils ont revele
+  if (r.solutions) return { sauvegarde: s, etoilesGagnees: 0 }
   const ancien = s.grilles[id]
   const etoilesGagnees = etoilesPour(r.score, ancien?.score ?? 0)
   if (!ancien || r.score > ancien.score) s.grilles[id] = r
@@ -59,6 +62,7 @@ export function enregistrerGrille(id: string, r: Resultat): Gain {
 export function enregistrerQuotidien(date: string, r: Resultat): Gain {
   const s = lire()
   let etoilesGagnees = 0
+  if (r.solutions) return { sauvegarde: s, etoilesGagnees: 0 }
   if (!s.quotidien[date]) {
     s.quotidien[date] = r
     etoilesGagnees = etoilesPour(r.score, 0)
