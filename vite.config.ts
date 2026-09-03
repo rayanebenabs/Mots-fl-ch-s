@@ -33,8 +33,8 @@ export default defineConfig({
         start_url: './',
         display: 'standalone',
         orientation: 'portrait',
-        background_color: '#0d0b14',
-        theme_color: '#0d0b14',
+        background_color: '#14103a',
+        theme_color: '#14103a',
         icons: [
           { src: './icone-192.png', sizes: '192x192', type: 'image/png' },
           { src: './icone-512.png', sizes: '512x512', type: 'image/png' },

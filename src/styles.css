@@ -41,15 +41,29 @@
 
 html, body, #root { height: 100%; }
 
+/* Le fond va sur html: c'est lui qui peint la toile du navigateur, marges de
+   sécurité comprises. Posé sur body avec background-attachment: fixed, il
+   s'arrêtait au bord du viewport et laissait une bande noire sous
+   l'indicateur d'accueil de l'iPhone en mode application. */
+html { background-color: var(--fond); }
+
 body {
   margin: 0;
   font-family: ui-rounded, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--texte);
+  background: transparent;
+  overscroll-behavior: none;
+}
+
+/* le dégradé, fixé au viewport étendu, derrière tout le reste */
+body::before {
+  content: '';
+  position: fixed;
+  inset: -1px;
+  z-index: -1;
   background:
     radial-gradient(120% 80% at 50% -10%, #372a8f 0%, transparent 60%),
     linear-gradient(170deg, var(--fond-2) 0%, var(--fond) 55%);
-  background-attachment: fixed;
-  overscroll-behavior: none;
 }
 
 button { font: inherit; color: inherit; border: 0; background: none; cursor: pointer; }
