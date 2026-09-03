@@ -12,6 +12,8 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      // ARTIFACT=1 : sortie en page unique, sans service worker
+      disable: !!process.env.ARTIFACT,
       // 'prompt' et pas 'autoUpdate': le script injecte par autoUpdate se
       // contente d'enregistrer le service worker, il n'ecoute jamais les
       // mises a jour. En mode application, sans barre d'adresse pour
